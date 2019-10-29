@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    margin: 0;
+}
+
+
+/*------ Menu fixo ------*/
+
+.header--container {
+    position: fixed;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
+.header--container_container--psitionHeader {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.container--psitionHeader_container--logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.container--logo_logo--fixed{
+    width: 90%
+}
+.header--container_container--navegation {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container--navegation_box--list {
+    width: 74%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+    font-size: 19px;
+    padding-right: 39px;
+}
+.box--list_iten--list {
+    color: #266294;
+    font-family: 'NunitoSans Regular';
+}
+
+/*----- main -----*/
+
+.container--main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*----- seção inicial ------*/
+
+.container--main_section--home {
+    z-index: -2;
+    width: 100%;
+    height: 108vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+    background-color: #164467;
+}
+.section--home_container--textHome{
+    z-index: -1;
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.container--textHome_box--text {
+    width: 94%;
+}
+.box--text_boxUnderline {
+
+}
+.box--text_title {
+    height: 11vh;
+    display: flex;
+    align-items: flex-start;
+    font-size: 45px;
+    color: #FFBA5C;
+    margin: 0;
+    font-family: 'Nunito ExtraBold'
+}
+.box--text_text--introduction {
+    width: 27%;
+    line-height: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+    font-family: 'NunitoSans Regular'
+}
+.container--imageBackground_image--item {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    top: 326px;
+}
