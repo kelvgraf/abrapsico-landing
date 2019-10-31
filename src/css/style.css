@@ -1,0 +1,264 @@
+body {
+    display: flex;
+    flex-direction: column;
+		background-color: #FAFAFA;
+		/* overflow-x: hidden; */
+		width: 100%;
+    margin: 0;
+}
+
+
+/*------ Menu fixo ------*/
+
+.header--container {
+    position: fixed;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
+.header--container_container--psitionHeader {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.container--psitionHeader_container--logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.container--logo_logo--fixed{
+    width: 90%
+}
+.header--container_container--navegation {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container--navegation_box--list {
+    width: 74%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+    font-size: 19px;
+    padding-right: 39px;
+}
+.box--list_iten--list {
+    color: #266294;
+    font-family: 'NunitoSans Regular';
+}
+
+/*----- main -----*/
+
+.container--main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*----- seção inicial ------*/
+
+.container--main_section--home {
+    z-index: -2;
+    width: 100%;
+    height: 108vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+    background-color: #164467;
+}
+.section--home_container--textHome{
+    z-index: -1;
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.container--textHome_box--text {
+    width: 94%;
+}
+
+.box--text_title {
+    height: 11vh;
+    display: flex;
+    align-items: flex-start;
+    font-size: 45px;
+    color: #FFBA5C;
+    margin: 0;
+    font-family: 'Nunito ExtraBold'
+}
+.box--text_text--introduction {
+    width: 27%;
+    line-height: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+    font-family: 'NunitoSans Regular'
+}
+.container--imageBackground_image--item {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    top: 326px;
+}
+
+.container--main_section--SearchForPsychologist {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	min-height: 90vh;
+	margin-bottom: 2rem;
+}
+
+.box--section_container--txtTitleSearchForPsychologist, .container-services__title-box {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	padding-left: 5rem;
+}
+
+.container--txtTitleSearchForPsychologist_title, .container-services__title {
+	width: 100%;
+	margin: 0;
+	padding-left: 5px;
+	font-size: 3rem;
+	font-family: 'Nunito ExtraBold';
+	color: #141414;
+}
+
+.container--txtTitleSearchForPsychologist_underline, .container-services__underline {
+	width: 80%;
+	height: 7px;
+	border-radius: 10px;
+	background: #FFBA5C;
+}
+
+.box--section_container--symptoms {
+	display: flex;
+	justify-content: space-evenly;
+	align-self: center;
+	width: 85%;
+	margin-top: 3rem;
+	font-family: 'Nunito ExtraBold';
+	font-size: 1.5rem;
+}
+
+.container--symptoms_container--itensSymptoms {
+	width: 35%;
+	padding: 3rem 0;
+	color: #266294;
+}
+
+.container--symptoms_container--itensSymptoms p {
+	margin: 2.5rem 0;
+	cursor: pointer;
+}
+
+.container--symptoms_container--itensSymptoms p:nth-child(1) {
+  margin-top: 0;
+}
+
+.container--symptoms_container--specificationSymptoms {
+	display: flex;
+	justify-content: center;
+	width: 35%;
+	min-height: 300px;
+	height: 100%;
+	padding: 3rem 4rem;
+	padding-bottom: 6rem;
+	border-radius: 14px;
+	color: #141414;
+	background: #FFBA5C30;
+}
+
+.container-services {
+  display: flex;
+	justify-content: center;
+	width: 100%;
+	min-height: 90vh;
+	padding: 2rem 0;
+	padding-top: 5rem;
+	background: #FFBA5C30;
+}
+
+.container-services__underline {
+	width: 60%;
+}
+
+.container-services__title-box {
+	width: 20%;
+	height: 100%;
+}
+
+.services-psicoterapist {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+}
+
+.services-psicoterapist__box {
+	width: 27%;
+	margin: 0 2rem;
+	margin-bottom: 2rem;
+}
+
+.services-psicoterapist__box h4 {
+	width: 70%;
+	margin-bottom: 0;
+	font-family: 'Nunito ExtraBold';
+	font-size: 2rem;
+	color: #266294;
+}
+
+.services-psicoterapist__box p {
+	width: 90%;
+	font-family: 'Nunito ExtraBold';
+	font-size: 1.1rem;
+	color: #141414;
+}
+
+@media (max-width: 800px) {
+	.box--section_container--symptoms,
+	.services-psicoterapist,
+	.container--symptoms_container--specificationSymptoms,
+	.container--symptoms_container--itensSymptoms,
+	.services-psicoterapist__box {
+		flex-direction: column;
+		width: 92%;
+	}
+
+	.container--symptoms_container--itensSymptoms {
+		padding-left: 2rem;
+	}
+
+	.container--symptoms_container--specificationSymptoms {
+		padding: 1rem;
+	}
+	
+	.box--section_container--txtTitleSearchForPsychologist, .container-services__title-box {
+		width: 70%;
+		padding-top: 1rem;
+	}
+
+	.container-services, .services-psicoterapist__box p {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.services-psicoterapist__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 2rem;
+	}
+}
