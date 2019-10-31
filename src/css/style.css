@@ -1,28 +1,26 @@
 body {
-    display: flex;
-    flex-direction: column;
-		background-color: #FAFAFA;
-		/* overflow-x: hidden; */
-		width: 100%;
-    margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #FAFAFA;
+	width: 100%;
+	margin: 0;
 }
-
 
 /*------ Menu fixo ------*/
 
 .header--container {
-    position: fixed;
-    width: 100%;
-    height: 13vh;
-    display: flex;
-    justify-content: center;
-    background-color: #FAFAFA;
+	position: fixed;
+	width: 100%;
+	height: 13vh;
+	display: flex;
+	justify-content: center;
+	background-color: #FAFAFA;
 }
 .header--container_container--psitionHeader {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .container--psitionHeader_container--logo {
     width: 20%;
@@ -40,18 +38,40 @@ body {
 }
 .container--navegation_box--list {
     width: 74%;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     list-style: none;
     font-size: 19px;
+    margin: 0;
     padding-right: 39px;
 }
 .box--list_iten--list {
     color: #266294;
     font-family: 'NunitoSans Regular';
 }
+/* .box--list_iten--list:hover {
+    color: pink;
+} */
+a { 
+    display: flex;
+    flex-direction: column;
+    text-decoration: none
+}
+.box--list_iten--listUnderlineNone {
+    width: 0;
+    height: 0;
+    /* transition: width 2s; */
+}
+.box--list_iten--listUnderline{
+    width: 100%;
+    height: 0.5vh;
+    transition: width 0.5s;
+    border-radius: 60px;
+    background-color: #FFBA5C;
+} 
 
 /*----- main -----*/
 
@@ -123,6 +143,7 @@ body {
 	flex-direction: column;
 	width: 50%;
 	padding-left: 5rem;
+	margin-bottom: 2rem;
 }
 
 .container--txtTitleSearchForPsychologist_title, .container-services__title {
@@ -147,7 +168,7 @@ body {
 	align-self: center;
 	width: 85%;
 	margin-top: 3rem;
-	font-family: 'Nunito ExtraBold';
+	font-family: 'Nunito SemiBold';
 	font-size: 1.5rem;
 }
 
@@ -164,6 +185,10 @@ body {
 
 .container--symptoms_container--itensSymptoms p:nth-child(1) {
   margin-top: 0;
+}
+
+.container--symptoms_container--itensSymptoms p:hover {
+  font-family: 'Nunito ExtraBold';
 }
 
 .container--symptoms_container--specificationSymptoms {
