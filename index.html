@@ -15,10 +15,10 @@
             </div>
             <nav class="header--container_container--navegation">
                 <ul class="container--navegation_box--list">
-                    <li class="box--list_iten--list">Quem somos</li>
-                    <li class="box--list_iten--list">Serviços</li>
-                    <li class="box--list_iten--list">Agenda</li>
-                    <li class="box--list_iten--list">Contato</li>
+                    <a href="#quemSomos"><li id="li--underlineItemIdentity" class="box--list_iten--list" >Quem somos</li><span id="underlineIdentity" class="box--list_iten--listUnderlineNone"></span></a>
+                    <a href="#servicos"><li id="li--underlineItemServises" class="box--list_iten--list">Serviços</li><span id="underlineServises" class="box--list_iten--listUnderlineNone"></span></a> 
+                    <a href="#agenda"><li id="li--underlineItemSchedule" class="box--list_iten--list">Agenda</li><span id="underlineSchedule" class="box--list_iten--listUnderlineNone"></span></a>
+                    <a href="#contato"><li id="li--underlineItemContact" class="box--list_iten--list">Contato</li><span id="underlineContact" class="box--list_iten--listUnderlineNone"></span></a>
                 </ul>
             </nav>
         </div>
@@ -101,9 +101,46 @@
                 </div>
             </div>
         </section>
+        <section id="servicos" class="container--main_blog--servises">
+            <div class="blog--servises_container--servises">
+                <div class="container--servises_box--txtTitleServises">
+                    <h1 class="box--txtTitleServises_title">Serviços</h1>
+                    <div class="box--txtTitleServises_underline"></div>
+                </div>
+                <div class="container--servises_container--boxsServises">
+                    <div class="container--boxsServises_box--servises">
+                        <div class="box--servises_serviceOptions">
+                            <div class="serviceOptions_box--imgService">
+                                <img class="box--imgService_img" src="./src/img/Servico-1.png">
+                            </div>
+                            <div class="serviceOptions_box--infoSolo">
+                                <h2 class="box--infoSolo_title">Psicoterapia Individual</h2>
+                                <p class="box--infoSolo_specification">Nas minhas sessões de terapia, trabalharemos para resolver problemas atuais e focar nos pensamentos e nos comportamentos positivos. Vou ajudá-lo a elaborar suas reações e lhe fornecerei ferramentas valiosas para lidar com os obstáculos da vida. Tenho certeza de que você achará meu serviço personalizado de Terapia particular inspirador. Ligue para marcar um horário.</p>
+                            </div>
+                        </div>
+                        <div class="box--servises_serviceOptions">
+                            <div class="serviceOptions_box--imgService">
+                                <img class="box--imgService_img" src="./src/img/Servico-2.png">
+                            </div>
+                            <div class="serviceOptions_box--infoCouple">
+                                <h2 class="box--infoCouple_title">Psicoterapia de Casal</h2>
+                                <p class="box--infoCouple_specification">Sentindo-se um pouco para baixo ultimamente e nada parece melhorar sua disposição? Pode ser hora de procurar ajuda de um profissional licenciado. Minhas sessões de Terapia de casal ajudam os pacientes a desenvolverem atitudes positivas em relação às circunstâncias mais complexas e desafiadoras da vida. Entre em contato comigo e deixe-me ajudá-lo a encontrar o melhor de si mesmo.</p>
+                            </div>
+                        </div>
+                        <div class="box--servises_serviceOptions">
+                            <div class="serviceOptions_box--imgService"></div>
+                            <div class="serviceOptions_"></div>
+                        </div>
+                    </div>
+                    <div class="container--boxsServises_box--servises box--servises">
+                        <div class="box--servises_serviceOptions"></div>
+                        <div class="box--servises_serviceOptions"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="container--main"></section>
-        <section class="container--main"></section>
-        <section class="container--main_section--schedule">
+        <section id="agenda" class="container--main_section--schedule">
             <div class="section--schedule_container--consult" >
                 <div class="container--consult_box--titleConsult">
                     <h1 class="box--titleConsult_title">Agende uma consulta</h1>
@@ -144,6 +181,9 @@
                 </div>
             </div>
         </section>
+        <section id="quemSomos"></section>
     </main>
+    <footer id="contato"></footer>
+    <script src="./src/js/main.js"></script>
 </body>
 </html>
