@@ -347,6 +347,16 @@ a {
 	font-size: 1.5rem;
 	text-decoration: underline;
 	color: #fff;
+	cursor: pointer;
+}
+
+.container--main_section--presentation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 90vh;
+	background-image: url('src/img/Foto-Sobre.jpg') no-repeat;
 }
 
 @media (max-width: 800px) {
