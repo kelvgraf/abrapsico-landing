@@ -1,4 +1,5 @@
 
+
 function openMenu(){
     if (document.querySelector('.header--container_container--navegation').style.display === 'flex'){
         document.querySelector('.header--container_container--navegation').style.display = 'none'
@@ -81,4 +82,3 @@ function handleText(item) {
 
     text.innerHTML = init();
 }
-
