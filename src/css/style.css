@@ -139,10 +139,15 @@ a {
     height: 11vh;
     display: flex;
     align-items: flex-start;
-    font-size: 45px;
+    font-size: 53px;
     color: #FFBA5C;
     margin: 0;
     font-family: 'Nunito ExtraBold'
+}
+@media (max-width: 1024px) {
+    .box--text_title {
+        font-size: 37px;
+    }
 }
 .box--text_text--introduction {
     width: 27%;
@@ -166,6 +171,11 @@ a {
     .box--text_text--introduction {
         width: 34%;
     }
+}
+
+.section--home_container--imageBackground {
+	display: flex;
+    align-items: flex-end;
 }
 .container--imageBackground_image--item {
     /* z-index: -1; */
