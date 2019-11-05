@@ -632,15 +632,23 @@ a {
 	font-size: 1.1rem;
 	color: #141414;
 }
-@media(max-width: 425px) {
-	.services-psicoterapist__box p {
-		font: Regular Nunito Sans;
-		font-weight: 400;
-		font-size: 1rem;
-		color:#164467;
-		text-align: left;
+	@media(max-width: 768px) {
+		.services-psicoterapist__box p {
+			font: Regular Nunito Sans;
+			font-weight: 400;
+			font-size: 1rem;
+			color:#164467;
+		}
 	}
-}
+	@media(max-width: 425px) {
+		.services-psicoterapist__box p {
+			font: Regular Nunito Sans;
+			font-weight: 400;
+			font-size: 1rem;
+			color:#164467;
+			text-align: left;
+		}
+	}
 
 .box--txtPresentation_txt {
     width: 50%;
@@ -657,7 +665,7 @@ a {
 	background: #266294;
 }
 
-	@media(max-width: 425px) {
+	@media(max-width: 768px) {
 		.container-links {
 			flex-direction: column;	
 		}
@@ -668,7 +676,7 @@ a {
 	padding: 0;
 	list-style: none;
 }
-	@media(max-width: 425px) {
+	@media(max-width: 768px) {
 		.container-links__list {
 			width: 100%;
 			padding-left: 2.18rem;
@@ -687,7 +695,7 @@ a {
 
 	@media(max-width: 425px) {
 		.container-links__list li {
-			font-size: 1.25rem;
+			font-size: 1.10rem;
 			font-family: 'Nunito ExtraBold'
 		}
 	}
