@@ -473,6 +473,15 @@ a {
 	margin-bottom: 2rem;
 }
 
+	@media(max-width: 425px) {
+		.box--section_container--txtTitleSearchForPsychologist,
+		.container-services__title-box,
+		.container-links__title-box {
+			padding-left: 2.18rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
 .container--txtTitleSearchForPsychologist_title,
 .container-services__title,
 .container-links__title {
@@ -483,6 +492,14 @@ a {
 	font-family: 'Nunito ExtraBold';
 	color: #141414;
 }
+
+	@media(max-width: 425px) {
+		.container--txtTitleSearchForPsychologist_title,
+		.container-services__title,
+		.container-links__title  {
+			font-size: 1.75rem;
+		}
+	}
 
 .container--txtTitleSearchForPsychologist_underline,
 .container-services__underline,
@@ -586,11 +603,26 @@ a {
 	color: #266294;
 }
 
+	@media(max-width: 425px) {
+		.services-psicoterapist__box h4 {
+			font-size: 1.375rem;
+		}
+	}
+
 .services-psicoterapist__box p {
 	width: 90%;
 	font-family: 'Nunito ExtraBold';
 	font-size: 1.1rem;
 	color: #141414;
+}
+@media(max-width: 425px) {
+	.services-psicoterapist__box p {
+		font: Regular Nunito Sans;
+		font-weight: 400;
+		font-size: 1rem;
+		color:#164467;
+		text-align: left;
+	}
 }
 
 .container-links {
@@ -602,11 +634,24 @@ a {
 	background: #266294;
 }
 
+	@media(max-width: 425px) {
+		.container-links {
+			flex-direction: column;	
+		}
+	}
+
 .container-links__list {
 	width: 50%;
 	padding: 0;
 	list-style: none;
 }
+	@media(max-width: 425px) {
+		.container-links__list {
+			width: 100%;
+			padding-left: 2.18rem;
+    	margin-bottom: 1.5rem;
+		}
+	}
 
 .container-links__list li {
 	margin: .75rem 0;
@@ -616,6 +661,13 @@ a {
 	color: #fff;
 	cursor: pointer;
 }
+
+	@media(max-width: 425px) {
+		.container-links__list li {
+			font-size: 1.25rem;
+			font-family: 'Nunito ExtraBold'
+		}
+	}
 
 .container--main_section--presentation {
 	display: flex;
@@ -648,6 +700,12 @@ a {
 		width: 70%;
 		padding-top: 1rem;
 	}
+
+		@media(max-width: 425px) {
+			.box--section_container--txtTitleSearchForPsychologist, .container-services__title-box {
+				padding-top: 5rem;
+			}
+		}
 
 	.container-services, .services-psicoterapist__box p {
 		flex-direction: column;
