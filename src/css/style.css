@@ -370,7 +370,8 @@ a {
 .box--section_container--txtTitleSearchForPsychologist,
 .container-services__title-box,
 .container-links__title-box,
-.container-about__title-box {
+.container-about__title-box,
+.container-who__title-box {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -394,7 +395,8 @@ a {
 .container--txtTitleSearchForPsychologist_underline,
 .container-services__underline,
 .container-links__underline,
-.container-about__underline {
+.container-about__underline,
+.container-who__underline {
 	width: 80%;
 	height: 7px;
 	border-radius: 10px;
@@ -472,6 +474,10 @@ a {
 
 .container-about__underline {
     width: 26%;
+}
+
+.container-who__underline {
+    width: 35%;
 }
 
 .container-links__title, .container-about__title {
@@ -558,6 +564,7 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-self: flex-start;
     width: 25%;
 }
 
@@ -581,7 +588,7 @@ a {
     color: #141414;
 }
 
-.container-team__members-box span {
+.container-team__members-box h5 {
     width: 70%;
     font-family: 'NunitoSans Regular';
     color: #266294;
@@ -621,5 +628,54 @@ a {
 		align-items: center;
 		text-align: center;
 		margin-top: 2rem;
-	}
+    }
+    
+    .container--main_section--presentation {
+        min-height: 90vh;
+        margin-bottom: 3rem;
+    }
+
+    .container-about__title-box, .container-who__title-box {
+        align-self: center;
+        width: 90%;
+        padding-left: 2rem;
+    }
+
+    .container-about__underline {
+        width: 66%;
+    }
+
+    .container-who__underline {
+        width: 85%;
+    }
+
+    .box--txtPresentation_txt {
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    .container-team__members-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container-team__members-box div {
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .container-team__members-box img {
+        width: 55%;
+    }
+
+    .container-team__members-box h4 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .container-team__members-box p, .container-team__members-box h5 {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
