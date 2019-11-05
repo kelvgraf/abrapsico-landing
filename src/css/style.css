@@ -662,3 +662,114 @@ a {
 		margin-top: 2rem;
 	}
 }
+
+/* ------- section agendamento ------- */
+.container--main_section--schedule {
+    display: flex;
+    justify-content: center;
+}
+.section--schedule_container--consult {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.container--consult_box--titleConsult {
+    width: 28%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.box--titleConsult_title {
+    font-size: 35px;
+    margin: 0%;
+    font-family: 'Nunito ExtraBold';
+}
+.box--titleConsult_underline {
+    width: 100%;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #FFBA5C;
+}
+.container--consult_container--infoSectionSchedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container--infoSectionSchedule_box--contactBox {
+    display: flex;
+    flex-direction: row;
+}
+.box--contactBox_box--iconContact {
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+}
+.box--iconContact_box--imgContact {
+    display: flex;
+    justify-content: center;
+}
+.box--imgContact_element--img {
+    width: 66%;
+}
+.box--iconContact_box--txtBox {
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box--txtBox_box--txtOrientation {
+
+}
+.box--txtOrientation_title {
+    font-size: 30px;
+    font-family: 'Nunito ExtraBold';
+    color: #266294;
+    margin: 0;
+}
+.box--txtOrientation_txt {
+    width: 78%;
+    line-height: 28px;
+    font-size: 19px;
+    font-family: 'NunitoSans Bold';
+    margin: 0;
+}
+.box--txtBox_box--phoneNunber {
+    height: 31%;
+    font-size: 24px;
+    color: #3F8ECB;
+    font-family: 'NunitoSans Regular';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.phoneNunber {
+    margin: 0;
+}
+.container--infoSectionSchedule_box--directionServiseOnline {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+.container--infoSectionSchedule_box--infoServices {
+    width: 79%;
+    height: 68%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.box--infoServices_titleServiceOnline {
+    width: 44%;
+    font-size: 26px;
+    font-family: 'Nunito ExtraBold';
+    color: #266294;
+    margin: 0;
+}
+.box--infoServices_txtInfoOnline {
+    width: 43.7%;
+    font-size: 16.5px;
+    font-family: 'NunitoSans Regular';
+    line-height: 23px;
+    margin: 0;
+}
