@@ -453,7 +453,7 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 }
-.container--main_section--SearchForPsychologist {
+.container--main_section--SearchForPsychologist, .container-team {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -464,7 +464,9 @@ a {
 
 .box--section_container--txtTitleSearchForPsychologist,
 .container-services__title-box,
-.container-links__title-box {
+.container-links__title-box,
+.container-about__title-box,
+.container-who__title-box {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -473,9 +475,19 @@ a {
 	margin-bottom: 2rem;
 }
 
+	@media(max-width: 425px) {
+		.box--section_container--txtTitleSearchForPsychologist,
+		.container-services__title-box,
+		.container-links__title-box {
+			padding-left: 2.18rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
 .container--txtTitleSearchForPsychologist_title,
 .container-services__title,
-.container-links__title {
+.container-links__title,
+.container-about__title {
 	width: 100%;
 	margin: 0;
 	padding-left: 5px;
@@ -484,9 +496,19 @@ a {
 	color: #141414;
 }
 
+	@media(max-width: 425px) {
+		.container--txtTitleSearchForPsychologist_title,
+		.container-services__title,
+		.container-links__title  {
+			font-size: 1.75rem;
+		}
+	}
+
 .container--txtTitleSearchForPsychologist_underline,
 .container-services__underline,
-.container-links__underline {
+.container-links__underline,
+.container-about__underline,
+.container-who__underline {
 	width: 80%;
 	height: 7px;
 	border-radius: 10px;
@@ -499,7 +521,7 @@ a {
 	align-self: center;
 	width: 85%;
 	margin-top: 3rem;
-	font-family: 'Nunito SemiBold';
+	font-family: 'NunitoSans Regular';
 	font-size: 1.5rem;
 }
 
@@ -545,13 +567,13 @@ a {
 	background: #FFBA5C30;
 }
 
-.container-services__underline {
-	width: 60%;
-}
-
 .container-services__title-box {
 	width: 20%;
 	height: 100%;
+}
+
+.container-services__underline {
+	width: 60%;
 }
 
 .container-links__title-box {
@@ -562,7 +584,15 @@ a {
 	width: 53%;
 }
 
-.container-links__title {
+.container-about__underline {
+    width: 26%;
+}
+
+.container-who__underline {
+    width: 35%;
+}
+
+.container-links__title, .container-about__title {
 	color: #fff;
 }
 
@@ -578,6 +608,10 @@ a {
 	margin-bottom: 2rem;
 }
 
+.services-psicoterapist__box img {
+	width: 70%;
+}
+
 .services-psicoterapist__box h4 {
 	width: 70%;
 	margin-bottom: 0;
@@ -586,11 +620,40 @@ a {
 	color: #266294;
 }
 
+	@media(max-width: 425px) {
+		.services-psicoterapist__box h4 {
+			font-size: 1.375rem;
+		}
+	}
+
 .services-psicoterapist__box p {
 	width: 90%;
-	font-family: 'Nunito ExtraBold';
+	font-family: 'NunitoSans Regular';
 	font-size: 1.1rem;
 	color: #141414;
+}
+	@media(max-width: 768px) {
+		.services-psicoterapist__box p {
+			font: Regular Nunito Sans;
+			font-weight: 400;
+			font-size: 1rem;
+			color:#164467;
+		}
+	}
+	@media(max-width: 425px) {
+		.services-psicoterapist__box p {
+			font: Regular Nunito Sans;
+			font-weight: 400;
+			font-size: 1rem;
+			color:#164467;
+			text-align: left;
+		}
+	}
+
+.box--txtPresentation_txt {
+    width: 50%;
+    font-size: 1.25rem;
+    font-family: 'Nunito ExtraBold'
 }
 
 .container-links {
@@ -602,28 +665,88 @@ a {
 	background: #266294;
 }
 
+	@media(max-width: 768px) {
+		.container-links {
+			flex-direction: column;	
+		}
+	}
+
 .container-links__list {
 	width: 50%;
 	padding: 0;
 	list-style: none;
 }
+	@media(max-width: 768px) {
+		.container-links__list {
+			width: 100%;
+			padding-left: 2.18rem;
+    	margin-bottom: 1.5rem;
+		}
+	}
 
 .container-links__list li {
 	margin: .75rem 0;
-	font-family: 'Nunito ExtraBold';
+	font-family: 'NunitoSans Regular';
 	font-size: 1.5rem;
 	text-decoration: underline;
 	color: #fff;
 	cursor: pointer;
 }
 
+	@media(max-width: 425px) {
+		.container-links__list li {
+			font-size: 1.10rem;
+			font-family: 'Nunito ExtraBold'
+		}
+	}
+
 .container--main_section--presentation {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	width: 100%;
-	min-height: 90vh;
-	background-image: url('src/img/Foto-Sobre.jpg') no-repeat;
+	min-height: 940px;
+    background-image: url('../img/Foto-Sobre.jpg');
+    background-repeat: no-repeat;
+}
+
+.container-team__members-box {
+    display: flex;
+    align-self: center;
+    width: 60%;
+}
+
+.container-team__members-box div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 25%;
+}
+
+.container-team__members-box img {
+	width: 70%;
+}
+
+.container-team__members-box h4 {
+    width: 70%;
+	margin-bottom: 0;
+	font-family: 'Nunito ExtraBold';
+	font-size: 2rem;
+	color: #266294;
+}
+
+.container-team__members-box p {
+    width: 80%;
+    margin-bottom: .5rem;
+    font-family: 'Nunito ExtraBold';
+    font-size: 1rem;
+    color: #141414;
+}
+
+.container-team__members-box h5 {
+    width: 70%;
+    font-family: 'NunitoSans Regular';
+    color: #266294;
 }
 
 @media (max-width: 800px) {
@@ -649,6 +772,12 @@ a {
 		padding-top: 1rem;
 	}
 
+		@media(max-width: 425px) {
+			.box--section_container--txtTitleSearchForPsychologist, .container-services__title-box {
+				padding-top: 5rem;
+			}
+		}
+
 	.container-services, .services-psicoterapist__box p {
 		flex-direction: column;
 		width: 100%;
@@ -660,7 +789,56 @@ a {
 		align-items: center;
 		text-align: center;
 		margin-top: 2rem;
-	}
+    }
+    
+    .container--main_section--presentation {
+        min-height: 90vh;
+        margin-bottom: 3rem;
+    }
+
+    .container-about__title-box, .container-who__title-box {
+        align-self: center;
+        width: 90%;
+        padding-left: 2rem;
+    }
+
+    .container-about__underline {
+        width: 66%;
+    }
+
+    .container-who__underline {
+        width: 85%;
+    }
+
+    .box--txtPresentation_txt {
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    .container-team__members-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container-team__members-box div {
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .container-team__members-box img {
+        width: 55%;
+    }
+
+    .container-team__members-box h4 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .container-team__members-box p, .container-team__members-box h5 {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 /* ------- section agendamento ------- */
@@ -676,6 +854,11 @@ a {
 @media (max-width: 1366px) {
     .section--schedule_container--consult {
         width: 87%;
+    }
+}
+@media (max-width: 768px) {
+    .section--schedule_container--consult {
+        width: 75%;
     }
 }
 .container--consult_box--titleConsult {
@@ -695,6 +878,11 @@ a {
         width: 29%;
     }
 }
+@media (max-width: 768px) {
+    .container--consult_box--titleConsult {
+        width: 46%;
+    }
+}
 .box--titleConsult_title {
     font-size: 35px;
     margin: 0%;
@@ -708,6 +896,14 @@ a {
 @media (max-width: 1024px) {
     .box--titleConsult_title {
         font-size: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .box--titleConsult_title {
+        height: 24vh;
+        font-size: 40px;
+        display: flex;
+        align-items: flex-end;
     }
 }
 .box--titleConsult_underline {
@@ -730,9 +926,24 @@ a {
     justify-content: center;
     flex-direction: row;
 }
+@media (max-width: 768px) {
+    .box--contactBox_box--iconContact {
+        height: 86vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
 .box--iconContact_box--imgContact {
     display: flex;
     justify-content: center;
+}
+@media (max-width: 768px) {
+    .box--iconContact_box--imgContact {
+        width: 55%;
+        height: 61%;
+        justify-content: flex-start;
+    }
 }
 .box--imgContact_element--img {
     width: 66%;
@@ -747,6 +958,11 @@ a {
         width: 56%;
     }
 }
+@media (max-width: 768px) {
+    .box--imgContact_element--img {
+        width: 75%;
+    }
+}
 .box--iconContact_box--txtBox {
     width: 53%;
     display: flex;
@@ -756,6 +972,12 @@ a {
 @media (max-width: 1024px) {
     .box--iconContact_box--txtBox {
         height: 21vh;
+    }
+}
+@media (max-width: 768px) {
+    .box--iconContact_box--txtBox {
+        height: 70vh;
+        justify-content: flex-end;
     }
 }
 .box--txtOrientation_title {
@@ -774,6 +996,12 @@ a {
         font-size: 20px;
     }
 }
+@media (max-width: 768px) {
+    .box--txtOrientation_title {
+        width: 40%;
+        font-size: 30px;
+    }
+}
 .box--txtOrientation_txt {
     width: 78%;
     line-height: 28px;
@@ -783,6 +1011,7 @@ a {
 }
 @media (max-width: 1366px) {
     .box--txtOrientation_txt {
+        width: 75%;
         font-size: 18px;
         line-height: 26px;
     }
@@ -791,6 +1020,12 @@ a {
     .box--txtOrientation_txt {
         width: 72%;
         font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .box--txtOrientation_txt {
+        width: 78%;
+        font-size: 22px;
     }
 }
 .box--txtBox_box--phoneNunber {
@@ -802,6 +1037,13 @@ a {
     flex-direction: column;
     justify-content: space-between;
 }
+@media (max-width: 768px) {
+    .box--txtBox_box--phoneNunber {
+        width: 73%;
+        height: 41%;
+        justify-content: flex-end;
+    }
+}
 .phoneNunber {
     margin: 0;
 }
@@ -809,6 +1051,17 @@ a {
     height: 40vh;
     display: flex;
     align-items: center;
+}
+@media (max-width: 1366px) {
+    .container--infoSectionSchedule_box--directionServiseOnline {
+        height: 50vh;
+    }
+}
+@media (max-width: 768px) {
+    .container--infoSectionSchedule_box--directionServiseOnline {
+        height: 110vh;
+        align-items: flex-start;
+    }
 }
 .container--infoSectionSchedule_box--infoServices {
     width: 80%;
@@ -851,6 +1104,13 @@ a {
         font-size: 20px;
     }
 }
+@media (max-width: 768px) {
+    .box--infoServices_titleServiceOnline {
+        width: 100%;
+        height: 17vh;
+        font-size: 38px;
+    }
+}
 .box--infoServices_txtInfoOnline {
     width: 45%;
     font-size: 16.5px;
@@ -867,5 +1127,11 @@ a {
     .box--infoServices_txtInfoOnline {
         width: 49%;
         font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .box--infoServices_txtInfoOnline {
+        width: 100%;
+        font-size: 29px;
     }
 }
