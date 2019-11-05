@@ -737,6 +737,7 @@ a {
 
 .container-team__members-box h5 {
     width: 70%;
+    margin: 0;
     font-family: 'NunitoSans Regular';
     color: #266294;
 }
