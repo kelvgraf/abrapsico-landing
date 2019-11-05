@@ -453,7 +453,7 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 }
-.container--main_section--SearchForPsychologist {
+.container--main_section--SearchForPsychologist, .container-team {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -464,7 +464,9 @@ a {
 
 .box--section_container--txtTitleSearchForPsychologist,
 .container-services__title-box,
-.container-links__title-box {
+.container-links__title-box,
+.container-about__title-box,
+.container-who__title-box {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -484,7 +486,8 @@ a {
 
 .container--txtTitleSearchForPsychologist_title,
 .container-services__title,
-.container-links__title {
+.container-links__title,
+.container-about__title {
 	width: 100%;
 	margin: 0;
 	padding-left: 5px;
@@ -503,7 +506,9 @@ a {
 
 .container--txtTitleSearchForPsychologist_underline,
 .container-services__underline,
-.container-links__underline {
+.container-links__underline,
+.container-about__underline,
+.container-who__underline {
 	width: 80%;
 	height: 7px;
 	border-radius: 10px;
@@ -516,7 +521,7 @@ a {
 	align-self: center;
 	width: 85%;
 	margin-top: 3rem;
-	font-family: 'Nunito SemiBold';
+	font-family: 'NunitoSans Regular';
 	font-size: 1.5rem;
 }
 
@@ -562,13 +567,13 @@ a {
 	background: #FFBA5C30;
 }
 
-.container-services__underline {
-	width: 60%;
-}
-
 .container-services__title-box {
 	width: 20%;
 	height: 100%;
+}
+
+.container-services__underline {
+	width: 60%;
 }
 
 .container-links__title-box {
@@ -579,7 +584,15 @@ a {
 	width: 53%;
 }
 
-.container-links__title {
+.container-about__underline {
+    width: 26%;
+}
+
+.container-who__underline {
+    width: 35%;
+}
+
+.container-links__title, .container-about__title {
 	color: #fff;
 }
 
@@ -593,6 +606,10 @@ a {
 	width: 27%;
 	margin: 0 2rem;
 	margin-bottom: 2rem;
+}
+
+.services-psicoterapist__box img {
+	width: 70%;
 }
 
 .services-psicoterapist__box h4 {
@@ -611,7 +628,7 @@ a {
 
 .services-psicoterapist__box p {
 	width: 90%;
-	font-family: 'Nunito ExtraBold';
+	font-family: 'NunitoSans Regular';
 	font-size: 1.1rem;
 	color: #141414;
 }
@@ -623,6 +640,12 @@ a {
 		color:#164467;
 		text-align: left;
 	}
+}
+
+.box--txtPresentation_txt {
+    width: 50%;
+    font-size: 1.25rem;
+    font-family: 'Nunito ExtraBold'
 }
 
 .container-links {
@@ -655,7 +678,7 @@ a {
 
 .container-links__list li {
 	margin: .75rem 0;
-	font-family: 'Nunito ExtraBold';
+	font-family: 'NunitoSans Regular';
 	font-size: 1.5rem;
 	text-decoration: underline;
 	color: #fff;
@@ -671,11 +694,51 @@ a {
 
 .container--main_section--presentation {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	width: 100%;
-	min-height: 90vh;
-	background-image: url('src/img/Foto-Sobre.jpg') no-repeat;
+	min-height: 940px;
+    background-image: url('../img/Foto-Sobre.jpg');
+    background-repeat: no-repeat;
+}
+
+.container-team__members-box {
+    display: flex;
+    align-self: center;
+    width: 60%;
+}
+
+.container-team__members-box div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 25%;
+}
+
+.container-team__members-box img {
+	width: 70%;
+}
+
+.container-team__members-box h4 {
+    width: 70%;
+	margin-bottom: 0;
+	font-family: 'Nunito ExtraBold';
+	font-size: 2rem;
+	color: #266294;
+}
+
+.container-team__members-box p {
+    width: 80%;
+    margin-bottom: .5rem;
+    font-family: 'Nunito ExtraBold';
+    font-size: 1rem;
+    color: #141414;
+}
+
+.container-team__members-box h5 {
+    width: 70%;
+    font-family: 'NunitoSans Regular';
+    color: #266294;
 }
 
 @media (max-width: 800px) {
@@ -718,5 +781,54 @@ a {
 		align-items: center;
 		text-align: center;
 		margin-top: 2rem;
-	}
+    }
+    
+    .container--main_section--presentation {
+        min-height: 90vh;
+        margin-bottom: 3rem;
+    }
+
+    .container-about__title-box, .container-who__title-box {
+        align-self: center;
+        width: 90%;
+        padding-left: 2rem;
+    }
+
+    .container-about__underline {
+        width: 66%;
+    }
+
+    .container-who__underline {
+        width: 85%;
+    }
+
+    .box--txtPresentation_txt {
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    .container-team__members-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container-team__members-box div {
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .container-team__members-box img {
+        width: 55%;
+    }
+
+    .container-team__members-box h4 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .container-team__members-box p, .container-team__members-box h5 {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
