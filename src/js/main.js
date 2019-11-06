@@ -1,5 +1,3 @@
-
-
 function openMenu(){
     if (document.querySelector('.header--container_container--navegation').style.display === 'flex'){
         document.querySelector('.header--container_container--navegation').style.display = 'none'
@@ -16,6 +14,11 @@ function closeMenu(){
         document.getElementById('menu-hamburguer').style.display = 'flex'
         document.getElementById('close-hamburguer').style.display = 'none'
     }
+}
+function clickMenu(){
+    document.querySelector('.header--container_container--navegation').style.display = 'none';
+    document.getElementById('close-hamburguer').style.display = 'none'
+    document.getElementById('menu-hamburguer').style.display = 'flex'
 }
 
 let underlineItemIdentity = document.getElementById('li--underlineItemIdentity')
