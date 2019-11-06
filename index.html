@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
-    <title>Abrapsico</title>
+		<title>Abrapsico</title>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon_package_v0.16-1/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon_package_v0.16-1/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon_package_v0.16-1/favicon-16x16.png">
+		<link rel="manifest" href="./src/img/favicon_package_v0.16-1/site.webmanifest">
+		<link rel="mask-icon" href="./src/img/favicon_package_v0.16-1/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
     <header class="header--container">
@@ -20,19 +29,19 @@
             <span id="close-hamburguer" onclick="closeMenu()">&#215;</span>
             <nav class="header--container_container--navegation">
                 <ul class="container--navegation_box--list">
-                    <a href="#quemSomos">
+                    <a href="#quemSomos" class="link">
                         <li id="li--underlineItemIdentity" class="box--list_iten--list" >Quem somos</li>
                         <span id="underlineIdentity" class="box--list_iten--listUnderlineNone"></span>
                     </a>
-                    <a href="#servicos">
+                    <a href="#servicos" class="link">
                         <li id="li--underlineItemServises" class="box--list_iten--list">Serviços</li>
                         <span id="underlineServises" class="box--list_iten--listUnderlineNone"></span>
                     </a> 
-                    <a href="#agenda">
+                    <a href="#agenda" class="link">
                         <li id="li--underlineItemSchedule" class="box--list_iten--list">Agenda</li>
                         <span id="underlineSchedule" class="box--list_iten--listUnderlineNone"></span>
                     </a>
-                    <a href="#contato">
+                    <a href="#contato" class="link">
                         <li id="li--underlineItemContact" class="box--list_iten--list">Contato</li>
                         <span id="underlineContact" class="box--list_iten--listUnderlineNone"></span>
                     </a>
@@ -161,10 +170,21 @@
                 <div class="container-links__underline"></div>
             </header>
             <ul class="container-links__list">
-                <li>Conselho Federal de Psicologia</li>
-                <li>Conselho Regional de Psicologia</li>
-                <li>Resolução CFP 011/2018</li>
-                <li>Código de Ética do Psicológo</li>
+                <li>
+									<a href="https://site.cfp.org.br" >Conselho Federal de Psicologia
+									</a>
+								</li>
+								<li>
+									<a href="https://www.crpsp.org">Conselho Regional de Psicologia
+									</a>
+								</li>
+                <li>
+									<a href="https://site.cfp.org.br/wp-content/uploads/2018/05/RESOLU%C3%87%C3%83O-N%C2%BA-11-DE-11-DE-MAIO-DE-2018.pdf">Resolução CFP 011/2018
+									</a>
+								</li>
+                <li>
+									<a href="https://site.cfp.org.br/wp-content/uploads/2012/07/codigo-de-etica-psicologia.pdf">Código de Ética do Psicológo</a>
+								</li>
             </ul>
         </section>
         <section id="agenda" class="container--main_section--schedule">
@@ -243,7 +263,39 @@
             </div>
         </section>
     </main>
-    <footer id="contato"></footer>
+    <footer id="contato">
+			<section class="contato_wrap">
+				<figure class="contato_wrap--figure">
+					<img src="./src/img/Simbolo-Footer.svg" alt="logo Abrapsico" class="contato_wrap--figure--img">
+				</figure>
+				<div class="contato_wrap--box">
+					<div class="contato_box">
+						<h2 class="contato_box--text">Agende uma consulta.</h2>
+						<p class="contato_box--text">Terapia presencial e online.</p>
+					</div>
+					<div class="contato_box--number">
+						<span class="contato_box--span-first">
+							<p class="contato_box--span">(11) 99825-8963</p>
+							<p class="contato_box--span" >(11) 97783-1381 (Whatsapp)</p>
+						</span>
+						<span class="contato_box--span-second">
+							<p class="contato_box--span--texte">associacao.abrapsico@gmail.com</p>
+							<span class="contato_box--img">
+                                <a href="https://www.facebook.com/Abrapsico1/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./src/img/Icone-Facebook.svg" alt="" class="contato_box--span--img">
+                                </a>
+                                <a href="https://www.instagram.com/associacao.abrapsico/?hl=pt-br" target="_blank" rel="noopener noreferrer">
+                                    <img src="./src/img/Icone-Instagram.svg" alt="" class="contato_box--span--img">
+                                </a>
+							</span>
+						</span>
+					</div>
+					<div class="contato_box--frase">
+						<p class="contato_box--frase--text">Das suas vulnerabilidades brotará a sua força — Sigmund Freud</p>
+					</div>
+				</div>
+			</section>
+    </footer>
     <script src="./src/js/main.js"></script>
 </body>
 <script src="./src/js/main.js"></script>
