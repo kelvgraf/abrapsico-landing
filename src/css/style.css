@@ -861,6 +861,11 @@ a {
         width: 75%;
     }
 }
+@media (max-width: 375px) {
+    .section--schedule_container--consult {
+        width: 85%;
+    }
+}
 .container--consult_box--titleConsult {
     width: 28%;
     height: 25vh;
@@ -880,7 +885,17 @@ a {
 }
 @media (max-width: 768px) {
     .container--consult_box--titleConsult {
-        width: 46%;
+        width: 42%;
+    }
+}
+@media (max-width: 425px) {
+    .container--consult_box--titleConsult {
+        width: 60%;
+    }
+}
+@media (max-width: 320px) {
+    .container--consult_box--titleConsult {
+        width: 62%;
     }
 }
 .box--titleConsult_title {
@@ -906,6 +921,16 @@ a {
         align-items: flex-end;
     }
 }
+@media (max-width: 426px) {
+    .box--titleConsult_title {
+        font-size: 32px;
+    }
+}
+@media (max-width: 375px) {
+    .box--titleConsult_title {
+        font-size: 28px;
+    }
+}
 .box--titleConsult_underline {
     width: 100%;
     height: 6px;
@@ -928,10 +953,20 @@ a {
 }
 @media (max-width: 768px) {
     .box--contactBox_box--iconContact {
-        height: 86vh;
+        height: 102vh;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+    }
+}
+@media (max-width: 425px) {
+    .box--contactBox_box--iconContact {
+        height: 67vh;
+    }
+}
+@media (max-width: 375px) {
+    .box--contactBox_box--iconContact {
+        height: 62vh;
     }
 }
 .box--iconContact_box--imgContact {
@@ -941,8 +976,18 @@ a {
 @media (max-width: 768px) {
     .box--iconContact_box--imgContact {
         width: 55%;
-        height: 61%;
+        height: 57%;
         justify-content: flex-start;
+    }
+}
+@media (max-width: 425px) {
+    .box--iconContact_box--imgContact {
+        height: 50%;
+    }
+}
+@media (max-width: 375px) {
+    .box--iconContact_box--imgContact {
+        height: 56%;
     }
 }
 .box--imgContact_element--img {
@@ -960,7 +1005,12 @@ a {
 }
 @media (max-width: 768px) {
     .box--imgContact_element--img {
-        width: 75%;
+        width: 65%;
+    }
+}
+@media (max-width: 425px) {
+    .box--imgContact_element--img {
+        width: 80%;
     }
 }
 .box--iconContact_box--txtBox {
@@ -976,8 +1026,18 @@ a {
 }
 @media (max-width: 768px) {
     .box--iconContact_box--txtBox {
-        height: 70vh;
+        height: 88vh;
         justify-content: flex-end;
+    }
+}
+@media (max-width: 425px) {
+    .box--iconContact_box--txtBox {
+        height: 56vh;
+    }
+}
+@media (max-width: 375px) {
+    .box--iconContact_box--txtBox {
+        height: 52vh;
     }
 }
 .box--txtOrientation_title {
@@ -998,8 +1058,16 @@ a {
 }
 @media (max-width: 768px) {
     .box--txtOrientation_title {
-        width: 40%;
-        font-size: 30px;
+        width: 100%;
+        font-size: 38px;
+        line-height: 47px;
+    }
+}
+@media (max-width: 425px) {
+    .box--txtOrientation_title {
+        width: 100%;
+        font-size: 23px;
+        line-height: 32px;
     }
 }
 .box--txtOrientation_txt {
@@ -1024,8 +1092,22 @@ a {
 }
 @media (max-width: 768px) {
     .box--txtOrientation_txt {
-        width: 78%;
-        font-size: 22px;
+        width: 100%;
+        line-height: 37px;
+        font-size: 29px;
+    }
+}
+@media (max-width: 425px) {
+    .box--txtOrientation_txt {
+        width: 100%;
+        line-height: 23px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 375px) {
+    .box--txtOrientation_txt {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 .box--txtBox_box--phoneNunber {
@@ -1039,9 +1121,26 @@ a {
 }
 @media (max-width: 768px) {
     .box--txtBox_box--phoneNunber {
-        width: 73%;
+        width: 100%;
         height: 41%;
+        font-size: 31px;
         justify-content: flex-end;
+    }
+}
+@media (max-width: 425px) {
+    .box--txtBox_box--phoneNunber {
+        font-size: 19px;
+    }
+}
+@media (max-width: 375px) {
+    .box--txtBox_box--phoneNunber {
+        height: 36%;
+        font-size: 17px;
+    }
+}
+@media (max-width: 320px) {
+    .box--txtBox_box--phoneNunber {
+        font-size: 16px;
     }
 }
 .phoneNunber {
@@ -1061,6 +1160,21 @@ a {
     .container--infoSectionSchedule_box--directionServiseOnline {
         height: 110vh;
         align-items: flex-start;
+    }
+}
+@media (max-width: 425px) {
+    .container--infoSectionSchedule_box--directionServiseOnline {
+        height: 63vh;
+    }
+}
+@media (max-width: 375px) {
+    .container--infoSectionSchedule_box--directionServiseOnline {
+        height: 68vh;
+    }
+}
+@media (max-width: 320px) {
+    .container--infoSectionSchedule_box--directionServiseOnline {
+        height: 59vh;
     }
 }
 .container--infoSectionSchedule_box--infoServices {
@@ -1083,6 +1197,21 @@ a {
         /* height: 88%; */
     }
 }
+@media (max-width: 425px) {
+    .container--infoSectionSchedule_box--infoServices {
+        height: 82%;
+    }
+}
+@media (max-width: 375px) {
+    .container--infoSectionSchedule_box--infoServices {
+        height: 77%;
+    }
+}
+/* @media (max-width: 320px) {
+    .container--infoSectionSchedule_box--infoServices {
+        height: 77%;
+    }
+} */
 .box--infoServices_titleServiceOnline {
     width: 45%;
     height: 7vh;
@@ -1111,6 +1240,11 @@ a {
         font-size: 38px;
     }
 }
+@media (max-width: 425px) {
+    .box--infoServices_titleServiceOnline {
+        font-size: 23px;
+    }
+}
 .box--infoServices_txtInfoOnline {
     width: 45%;
     font-size: 16.5px;
@@ -1133,5 +1267,15 @@ a {
     .box--infoServices_txtInfoOnline {
         width: 100%;
         font-size: 29px;
+    }
+}
+@media (max-width: 425px) {
+    .box--infoServices_txtInfoOnline {
+        font-size: 16px;
+    }
+}
+@media (max-width: 320px) {
+    .box--infoServices_txtInfoOnline {
+        font-size: 13.7px;
     }
 }
