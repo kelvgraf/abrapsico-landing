@@ -8,12 +8,8 @@ function openMenu(){
         document.querySelector('.header--container_container--navegation').style.display = 'flex'
     }
 }
-function clickMenu(){
-    document.querySelector('.header--container_container--navegation').style.display = 'none';
-    document.getElementById('close-hamburguer').style.display = 'none'
-    document.getElementById('menu-hamburguer').style.display = 'flex'
-}
 
+// ---------------- Funções do menu descktop --------------------
 let underlineItemIdentity = document.getElementById('li--underlineItemIdentity')
 let underlineIdentity = document.getElementById('underlineIdentity')
 
@@ -26,9 +22,7 @@ let underlineSchedule = document.getElementById('underlineSchedule');
 let underlineItemContact = document.getElementById('li--underlineItemContact')
 let underlineContact = document.getElementById('underlineContact');
 
-// console.log(underlineItemIdentity)
 underlineItemIdentity.addEventListener('mouseover', function(){
-    // console.log(underlineIdentity)
     underlineIdentity.setAttribute('class', 'box--list_iten--listUnderline')
 })
 underlineItemIdentity.addEventListener('mouseout', function(){
@@ -36,7 +30,6 @@ underlineItemIdentity.addEventListener('mouseout', function(){
 })
 // ---------------- --------------------
 underlineItemServises.addEventListener('mouseover', function(){
-    // console.log(underlineServises)
     underlineServises.setAttribute('class', 'box--list_iten--listUnderline')
 })
 underlineItemServises.addEventListener('mouseout', function(){
@@ -44,7 +37,6 @@ underlineItemServises.addEventListener('mouseout', function(){
 })
 // ----------------- --------------------
 underlineItemSchedule.addEventListener('mouseover', function(){
-    // console.log(underlineSchedule)
     underlineSchedule.setAttribute('class', 'box--list_iten--listUnderline')
 })
 underlineItemSchedule.addEventListener('mouseout', function(){
@@ -52,13 +44,13 @@ underlineItemSchedule.addEventListener('mouseout', function(){
 })
 // ----------------- --------------------
 underlineItemContact.addEventListener('mouseover', function(){
-    // console.log(underlineContact)
     underlineContact.setAttribute('class', 'box--list_iten--listUnderline')
 })
 underlineItemContact.addEventListener('mouseout', function(){
     underlineContact.setAttribute('class', 'box--list_iten--listUnderlineNone')
 })
 
+// ----------------- Funções da seção sintomas --------------------
 function handleText(item) {
     const text = document.getElementById('texto');
     function init () {
