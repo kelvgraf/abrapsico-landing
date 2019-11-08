@@ -421,6 +421,29 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+@media (max-width: 768px){
+    .container--slideBlog_box--arrowLeft , .container--slideBlog_box--arrowRight{
+        display: none;
+    }
+    .container--blog_container--slideBlog{
+        flex-direction: column;
+    }
+}
+.container--slideBlog_link{
+    display: none;
+}
+@media (max-width: 768px){
+    .container--slideBlog_link{
+        display:flex;
+        font-size: 15px;
+        font-family: 'NunitoSans';
+        color:#266294;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-bottom: 5vh;
+    }
+}
+
 .container--slideBlog_box--slideInfo{
     width: 25vw;
     min-height: 40vh;
@@ -430,20 +453,32 @@ body {
 @media (max-width: 768px){
     .container--slideBlog_box--slideInfo{
         width: 35vw;
-    }
-    .tabletEdit {
-        display:none; 
+        display: flex;
+
     }
 }
 @media (max-width: 425px){
     .container--slideBlog_box--slideInfo{
-        width: 60vw; 
+        width: 95vw;
+        min-height: auto;
+        margin-bottom: 5vh;
     }
 }
 
 .box--slideInfo_box--slideTxt{
     padding: 15px;
     min-height: 23vh;
+    font-family: 'NunitoSans';
+    color: #6C6C6C;
+}
+@media (max-width: 425px){
+    .box--slideInfo_box--slideTxt{
+        font-size: 12px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        padding: 20px 10px;
+    }
 }
 .section--blog_container--blog{
     width: 90vw;
@@ -457,8 +492,9 @@ body {
     width: 100%;
 }
 @media (max-width: 425px){
-    .mobile--none{
-        display: none;  
+    .box--slideImg_img{
+        width: 45vw;
+        border-radius: 10px;
     }
 }
 .box--slideTxt_slideTxt{
@@ -475,6 +511,11 @@ body {
     font-family: 'Nunito ExtraBold';
     color: #266294;
 }
+@media(max-width: 425px) {
+    .box--slideTxt_slideTxt2{
+        font-size: 15px;
+    }      
+}
 .box--slideTxt_slideTxtLink{
     font-family: 'NunitoSans Regular';
     color: #74B5E5;
@@ -484,6 +525,11 @@ body {
     letter-spacing: 2.1px;
     text-decoration: none;
     text-transform: uppercase;
+}
+@media(max-width: 425px) {
+    .box--slideTxt_slideTxtLink{
+        font-size: 12px;
+    }      
 }
 .container--main_section--SearchForPsychologist, .container-team {
 	display: flex;
