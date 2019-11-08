@@ -411,7 +411,13 @@ body {
 	}
 }
 /*----- seção blog ------*/
-
+.container--blog_box--textTitle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 2rem;
+}
 .container--main_section--blog{
     display: flex;
     justify-content: center;
@@ -486,8 +492,8 @@ body {
 .box--textTitle_title{
     font-size:32px;
     font-family: 'Nunito ExtraBold';
-    margin:2vh 0 8vh 2vw;
 }
+
 .box--slideImg_img{
     width: 100%;
 }
@@ -1020,10 +1026,14 @@ body {
         font-size: 28px;
     }
 }
-.box--titleConsult_underline {
-    width: 100%;
+
+.box--titleConsult_underline, .box--textTitle_underline {
+    min-width: 11rem;
     height: 6px;
+    /* margin-left: 1.2rem; */
     border-radius: 50px;
+    padding-left: 1rem;
+    align-self: baseline;
     background-color: #FFBA5C;
 }
 .container--consult_container--infoSectionSchedule {
