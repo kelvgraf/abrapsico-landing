@@ -70,3 +70,4 @@ function handleText(item) {
 
     text.innerHTML = init();
 }
+
