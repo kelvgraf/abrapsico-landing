@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/medium.css">
     <title>Abrapsico</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon_package_v0.16-1/apple-touch-icon.png">
@@ -81,45 +82,8 @@
                     <h1 class="box--textTitle_title">Nosso blog</h1>
                     <div class="box--textTitle_underline"></div>
                 </div>
-                <div class="container--blog_container--slideBlog">
-                    <div class="container--slideBlog_box--arrowLeft">
-                        <img class="box--arrowLeft_arrowLeft" src="./src/img/Seta_esquerda.svg">
-                    </div>
-                    <div class="container--slideBlog_box--slideInfo">
-                        <div class="box--slideInfo_box--slideImg">
-                            <img class="box--slideImg_img" src="./src/img/imagemblog1.png">
-                        </div>
-                        <div class="box--slideInfo_box--slideTxt">
-                            <p class="box--slideTxt_slideTxt1">por Eleisângela - 25 jun 2019</p>
-                            <p class="box--slideTxt_slideTxt2">Sobre a regulamentação da terapia online no Brasil</p>
-                            <a href="" class="box--slideTxt_slideTxtLink"><p class="box--slideTxt_slideTxtLink">leia mais +</p></a> 
-                        </div>
-                    </div>
-                    <div class="container--slideBlog_box--slideInfo">
-                        <div class="box--slideInfo_box--slideImg">
-                            <img class="box--slideImg_img " src="./src/img/imagemblog3.png">
-                        </div>
-                        <div class="box--slideInfo_box--slideTxt ">
-                            <p class="box--slideTxt_slideTxt1">por Renata - 14 jul 2019</p>
-                            <p class="box--slideTxt_slideTxt2 ">Orientação vocacional: algumas dicas</p>
-                            <a href="" class="box--slideTxt_slideTxtLink"><p class="box--slideTxt_slideTxtLink">leia mais +</p></a> 
-                        </div>
-                    </div>
-                    <div class="container--slideBlog_box--slideInfo">
-                        <div class="box--slideInfo_box--slideImg">
-                            <img class="box--slideImg_img "  src="./src/img/imagemblog2.png">
-                        </div>
-                        <div class="box--slideInfo_box--slideTxt">
-                            <p class="box--slideTxt_slideTxt1">por Andréa - 30 ago 2019</p>
-                            <p class="box--slideTxt_slideTxt2">Dúvidas frequentes sobre psicoterapia infantil</p>
-                            <a href="" class="box--slideTxt_slideTxtLink"><p class="box--slideTxt_slideTxtLink">leia mais +</p></a> 
-                        </div>
-                    </div>
-                   
-                    <div class="container--slideBlog_box--arrowRight">
-                        <img class="box--arrowRight_arrowRight" src="./src/img/Seta_direita.svg">
-                    </div>
-                    <a class="container--slideBlog_link" href="#">Mostrar mais +</a>
+                <div id="medium"></div>
+                <div class="paginationMedium" id="medium-pagination"> </div>
                 </div>
             </div>
         </section>
@@ -284,6 +248,8 @@
 			</section>
     </footer>
     <script src="./src/js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="./src/js/medium.js"></script>
 </body>
 <script src="./src/js/main.js"></script>
 </html>
