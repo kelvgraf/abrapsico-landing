@@ -412,7 +412,13 @@ body {
 	}
 }
 /*----- seção blog ------*/
-
+.container--blog_box--textTitle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 2rem;
+}
 .container--main_section--blog{
     display: flex;
     justify-content: center;
@@ -491,6 +497,7 @@ body {
     font-family: 'Nunito ExtraBold';
     border-bottom: 8px solid #FFBA5C;
 }
+
 .box--slideImg_img{
     width: 100%;
 }
@@ -983,7 +990,7 @@ body {
 .container-links {
 	display: flex;
 	width: 100%;
-	min-height: 30vh;
+	min-height: 35vh;
 	padding: 2rem 0;
 	padding-top: 5rem;
 	background: #266294;
@@ -996,8 +1003,11 @@ body {
 	}
 
 .container-links__list {
-	width: 50%;
 	padding: 0;
+	width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 	list-style: none;
 }
 	@media(max-width: 768px) {
@@ -1020,7 +1030,7 @@ body {
 .container-links__list li a{
 	margin: .75rem 0;
 	font-family: 'NunitoSans Regular';
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	text-decoration: underline;
 	color: #fff;
 	cursor: pointer;
@@ -1279,10 +1289,14 @@ body {
         font-size: 28px;
     }
 }
-.box--titleConsult_underline {
-    width: 100%;
+
+.box--titleConsult_underline, .box--textTitle_underline {
+    min-width: 11rem;
     height: 6px;
+    /* margin-left: 1.2rem; */
     border-radius: 50px;
+    padding-left: 1rem;
+    align-self: baseline;
     background-color: #FFBA5C;
 }
 .container--consult_container--infoSectionSchedule {
@@ -1389,7 +1403,7 @@ body {
     }
 }
 .box--txtOrientation_title {
-    font-size: 30px;
+    font-size: 2.5rem;
     font-family: 'Nunito ExtraBold';
     color: #266294;
     margin: 0;
@@ -1563,7 +1577,7 @@ body {
 .box--infoServices_titleServiceOnline {
     width: 45%;
     height: 7vh;
-    font-size: 26px;
+    font-size: 2.5rem;
     font-family: 'Nunito ExtraBold';
     color: #266294;
     margin: 0;
