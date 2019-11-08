@@ -338,7 +338,7 @@ body {
 }
 .box--text_text--introduction {
     width: 27%;
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     line-height: 1.75rem;
     color: #FFFFFF;
     margin: 0;
@@ -485,9 +485,11 @@ body {
     width: 90vw;
 }
 .box--textTitle_title{
-    font-size:35px;
-    font-family: 'Nunito ExtraBold';
     margin:2vh 0 8vh 2vw;
+    width: fit-content;
+    font-size: 3rem;
+    font-family: 'Nunito ExtraBold';
+    border-bottom: 8px solid #FFBA5C;
 }
 .box--slideImg_img{
     width: 100%;
@@ -579,15 +581,16 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	width: 43%;
+    /* width: 43%; */
+    width: fit-content;
 	padding-left: 5rem;
 	margin-bottom: 2rem;
 }
-    @media(max-width: 2560px) {
+  /*   @media(max-width: 2560px) {
         .box--section_container--txtTitleSearchForPsychologist {
             width: 24%;
         }
-    }
+    } */
     @media(max-width: 1024px) {
         .box--section_container--txtTitleSearchForPsychologist,
         .container-services__title-box,
@@ -652,12 +655,14 @@ body {
 .container-services__title,
 .container-links__title,
 .container-about__title {
-	width: 100%;
+    /* width: 100%; */
+    width: fit-content;
 	margin: 0;
 	/* padding-left: 5px; */
-	font-size: 35px;
+	font-size: 3rem;
 	font-family: 'Nunito ExtraBold';
-	color: #141414;
+    color: #141414;
+    border-bottom: 8px solid #FFBA5C;
 }
     @media(max-width: 1024px) {
         .container--txtTitleSearchForPsychologist_title,
@@ -861,12 +866,12 @@ body {
 }
 
 .container-services__title-box {
-	width: 15.5%;
+	/* width: 15.5%; */
 	height: 100%;
 }
 @media(max-width: 2560px) {
     .container-services__title-box  {
-        width: 8.5%;
+        /* width: 8.5%; */
     }
 }
 @media(max-width: 1366px) {
@@ -968,9 +973,11 @@ body {
 	}
 
 .box--txtPresentation_txt {
-    width: 50%;
-    font-size: 1.25rem;
-    font-family: 'Nunito ExtraBold'
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    width: 42%;
+    font-size: 1.6rem;
+    font-family: 'Nunito ExtraBold';
 }
 
 .container-links {
@@ -1033,12 +1040,15 @@ body {
 	min-height: 940px;
     background-image: url('../img/Foto-Sobre.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container-team__members-box {
+    margin-right: 5rem;
+    padding: 1.5rem 0;
+    max-width: 70%;
     display: flex;
-    align-self: center;
-    width: 60%;
+    align-self: flex-end;
 }
 
 .container-team__members-box div {
@@ -1203,7 +1213,8 @@ body {
     }
 }
 .container--consult_box--titleConsult {
-    width: 28%;
+    /* width: 28%; */
+    width: fit-content;
     height: 25vh;
     display: flex;
     justify-content: center;
@@ -1235,8 +1246,9 @@ body {
     }
 }
 .box--titleConsult_title {
-    font-size: 35px;
+    font-size: 3rem;
     margin: 0%;
+    border-bottom: 8px solid #FFBA5C;
     font-family: 'Nunito ExtraBold';
 }
 @media (max-width: 1366px) {
