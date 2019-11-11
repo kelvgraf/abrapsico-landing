@@ -962,6 +962,11 @@ body {
 	width: 15.5%;
 	height: 100%;
 }
+@media(max-width: 2560px) {
+    .container-services__title-box  {
+        /* width: 8.5%; */
+    }
+}
 @media(max-width: 1366px) {
     .container-services__title-box  {
         width: 16.5%;
@@ -1290,9 +1295,9 @@ body {
     }
 }
 @media (max-width: 768px) {
-    .section--schedule_container--consult {
-        width: 75%;
-    }
+	.section--schedule_container--consult {
+		width: 78%;
+	} 
 }
 @media (max-width: 375px) {
     .section--schedule_container--consult {
@@ -1317,14 +1322,14 @@ body {
     }
 }
 @media (max-width: 768px) {
-    .container--consult_box--titleConsult {
-        width: 42%;
-    }
+	.container--consult_box--titleConsult {
+		width: 57%;
+	}
 }
-@media (max-width: 425px) {
-    .container--consult_box--titleConsult {
-        width: 60%;
-    }
+@media (max-width: 648px) {
+	.container--consult_box--titleConsult {
+		width: 40%;
+	}
 }
 @media (max-width: 320px) {
     .container--consult_box--titleConsult {
@@ -1346,13 +1351,13 @@ body {
         font-size: 25px;
     }
 }
-@media (max-width: 768px) {
-    .box--titleConsult_title {
-        height: 24vh;
-        font-size: 40px;
-        display: flex;
-        align-items: flex-end;
-    }
+@media (max-width: 648px) {
+	.box--titleConsult_title {
+		height: 24vh;
+		font-size: 2rem;
+		display: flex;
+		align-items: flex-end;
+	}
 }
 @media (max-width: 426px) {
     .box--titleConsult_title {
@@ -1386,7 +1391,7 @@ body {
 }
 @media (max-width: 768px) {
     .box--contactBox_box--iconContact {
-        height: 102vh;
+        height: 53vh;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -1409,8 +1414,7 @@ body {
 @media (max-width: 768px) {
     .box--iconContact_box--imgContact {
         width: 55%;
-        height: 57%;
-        justify-content: flex-start;
+        height: 66%;
     }
 }
 @media (max-width: 425px) {
@@ -1438,7 +1442,7 @@ body {
 }
 @media (max-width: 768px) {
     .box--imgContact_element--img {
-        width: 65%;
+        width: 66%;
     }
 }
 @media (max-width: 425px) {
@@ -1459,8 +1463,8 @@ body {
 }
 @media (max-width: 768px) {
     .box--iconContact_box--txtBox {
-        height: 88vh;
-        justify-content: flex-end;
+        height: 31vh;
+        justify-content: space-between;
     }
 }
 @media (max-width: 425px) {
@@ -1492,7 +1496,7 @@ body {
 @media (max-width: 768px) {
     .box--txtOrientation_title {
         width: 100%;
-        font-size: 38px;
+        font-size: 1.5rem;
         line-height: 47px;
     }
 }
@@ -1526,8 +1530,8 @@ body {
 @media (max-width: 768px) {
     .box--txtOrientation_txt {
         width: 100%;
-        line-height: 37px;
-        font-size: 29px;
+        line-height: 29px;
+        font-size: 1rem;
     }
 }
 @media (max-width: 425px) {
@@ -1578,6 +1582,11 @@ body {
 }
 .phoneNunber {
     margin: 0;
+}
+@media (max-width: 768px) {
+    .phoneNunber {
+        font-size: 1.3rem;
+    }
 }
 .container--infoSectionSchedule_box--directionServiseOnline {
     height: 40vh;
@@ -1699,7 +1708,7 @@ body {
 @media (max-width: 768px) {
     .box--infoServices_txtInfoOnline {
         width: 100%;
-        font-size: 29px;
+        font-size: 1.2rem;
     }
 }
 @media (max-width: 425px) {
