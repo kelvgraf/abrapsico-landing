@@ -662,35 +662,34 @@ body {
 .container-services__title,
 .container-links__title,
 .container-about__title {
-    /* width: 100%; */
-    width: fit-content;
+	width: fit-content;
 	margin: 0;
-	/* padding-left: 5px; */
 	font-size: 3rem;
 	font-family: 'Nunito ExtraBold';
-    color: #141414;
-    border-bottom: 8px solid #FFBA5C;
+	color: #141414;
+	border-bottom: 8px solid #FFBA5C;
 }
-    @media(max-width: 1024px) {
-        .container--txtTitleSearchForPsychologist_title,
-        .container-services__title,
-        .container-links__title  {
-            font-size: 25px;
-        }
-    }
-    @media(max-width: 768px) {
-        .container--txtTitleSearchForPsychologist_title,
-        .container-services__title,
-        .container-links__title  {
-            font-size: 40px;
-        }
-    }
+	@media(max-width: 1024px) {
+		.container--txtTitleSearchForPsychologist_title,
+		.container-services__title,
+		.container-links__title  {
+			font-size: 25px;
+		}
+	}
+	@media(max-width: 768px) {
+		.container--txtTitleSearchForPsychologist_title,
+		.container-services__title,
+		.container-links__title  {
+			font-size: 40px;
+		}
+	}
 
-	@media(max-width: 425px) {
+	@media(max-width: 648px) {
 		.container--txtTitleSearchForPsychologist_title,
 		.container-services__title,
 		.container-links__title  {
 			font-size: 1.75rem;
+			border-bottom-width: 4px;
 		}
 	}
 
@@ -827,22 +826,22 @@ body {
     }
 }
 @media(max-width: 768px) {
-    .container--symptoms_container--specificationSymptoms  {
-        align-self: center;
-    }
+	.container--symptoms_container--specificationSymptoms  {
+		align-self: center;
+	}
 }
 #texto {
-    font-size: 19px;
+	font-size: 19px;
 }
 @media(max-width: 1366px) {
-    #texto  {
-        font-size: 18px;
-    }
+	#texto  {
+		font-size: 18px;
+	}
 }
 @media(max-width: 1024px) {
-    #texto  {
-        font-size: 13px;
-    }
+	#texto  {
+		font-size: 13px;
+	}
 }
 @media(max-width: 768px) {
     #texto  {
@@ -922,6 +921,13 @@ body {
 
 .container-links__title, .container-about__title {
 	color: #fff;
+}
+
+@media (max-width: 648px) {
+	.container-about__title {
+		font-size: 1.75rem;
+		border-bottom-width: 4px;
+	}
 }
 
 .services-psicoterapist {
@@ -1048,9 +1054,14 @@ body {
 	align-items: center;
 	width: 100%;
 	min-height: 940px;
-    background-image: url('../img/Foto-Sobre.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url('../img/Foto-Sobre.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media(max-width: 648px) {
+	.container--main_section--presentation {
+		background-position-x: center;
+	}
 }
 
 .container-team__members-box {
@@ -1146,56 +1157,66 @@ body {
 		align-items: center;
 		text-align: center;
 		margin-top: 2rem;
-    }
+	}
     
-    .container--main_section--presentation {
-        min-height: 90vh;
-        margin-bottom: 3rem;
-    }
+	.container--main_section--presentation {
+		min-height: 90vh;
+		margin-bottom: 3rem;
+	}
 
-    .container-about__title-box, .container-who__title-box {
-        align-self: center;
-        width: 90%;
-        padding-left: 2rem;
-    }
+	.container-about__title-box, .container-who__title-box {
+		align-self: center;
+		width: 90%;
+		padding-left: 2rem;
+	}
 
-    .container-about__underline {
-        width: 66%;
-    }
+	.container-about__underline {
+		width: 66%;
+	}
 
-    .container-who__underline {
-        width: 85%;
-    }
+	.container-who__underline {
+		width: 85%;
+	}
 
-    .box--txtPresentation_txt {
-        width: 90%;
-        margin-top: 3rem;
-    }
+	.box--txtPresentation_txt {
+		width: 90%;
+		margin-top: 3rem;
+	}
 
-    .container-team__members-box {
-        flex-direction: column;
-        width: 90%;
-    }
+	.container-team__members-box {
+		flex-direction: column;
+		width: 90%;
+	}
 
-    .container-team__members-box div {
-        align-items: center;
-        width: 100%;
-        margin: 2rem 0;
-    }
+	.container-team__members-box div {
+		align-items: center;
+		width: 100%;
+		margin: 2rem 0;
+	}
 
-    .container-team__members-box img {
-        width: 55%;
-    }
+	.container-team__members-box img {
+		width: 55%;
+	}
 
-    .container-team__members-box h4 {
-        width: 90%;
-        text-align: center;
-    }
+	.container-team__members-box h4 {
+		width: 90%;
+		text-align: center;
+	}
 
-    .container-team__members-box p, .container-team__members-box h5 {
-        font-size: 1rem;
-        text-align: center;
-    }
+	.container-team__members-box p, .container-team__members-box h5 {
+		font-size: 1rem;
+		text-align: center;
+	}
+}
+
+@media (max-width: 648px) {
+	.box--txtPresentation_txt {
+		margin-top: 4rem;
+		padding: .5rem 0;
+		width: 95%;
+		font-size: 1rem;
+		font-family: 'NunitoSans Regular';
+	}
 }
 
 /* ------- section agendamento ------- */
