@@ -419,6 +419,11 @@ body {
     width: 50%;
     margin-bottom: 2rem;
 }
+@media(max-width: 320px) {
+	.container--blog_box--textTitle {
+		width: 55%;
+	}
+}
 .container--main_section--blog{
     display: flex;
     justify-content: center;
@@ -496,6 +501,16 @@ body {
     font-size: 3rem;
     font-family: 'Nunito ExtraBold';
     border-bottom: 8px solid #FFBA5C;
+}
+@media (max-width: 1024px){
+    .box--textTitle_title{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 425px){
+    .box--textTitle_title{
+        font-size: 1.75rem;
+    }
 }
 
 .box--slideImg_img{
@@ -593,11 +608,10 @@ body {
 	padding-left: 5rem;
 	margin-bottom: 2rem;
 }
-  /*   @media(max-width: 2560px) {
-        .box--section_container--txtTitleSearchForPsychologist {
-            width: 24%;
-        }
-    } */
+.box--section_container--txtTitleSearchForPsychologist {
+    height: 19vh;
+    justify-content: flex-end;
+}
     @media(max-width: 1024px) {
         .box--section_container--txtTitleSearchForPsychologist,
         .container-services__title-box,
@@ -613,7 +627,7 @@ body {
     }
     @media(max-width: 1024px) {
         .box--section_container--txtTitleSearchForPsychologist {
-            width: 45%;
+            width: 55%;
         }
     }
     
@@ -671,18 +685,23 @@ body {
     color: #141414;
     border-bottom: 8px solid #FFBA5C;
 }
+.container-services__title {
+    height: 24vh;
+    display: flex;
+    align-items: flex-end;
+}
     @media(max-width: 1024px) {
         .container--txtTitleSearchForPsychologist_title,
         .container-services__title,
         .container-links__title  {
-            font-size: 25px;
+            font-size: 2rem;
         }
     }
     @media(max-width: 768px) {
         .container--txtTitleSearchForPsychologist_title,
         .container-services__title,
         .container-links__title  {
-            font-size: 40px;
+            font-size: 2rem;
         }
     }
 
@@ -922,6 +941,11 @@ body {
 
 .container-links__title, .container-about__title {
 	color: #fff;
+}
+@media(max-width: 1024px) {
+    .container-about__title  {
+        font-size: 2rem;
+    }
 }
 
 .services-psicoterapist {
@@ -1250,7 +1274,7 @@ body {
 }
 @media (max-width: 1024px) {
     .container--consult_box--titleConsult {
-        width: 29%;
+        width: 37%;
     }
 }
 @media (max-width: 768px) {
@@ -1281,20 +1305,20 @@ body {
 }
 @media (max-width: 1024px) {
     .box--titleConsult_title {
-        font-size: 25px;
+        font-size: 2rem;
     }
 }
 @media (max-width: 768px) {
     .box--titleConsult_title {
         height: 24vh;
-        font-size: 40px;
+        font-size: 2rem;
         display: flex;
         align-items: flex-end;
     }
 }
-@media (max-width: 426px) {
+@media (max-width: 425px) {
     .box--titleConsult_title {
-        font-size: 32px;
+        font-size: 1.75rem;
     }
 }
 @media (max-width: 375px) {
