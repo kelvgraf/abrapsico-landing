@@ -970,6 +970,15 @@ body {
 	width: 70%;
 }
 
+@media(max-width: 1024px) {
+    .services-psicoterapist__box img {
+        width: 50%;
+    }
+    .services-psicoterapist__box h4 {
+        margin: 1rem 0;
+    }
+}
+
 .services-psicoterapist__box h4 {
 	width: 70%;
 	margin-bottom: 0;
@@ -1110,13 +1119,6 @@ body {
     color: #141414;
 }
 
-@media(max-width: 425px) {
-    .container-team__members-box p, .container-team__members-box h4 {
-        text-align: left;
-    }
-}
-
-
 .container-team__members-box h5 {
     width: 70%;
     margin: 0;
@@ -1230,6 +1232,12 @@ body {
 
     .container-team__members-box h5 {
         font-family: 'NunitoSans Regular';
+    }
+}
+
+@media(max-width: 425px) {
+    .container-team__members-box p, .container-team__members-box h4, .container-team__members-box h5 {
+        text-align: left;
     }
 }
 
