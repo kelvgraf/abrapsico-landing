@@ -936,6 +936,12 @@ body {
 	margin-bottom: 2rem;
 }
 
+@media(max-width: 425px) {
+    .services-psicoterapist__box {
+        margin-bottom: .5rem;
+    }
+}
+
 .services-psicoterapist__box img {
 	width: 70%;
 }
@@ -950,7 +956,9 @@ body {
 
 	@media(max-width: 425px) {
 		.services-psicoterapist__box h4 {
-			font-size: 1.375rem;
+            width: 100%;
+            margin: 1rem 0;
+            font-size: 1.375rem;
 		}
 	}
 
@@ -962,23 +970,12 @@ body {
 }
 	@media(max-width: 768px) {
 		.services-psicoterapist__box p {
-			font: Regular Nunito Sans;
-			font-weight: 400;
-			font-size: 1rem;
-			color:#164467;
-			text-align: left;
+            margin-top: 1rem;
+            font-size: 1rem;
+            color:#164467;
+            text-align: left;
 		}
 	}
-	@media(max-width: 425px) {
-		.services-psicoterapist__box p {
-			font: Regular Nunito Sans;
-			font-weight: 400;
-			font-size: 1rem;
-			color:#164467;
-			text-align: left;
-		}
-	}
-
 .box--txtPresentation_txt {
     margin-top: 1.5rem;
     margin-bottom: 3rem;
@@ -1020,9 +1017,7 @@ body {
 
 	@media(max-width: 425px) {
 		.container-links__list {
-			width: 95%;
 			padding-left: 2.18rem;
-            margin-bottom: 1.5rem;
             box-sizing: border-box;
 		}
 	}
@@ -1091,6 +1086,13 @@ body {
     color: #141414;
 }
 
+@media(max-width: 425px) {
+    .container-team__members-box p, .container-team__members-box h4 {
+        text-align: left;
+    }
+}
+
+
 .container-team__members-box h5 {
     width: 70%;
     margin: 0;
@@ -1119,7 +1121,7 @@ body {
    
 	
    
-    @media(max-width: 425px) {
+    /* @media(max-width: 425px) {
         .box--section_container--txtTitleSearchForPsychologist{
             width: 62%;
         }
@@ -1133,10 +1135,10 @@ body {
         .box--section_container--txtTitleSearchForPsychologist{
             width: 82%;
         }
-    }
+    } */
     
         
-	.container-services, .services-psicoterapist__box p {
+	.container-services {
 		flex-direction: column;
 		width: 100%;
 	}
@@ -1175,7 +1177,9 @@ body {
 
     .container-team__members-box {
         flex-direction: column;
-        width: 90%;
+        align-self: center;
+        width: 100%;
+        margin: 0;
     }
 
     .container-team__members-box div {
@@ -1186,16 +1190,22 @@ body {
 
     .container-team__members-box img {
         width: 55%;
+        align-self: center;
     }
 
     .container-team__members-box h4 {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
     .container-team__members-box p, .container-team__members-box h5 {
+        width: 100%;
         font-size: 1rem;
         text-align: center;
+    }
+
+    .container-team__members-box h5 {
+        font-family: 'NunitoSans Regular';
     }
 }
 
