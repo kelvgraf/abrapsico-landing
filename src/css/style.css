@@ -23,6 +23,7 @@ body {
 	display: flex;
 	justify-content: center;
     background-color: #FAFAFA;
+    z-index: 99;
 }
 .header--container_container--psitionHeader {
 	width: 100%;
