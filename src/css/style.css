@@ -498,6 +498,7 @@ body {
 }
 .section--blog_container--blog{
     width: 90vw;
+    padding: 2rem 0;
 }
 .box--textTitle_title{
     margin:2vh 0 8vh 2vw;
