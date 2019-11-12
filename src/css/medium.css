@@ -66,6 +66,10 @@
   height: 25vh;
   overflow: hidden;
   position: relative;
+  background-image: url(../img/Simbolo-Footer.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 .link-page{
   position: absolute;
@@ -97,7 +101,10 @@
   min-height: -webkit-fill-available;
   border-radius: 10px 10px 0 0;
 }
-
+.selected{
+  color: #74B5E5;
+  transform: scale(1.5);
+}
 
 @media (max-width:880px) {
   #medium {
