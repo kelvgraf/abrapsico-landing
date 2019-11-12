@@ -212,37 +212,37 @@ body {
 /*----- TESTE MENU ----- */
 
 .menu {
-    width: 80%;
-    height: 85%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+	width: 80%;
+	height: 85%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
   
-    @media (max-width: 768px){
-      .menu {
-        width: 56vw;
-        height: 8vh;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-      }
-    }
+	@media (max-width: 768px){
+		.menu {
+			width: 56vw;
+			height: 8vh;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: center;
+		}
+	}
   
   .menu-mobile {
     display: none;  
   }  
   
-    @media(max-width: 768px) {
-      .menu-mobile {
-        display: block;
-        font-size: 1.12rem;
-        text-transform: uppercase; 
-        padding-right: 2rem;
-        color: #EE332570;
-      }
-    }
+	@media(max-width: 768px) {
+		.menu-mobile {
+			display: block;
+			font-size: 1.12rem;
+			text-transform: uppercase; 
+			padding-right: 2rem;
+			color: #EE332570;
+		}
+	}
 
 .menu-list {
     margin-right: 1rem;
@@ -375,11 +375,11 @@ body {
         height: 90vh;
     }
 }
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
     .container--main_section--home {
         height: 100vh;
     }
-}
+} */
 @media (max-width: 1024px) {
     .container--main_section--home {
         height: 90vh;
@@ -1188,15 +1188,25 @@ body {
 		font-size: 1.4rem;
 	}
 }
+
+@media (max-width: 768px) {
+	.box--txtPresentation_txt {
+		width: 90%;
+		margin-top: 3rem;
+	}
+}
+
 @media(max-width: 648px) {
 	.box--txtPresentation_txt {
-		margin-top: 0;
 		margin-bottom: 0;
 		padding: 1rem 0;
 		width: 100%;
 		line-height: 1.4rem;
     font-size: 1.1rem;
     font-family: 'Nunito Regular';
+	}
+	.box--txtPresentation_txt-who-we-are{
+		margin-top: 1rem;
 	}
 }
 
@@ -1275,19 +1285,19 @@ body {
 }
 
 .container-team__members-box {
-    margin-right: 5rem;
-    padding: 1.5rem 0;
-    max-width: 70%;
-    display: flex;
-    align-self: flex-end;
+	margin-right: 5rem;
+	/* padding: 1.5rem 0; */
+	max-width: 70%;
+	display: flex;
+	align-self: flex-end;
 }
 
 .container-team__members-box div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-self: flex-start;
-    width: 25%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-self: flex-start;
+	width: 25%;
 }
 
 .container-team__members-box img {
@@ -1372,13 +1382,19 @@ body {
     
 	.container--main_section--presentation {
 		min-height: 90vh;
-		margin-bottom: 3rem;
+		margin-bottom: 4.5rem;
 	}
 
-	.container-about__title-box, .container-who__title-box {
+	.container-about__title-box {
+		padding-left: 5rem;
 		align-self: center;
 		width: 90%;
+	}
+
+	.container-who__title-box {
 		padding-left: 2rem;
+		align-self: center;
+		width: 90%;
 	}
 
 	.container-about__underline {
@@ -1389,17 +1405,12 @@ body {
 		width: 85%;
 	}
 
-	.box--txtPresentation_txt {
-		width: 90%;
-		margin-top: 3rem;
+	.container-team__members-box {
+		flex-direction: column;
+		align-self: center;
+		width: 100%;
+		margin: 0;
 	}
-
-    .container-team__members-box {
-        flex-direction: column;
-        align-self: center;
-        width: 100%;
-        margin: 0;
-    }
 
 	.container-team__members-box div {
 		align-items: center;
@@ -1425,6 +1436,15 @@ body {
 
 	.container-team__members-box h5 {
 		font-family: 'NunitoSans Regular';
+	}
+}
+
+@media(max-width: 648px) {
+	.container-about__title-box{
+		padding-left: 2.5rem;
+	}
+	.container-who__title-box {
+		padding-left: 1.5rem;
 	}
 }
 
@@ -1455,9 +1475,9 @@ body {
 		width: 75%;
 	}
 }
-@media (max-width: 375px) {
+@media (max-width: 648px) {
 	.section--schedule_container--consult {
-		width: 85%;
+		width: 80%;
 	}
 }
 .container--consult_box--titleConsult {
@@ -1769,7 +1789,7 @@ body {
 }
 .box--txtBox_box--phoneNunber {
     height: 31%;
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #3F8ECB;
     font-family: 'NunitoSans Regular';
     display: flex;
@@ -1931,7 +1951,7 @@ body {
 }
 .box--infoServices_txtInfoOnline {
     width: 45%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: 'NunitoSans Regular';
     /* line-height: 23px; */
     margin: 0;
@@ -2019,7 +2039,7 @@ body {
 
 @media(max-width: 800px) {
 	.contato_wrap--box {
-		width: 95%;
+		width: 92%;
 	}
 }
 
