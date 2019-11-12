@@ -5,209 +5,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/medium.css">
     <title>Abrapsico</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon_package_v0.16-1/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon_package_v0.16-1/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon_package_v0.16-1/favicon-16x16.png">
+    <link rel="manifest" href="./src/img/favicon_package_v0.16-1/site.webmanifest">
+    <link rel="mask-icon" href="./src/img/favicon_package_v0.16-1/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header class="header--container">
-		<!-- Os nomes das tags podem melhorar, estao repetitivas e aglomerativas sem necessidade -->
-		<!-- cuidado com a indentação de espaços -->
-		<!-- excesso de caixa dentro de caixa pode atrapalhar -->
         <div class="header--container_container--psitionHeader">
             <div class="container--psitionHeader_container--logo">
-                <img class="container--logo_logo--fixed" src="./src/img/Logo.svg">
+                <a href="#HOME">
+                    <img class="container--logo_logo--fixed" src="./src/img/Logo.svg">
+                </a>
             </div>
-            <span id="menu-hamburguer" onclick="openMenu()">&#9776;</span>
-            <span id="close-hamburguer" onclick="closeMenu()">&#215;</span>
-            <nav class="header--container_container--navegation">
-                <ul class="container--navegation_box--list">
-                    <a href="#quemSomos">
-                        <li id="li--underlineItemIdentity" class="box--list_iten--list" >Quem somos</li>
-                        <span id="underlineIdentity" class="box--list_iten--listUnderlineNone"></span>
+            <nav class="menu">
+                <img src="src/img/menu.svg" class="menu-mobile" id="menu-mobile" alt="Icone Menu">
+                <ul class="menu-list" id="menu-list">
+                    <a href="#QUEMSOMOS">
+                        <li class="menu-item" id="menu-item">Quem somos</li>
                     </a>
-                    <a href="#servicos">
-                        <li id="li--underlineItemServises" class="box--list_iten--list">Serviços</li>
-                        <span id="underlineServises" class="box--list_iten--listUnderlineNone"></span>
-                    </a> 
-                    <a href="#agenda">
-                        <li id="li--underlineItemSchedule" class="box--list_iten--list">Agenda</li>
-                        <span id="underlineSchedule" class="box--list_iten--listUnderlineNone"></span>
+                    <a href="#SERVICOS">
+                        <li class="menu-item item-sobre" id="menu-item2">Serviços</li>
                     </a>
-                    <a href="#contato">
-                        <li id="li--underlineItemContact" class="box--list_iten--list">Contato</li>
-                        <span id="underlineContact" class="box--list_iten--listUnderlineNone"></span>
+                    <a href="#AGENDA">
+                        <li class="menu-item" id="menu-item3">Agenda</li>
+                    </a>
+                    <a href="#CONTATO">
+                        <li class="menu-item" id="menu-item4">Contato</li>
                     </a>
                 </ul>
             </nav>
         </div>
     </header> 
-    <main class="container--main">
+    <main class="container--main" id="HOME">
         <section class="container--main_section--home">
-				<div class="section--home_container--textHome">
-					<div class="container--textHome_box--text">
-						<h1 class="box--text_title">Experimente mudar com a Abrapsico.</h1>
-						<p class="box--text_text--introduction">_<br>Atendimento psicológico de qualidade, visando sempre o bem estar do paciente, com profissionais qualificados prontos para te atender, não deixe de agendar a sua consulta.</p>
-					</div>
-				</div>
-				<div class="section--home_container--imageBackground">
-					<img class="container--imageBackground_image--item" src="./src/img/Grafismo.png">
-				</div>
-            </section>
-			<section class="container--main_section--SearchForPsychologist">
-				<div class="box--section_container--txtTitleSearchForPsychologist">
-					<h1 class="container--txtTitleSearchForPsychologist_title">Quando procurar um psicólogo?</h1>
-					<div class="container--txtTitleSearchForPsychologist_underline"></div>
-				</div>
-				<div class="box--section_container--symptoms">
-					<div class="container--symptoms_container--itensSymptoms">
-						<p onclick="handleText('first-text')">Pensamentos negativos constantes</p>
-						<p onclick="handleText('second-text')">Excesso de raiva</p>
-						<p onclick="handleText('third-text')">Dificuldade nos relacionamentos</p>
-						<p onclick="handleText('fourth-text')">Situações traumáticas</p>
-						<p onclick="handleText('fifth-text')">Sintomas de doenças não identificadas</p>
-					</div>
-					<div class="container--symptoms_container--specificationSymptoms">
-						<p id="texto">Se você perceber que seus pensamentos o impedem de viver a vida normalmete. Por exemplo, você pensa constantemente sobre situações catastróficas, fica obcecado com uma ideia ou expectativa ruim. A terapia psicológica emprega técnicas muito úteis para resolver estes problemas.</p>
-					</div>
-				</div>
-			</section>
-			<section id="servicos" class="container-services">
-				<aside class="container-services__title-box">
-					<h1 class="container-services__title">Serviços</h1>
-					<div class="container-services__underline"></div>
-				</aside>
-				<div class="services-psicoterapist">
-					<div class="services-psicoterapist__box">
-						<img src='./src/img/Servico-1.png' />
-						<h4>Psicoterapia Individual</h4>
-						<p>Nas minhas sessões de terapia, trabalharemos para resolver problemas atuais e focar nos pensamentos e nos comportamentos positivos. Vou ajudá-lo a elaborar suas reações e lhe fornecerei ferramentas valiosas para lidar com os obstáculos da vida. Tenho certeza de que você achará meu serviço personalizado de Terapia particular inspirador. Ligue para marcar um horário.</p>
-					</div>
-					<div class="services-psicoterapist__box">
-						<img src='./src/img/Servico-2.png' />
-						<h4>Psicoterapia de Casal</h4>
-						<p>Sentindo-se um pouco para baixo ultimamente e nada parece melhorar sua disposição? Pode ser hora de procurar ajuda de um profissional licenciado. Minhas sessões de Terapia de casal ajudam os pacientes a desenvolverem atitudes positivas em relação às circunstâncias mais complexas e desafiadoras da vida. Entre em contato comigo e deixe-me ajudá-lo a encontrar o melhor de si mesmo.</p>
-					</div>
-					<div class="services-psicoterapist__box">
-						<img src='./src/img/Servico-3.png' />
-						<h4>Psicoterapia Famíliar</h4>
-						<p>Se está procurando serviço de Consulta e de qualidade para você e sua família, com um(a) Psicólogo(a) profissional e comprometido(a), você veio ao lugar certo. Guio meus pacientes durante todo o processo e implementar métodos para ajudá-los a estabelecer novas atitudes em relação aos assuntos mais complexos da vida. Entre em contato e veja o que posso fazer por você.</p>
-					</div>
-					<div class="services-psicoterapist__box">
-						<img src='./src/img/Servico-4.png' />
-						<h4>Psicoterapia Infantil</h4>
-						<p>É nessa fase que a criatividade se expressa com facilidade, que os primeiros afetos vão proporcionar acolhimento para encorajar a vida no futuro e que os monstros imaginários podem provocar mudança no comportamento e alimentar medos fantasiosos, quando a bagunça e o barulho dão espaço ao silêncio e ao isolamento, causando mudança no comportamento, significa que é um bom momento de cuidar da saúde mental dos pequenos. Se está procurando serviço de Consulta e de qualidade, com um(a) Psicólogo(a) profissional e comprometido(a), você veio ao lugar certo. Guio meus pacientes durante todo o processo e implementar métodos para ajudá-los a estabelecer novas atitudes em relação aos assuntos mais complexos da vida. Entre em contato e veja o que posso fazer por você.</p>
-					</div>
-					<div class="services-psicoterapist__box">
-						<img src='./src/img/Servico-5.png' />
-						<h4>Orientação Vocacional</h4>
-						<p>Quando ainda somos crianças, nossos sonhos profissionais são ambiciosos, astronautas, dançarinos e estrelas de cinema podem ter feito parte da sua lista. Porém o tempo de sonhar que você pode ser seu super-herói favorito passa e a realidade enche muitos jovens de dúvidas e medos, escolher a profissão que vai acompanhar você em boa parte da vida pode causar muita ansiedade. Principalmente quando se é jovem e existe todo um caminho desconhecido pela frente. São muitas as opções, diferentes caminhos podem ser seguidos, mas como escolher o melhor? É nesse momento que a orientação vocacional é uma excelente aliada, e estamos aqui prontos para atendente-los e orientá-los da melhor forma possível agende agora.</p>
-					</div>
-				</div>
-			</section>
-			<section class="container-links">
-				<div class="container-links__title-box">
-					<h1 class="container-links__title">Links recomendados</h1>
-					<div class="container-links__underline"></div>
-				</div>
-				<ul class="container-links__list">
-					<li>Conselho Federal de Psicologia</li>
-					<li>Conselho Regional de Psicologia</li>
-					<li>Resolução CFP 011/2018</li>
-					<li>Código de Ética do Psicológo</li>
-				</ul>
-			</section>
+            <div class="section--home_container--textHome">
+                <div class="container--textHome_box--text">
+                    <h1 class="box--text_title">Experimente mudar com a Abrapsico.</h1>
+                    <p class="box--text_text--introduction">_<br>Atendimento psicológico de qualidade, visando sempre o bem estar do paciente, com profissionais qualificados prontos para te atender, não deixe de agendar a sua consulta.</p>
+                </div>
+            </div>
+            <div class="section--home_container--imageBackground">
+                <img class="container--imageBackground_image--item" src="./src/img/Grafismo.png">
+            </div>
+        </section>
+        <section class="container--main_section--SearchForPsychologist">
+            <div class="box--section_container--txtTitleSearchForPsychologist">
+                <h2 class="container--txtTitleSearchForPsychologist_title">Quando procurar um psicólogo?</h2>
+            </div>
+            <div class="box--section_container--symptoms">
+                <div class="container--symptoms_container--itensSymptoms">
+                    <p onclick="handleText('first-text')">Pensamentos negativos constantes</p>
+                    <p onclick="handleText('second-text')">Excesso de raiva</p>
+                    <p onclick="handleText('third-text')">Dificuldade nos relacionamentos</p>
+                    <p onclick="handleText('fourth-text')">Situações traumáticas</p>
+                    <p onclick="handleText('fifth-text')">Sintomas de doenças não identificadas</p>
+                </div>
+                <div class="container--symptoms_container--specificationSymptoms">
+                    <p id="texto">Todo mundo tem algum tipo de pensamento pessimista durante o dia. É extremamente normal.  Mas quando se torna recorrente e obsessivo -  como a idealização de situações catastróficas ou ideias ruins -  é de extrema importância buscar ajuda. A terapia psicológica oferece técnicas direcionadas para resolver esse tipo de problema e melhorar a qualidade de vida do indivíduo.</p>
+                </div>
+            </div>
+        </section>
         <section class="container--main_section--blog">
             <div class="section--blog_container--blog">
                 <div class="container--blog_box--textTitle">
-                    <h1 class="box--textTitle_title">Nosso blog</h1>
-                    <div class="box--textTitle_underline"></div>
+                    <h2 class="box--textTitle_title">Nosso blog</h2>
                 </div>
-                <div class="container--blog_container--slideBlog">
-                    <div class="container--slideBlog_box--arrowLeft">
-                        <img class="box--arrowLeft_arrowLeft" src="./src/img/Seta_esquerda.svg">
-                    </div>
-                    <div class="container--slideBlog_box--slideInfo">
-                        <div class="box--slideInfo_box--slideImg">
-                            <img class="box--slideImg_img" src="./src/img/imagemblog1.png">
-                        </div>
-                        <div class="box--slideInfo_box--slideTxt">
-                            <p class="box--slideTxt_slideTxt1">por Eleisângela - 25 jun 2019</p>
-                            <p class="box--slideTxt_slideTxt2">Sobre a regulamentação da terapia online no Brasil</p>
-                            <a href="" class="box--slideTxt_slideTxtLink"><p class="box--slideTxt_slideTxtLink">leia mais +</p></a> 
-                        </div>
-                    </div>
-                    <div class="container--slideBlog_box--slideInfo mobile--none">
-                        <div class="box--slideInfo_box--slideImg">
-                            <img class="box--slideImg_img " src="./src/img/imagemblog3.png">
-                        </div>
-                        <div class="box--slideInfo_box--slideTxt ">
-                            <p class="box--slideTxt_slideTxt1">por Renata - 14 jul 2019</p>
-                            <p class="box--slideTxt_slideTxt2 ">Orientação vocacional: algumas dicas</p>
-                            <a href="" class="box--slideTxt_slideTxtLink"><p class="box--slideTxt_slideTxtLink">leia mais +</p></a> 
-                        </div>
-                    </div>
-                    <div class="container--slideBlog_box--slideInfo tabletEdit">
-                        <div class="box--slideInfo_box--slideImg">
-                            <img class="box--slideImg_img "  src="./src/img/imagemblog2.png">
-                        </div>
-                        <div class="box--slideInfo_box--slideTxt">
-                            <p class="box--slideTxt_slideTxt1">por Andréa - 30 ago 2019</p>
-                            <p class="box--slideTxt_slideTxt2">Dúvidas frequentes sobre psicoterapia infantil</p>
-                            <a href="" class="box--slideTxt_slideTxtLink"><p class="box--slideTxt_slideTxtLink">leia mais +</p></a> 
-                        </div>
-                    </div>
-                    <div class="container--slideBlog_box--arrowRight">
-                        <img class="box--arrowRight_arrowRight_" src="./src/img/Seta_direita.svg">
-                    </div>
+                <div id="medium"></div>
+                <div class="paginationMedium" id="medium-pagination"></div>
                 </div>
             </div>
         </section>
-        <section class="container--main"></section>
-        <section class="container--main"></section>
-        <section id="agenda" class="container--main_section--schedule">
+        <section id="SERVICOS" class="container-services">
+            <aside class="container-services__title-box">
+                <h2 class="container-services__title">Serviços</h2>
+            </aside>
+            <div class="services-psicoterapist">
+                <div class="services-psicoterapist__box">
+                    <img src='./src/img/Servico-1.png' />
+                    <h4>Psicoterapia Individual</h4>
+                    <p>Nas minhas sessões de terapia, trabalharemos para resolver problemas atuais e focar nos pensamentos e nos comportamentos positivos. Vou ajudá-lo a elaborar suas reações e lhe fornecerei ferramentas valiosas para lidar com os obstáculos da vida. Tenho certeza de que você achará meu serviço personalizado de Terapia particular inspirador. Ligue para marcar um horário.</p>
+                </div>
+                <div class="services-psicoterapist__box">
+                    <img src='./src/img/Servico-2.png' />
+                    <h4>Psicoterapia de Casal</h4>
+                    <p>Sentindo-se um pouco para baixo ultimamente e nada parece melhorar sua disposição? Pode ser hora de procurar ajuda de um profissional licenciado. Minhas sessões de Terapia de casal ajudam os pacientes a desenvolverem atitudes positivas em relação às circunstâncias mais complexas e desafiadoras da vida. Entre em contato comigo e deixe-me ajudá-lo a encontrar o melhor de si mesmo.</p>
+                </div>
+                <div class="services-psicoterapist__box">
+                    <img src='./src/img/Servico-3.png' />
+                    <h4>Psicoterapia Famíliar</h4>
+                    <p>Se está procurando serviço de Consulta e de qualidade para você e sua família, com um(a) Psicólogo(a) profissional e comprometido(a), você veio ao lugar certo. Guio meus pacientes durante todo o processo e implementar métodos para ajudá-los a estabelecer novas atitudes em relação aos assuntos mais complexos da vida. Entre em contato e veja o que posso fazer por você.</p>
+                </div>
+                <div class="services-psicoterapist__box">
+                    <img src='./src/img/Servico-4.png' />
+                    <h4>Psicoterapia Infantil</h4>
+                    <p>É nessa fase que a criatividade se expressa com facilidade, que os primeiros afetos vão proporcionar acolhimento para encorajar a vida no futuro e que os monstros imaginários podem provocar mudança no comportamento e alimentar medos fantasiosos, quando a bagunça e o barulho dão espaço ao silêncio e ao isolamento, causando mudança no comportamento, significa que é um bom momento de cuidar da saúde mental dos pequenos. Se está procurando serviço de Consulta e de qualidade, com um(a) Psicólogo(a) profissional e comprometido(a), você veio ao lugar certo. Guio meus pacientes durante todo o processo e implementar métodos para ajudá-los a estabelecer novas atitudes em relação aos assuntos mais complexos da vida. Entre em contato e veja o que posso fazer por você.</p>
+                </div>
+                <div class="services-psicoterapist__box">
+                    <img src='./src/img/Servico-5.png' />
+                    <h4>Orientação Vocacional</h4>
+                    <p>Quando ainda somos crianças, nossos sonhos profissionais são ambiciosos, astronautas, dançarinos e estrelas de cinema podem ter feito parte da sua lista. Porém o tempo de sonhar que você pode ser seu super-herói favorito passa e a realidade enche muitos jovens de dúvidas e medos, escolher a profissão que vai acompanhar você em boa parte da vida pode causar muita ansiedade. Principalmente quando se é jovem e existe todo um caminho desconhecido pela frente. São muitas as opções, diferentes caminhos podem ser seguidos, mas como escolher o melhor? É nesse momento que a orientação vocacional é uma excelente aliada, e estamos aqui prontos para atendente-los e orientá-los da melhor forma possível agende agora.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container-links">
+            <div class="container-links__title-box">
+                <h2 class="container-links__title">Links recomendados</h2>
+            </div>
+            <ul class="container-links__list">
+                <li>
+                    <a href="https://site.cfp.org.br">Conselho Federal de Psicologia</a>
+                </li>
+                <li>
+                    <a href="https://www.crpsp.org">Conselho Regional de Psicologia</a>
+                </li>
+                <li>
+                    <a href="https://site.cfp.org.br/wp-content/uploads/2018/05/RESOLU%C3%87%C3%83O-N%C2%BA-11-DE-11-DE-MAIO-DE-2018.pdf">Resolução CFP 011/2018</a>
+                </li>
+                <li>
+                    <a href="https://site.cfp.org.br/wp-content/uploads/2012/07/codigo-de-etica-psicologia.pdf">Código de Ética do Psicológo</a>
+                </li>
+            </ul>
+        </section>
+        <section id="AGENDA" class="container--main_section--schedule">
             <div class="section--schedule_container--consult" >
                 <div class="container--consult_box--titleConsult">
-                    <h1 class="box--titleConsult_title">Agende uma consulta</h1>
-                    <div class="box--titleConsult_underline"></div>
+                    <h2 class="box--titleConsult_title">Agende uma consulta</h2>
                 </div>
                 <div class="container--consult_container--infoSectionSchedule">
-                    <div class="container--infoSectionSchedule_box--contactBox">
-                        <div class="box--contactBox_box--iconContact">
-                            <img class="box--iconContact_element--img" src="./src/img/Ícone-Agendamento.svg">
-                            <div class="box--iconContact_box--txtBox">
-                                <div class="box--txtBox_box--txtOrientation">
-                                    <h2 class="box--txtOrientation_title">Vamos conversar? </h2>
-                                    <p class="box--txtOrientation_txt">Nossa equipe está à disposição para lhe atender e solucionar suas dúvidas.</p>
-                                </div>
-                                <div class="box--txtBox_box--phoneNunber">
-                                    <p class="box--phoneNunber_nunber--call phoneNunber">(11) 99825-8963</p>
-                                    <p class="box--phoneNunber_nunber--Whatsapp phoneNunber">(11) 97783-1381 (Whatsapp)</p>
-                                </div>
+                    <div class="box--contactBox_box--iconContact">
+                        <div class="box--iconContact_box--imgContact">
+                            <img class="box--imgContact_element--img" src="./src/img/Ícone-Agendamento.svg">
+                        </div>
+                        <div class="box--iconContact_box--txtBox">
+                            <div class="box--txtBox_box--txtOrientation">
+                                <h2 class="box--txtOrientation_title">Vamos conversar?</h2>
+                                <p class="box--txtOrientation_txt">Nossa equipe está à disposição para lhe atender e solucionar suas dúvidas.</p>
+                            </div>
+                            <div class="box--txtBox_box--phoneNunber">
+                                <p class="box--phoneNunber_nunber--call phoneNunber">(11) 99825-8963</p>
+                                <p class="box--phoneNunber_nunber--Whatsapp phoneNunber">(11) 97783-1381 (Whatsapp)</p>
                             </div>
                         </div>
-                        <div class="box--contactBox_box--infoContact"></div>
                     </div>
-                    <div class="container--infoSectionSchedule_box--infoServices">
-                        <h2>Terapia Online</h2>
-                        <p>A Terapia Online foi regulamentada no Brasil em 12/11/2018, através da Resolução CFP 011/2018. Atualmente é permitida e amplamente divulgada, não havendo limites de sessões para sua prática. A Terapia Online amplia o acesso de serviços de psicologia à população que vive em regiões com acesso limitado a serviços psicológicos e também para brasileiros que moram no exterior.</p>
+                    <div class="container--infoSectionSchedule_box--directionServiseOnline">
+                        <div class="container--infoSectionSchedule_box--infoServices">
+                            <h2 class="box--infoServices_titleServiceOnline">Terapia Online</h2>
+                            <p class="box--infoServices_txtInfoOnline">A Terapia Online foi regulamentada no Brasil em 12/11/2018, através da Resolução CFP 011/2018. Atualmente é permitida e amplamente divulgada, não havendo limites de sessões para sua prática. A Terapia Online amplia o acesso de serviços de psicologia à população que vive em regiões com acesso limitado a serviços psicológicos e também para brasileiros que moram no exterior.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="container--main"></section>
+        <section class="container--main"></section>
         <section class="container--main_section--presentation">
-            <div class="section--presentation_container--infoPresentation">
-                <div class="container--infoPresentation_box--txtPresentation">
-                    <div class="box--txtPresentation_box--underlineBox">
-                        <h1 class="box--underlineBox_title">Sobre nós</h1>
-                        <div class="box--underlineBox_underline"></div>
-                    </div>
-                    <p class="box--txtPresentation_txt">Somos uma associação (Não Governamental), atuamos com atendimentos gratuitos, valores sociais e valores normais de acordo com a tabela do Conselho Regional de Psicologia (CRP). Temos como objetivo fazer com que a psicologia alcance a todos os públicos, independente da situação em que se encontre. Atuamos visando a saúde mental e o bem estar da população em geral, nosso foco é fazer com que a psicologia chegue ao alcance de todos.</p>
+            <div class="container-about__title-box">
+                <h2 class="container-about__title">Sobre nós</h2>
+                <p class="box--txtPresentation_txt">Somos uma associação (Não Governamental), atuamos com atendimentos gratuitos, valores sociais e valores normais de acordo com a tabela do Conselho Regional de Psicologia (CRP). Temos como objetivo fazer com que a psicologia alcance a todos os públicos, independente da situação em que se encontre. Atuamos visando a saúde mental e o bem estar da população em geral, nosso foco é fazer com que a psicologia chegue ao alcance de todos.</p>
+            </div>
+        </section>
+        <section id="QUEMSOMOS" class="container-team">
+            <div class="container-who__title-box">
+                <h2 class="container-services__title">Quem Somos</h2>
+                <p class="box--txtPresentation_txt">Um grupo de Psicólogos que atua visando o bem estar do Indivíduo, levando a Psicologia ao alcance de todos. Prezamos pela ética e qualidade no atendimento.</p>
+            </div>
+            <div class="container-team__members-box">
+                <div>
+                    <img src='src/img/QuemSomos-1.png' />
+                    <h4>Andréa Marinho</h4>
+                    <p>Psicóloga clínica especialista em Inclusão Escolar</p>
+                    <h5>CRP 06/000000</h5>
+                </div>
+                <div>
+                    <img src='src/img/QuemSomos-2.png' />
+                    <h4>Juan Vítor de Oliveira</h4>
+                    <p>Psicólogo clínico versado na abordagem psicanalítica</p>
+                    <h5>CRP 06/151492</h5>
+                </div>
+                <div>
+                    <img src='src/img/QuemSomos-3.png' />
+                    <h4>Renata de Moraes</h4>
+                    <p>Psicóloga clínica e organizacional</p>
+                    <h5>CRP 06/115760</h5>
+                </div>
+                <div>
+                    <img src='src/img/QuemSomos-4.png' />
+                    <h4>Elisangela Fernandes</h4>
+                    <p>Psicóloga clínica e social Abordagem Terapia Cognitivo Comportamental (TCC)</p>
+                    <h5>CRP 06/149117</h5>
                 </div>
             </div>
         </section>
-        <section id="quemSomos"></section>
     </main>
-    <footer id="contato"></footer>
+    <footer id="contato">
+        <section class="contato_wrap">
+            <figure class="contato_wrap--figure">
+                <img src="./src/img/Simbolo-Footer.svg" alt="logo Abrapsico" class="contato_wrap--figure--img">
+            </figure>
+            <div class="contato_wrap--box">
+                <div class="contato_box">
+                    <h2 class="contato_box--text">Agende uma consulta.</h2>
+                    <p class="contato_box--text">Terapia presencial e online.</p>
+                </div>
+                <div class="contato_box--number">
+                    <span class="contato_box--span-first">
+                        <p class="contato_box--span">(11) 99825-8963</p>
+                        <p class="contato_box--span" >(11) 97783-1381 (Whatsapp)</p>
+                    </span>
+                    <span class="contato_box--span-second">
+                        <p class="contato_box--span--texte">associacao.abrapsico@gmail.com</p>
+                        <span class="contato_box--img">
+                            <a href="https://www.facebook.com/Abrapsico1/" target="_blank" rel="noopener noreferrer">
+                                <img src="./src/img/Icone-Facebook.svg" alt="" class="contato_box--span--img">
+                            </a>
+                            <a href="https://www.instagram.com/associacao.abrapsico/?hl=pt-br" target="_blank" rel="noopener noreferrer">
+                                <img src="./src/img/Icone-Instagram.svg" alt="" class="contato_box--span--img">
+                            </a>
+                        </span>
+                    </span>
+                </div>
+                <div class="contato_box--frase">
+                    <p class="contato_box--frase--text">Das suas vulnerabilidades brotará a sua força — Sigmund Freud</p>
+                </div>
+            </div>
+        </section>
+    </footer>
     <script src="./src/js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="./src/js/medium.js"></script>
 </body>
 <script src="./src/js/main.js"></script>
 </html>
