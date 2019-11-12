@@ -212,37 +212,37 @@ body {
 /*----- TESTE MENU ----- */
 
 .menu {
-    width: 80%;
-    height: 85%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+	width: 80%;
+	height: 85%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
   
-    @media (max-width: 768px){
-      .menu {
-        width: 56vw;
-        height: 8vh;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-      }
-    }
+	@media (max-width: 768px){
+		.menu {
+			width: 56vw;
+			height: 8vh;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: center;
+		}
+	}
   
   .menu-mobile {
     display: none;  
   }  
   
-    @media(max-width: 768px) {
-      .menu-mobile {
-        display: block;
-        font-size: 1.12rem;
-        text-transform: uppercase; 
-        padding-right: 2rem;
-        color: #EE332570;
-      }
-    }
+	@media(max-width: 768px) {
+		.menu-mobile {
+			display: block;
+			font-size: 1.12rem;
+			text-transform: uppercase; 
+			padding-right: 2rem;
+			color: #EE332570;
+		}
+	}
 
 .menu-list {
     margin-right: 1rem;
