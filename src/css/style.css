@@ -211,7 +211,7 @@ body {
 } 
 
 
-/* TESTE MENU */
+/*----- TESTE MENU ----- */
 
 .menu {
     width: 80%;
@@ -712,7 +712,7 @@ body {
     }
     @media(max-width: 1366px) {
         .box--section_container--txtTitleSearchForPsychologist {
-            width: 47.5%;
+            width: 50%;
         }
     }
     @media(max-width: 1024px) {
@@ -1278,7 +1278,7 @@ body {
     }
 }
 
-/* ------- section agendamento ------- */
+/*------- section agendamento -------*/
 
 .container--main_section--schedule {
     display: flex;
@@ -1810,7 +1810,7 @@ body {
     }
 }
 
-/* 	FOOTER */
+/*----- FOOTER -----*/
 
 .contato_wrap {
 	width: 100%;
