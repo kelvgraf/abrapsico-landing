@@ -46,6 +46,7 @@ function mountPagination(feed) {
 
         link.addEventListener('click', function(ev) {
             mountPage(mediumPosts[key]);
+            link.style.color = "#74B5E5";
         });
 
         pagination.appendChild(link);
