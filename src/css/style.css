@@ -1198,22 +1198,21 @@ body {
    
 	
    
-    /* @media(max-width: 648px) {
-        .box--section_container--txtTitleSearchForPsychologist{
-            width: 62%;
-        }
-    }
-    @media(max-width: 375px) {
-        .box--section_container--txtTitleSearchForPsychologist{
-            width: 70%;
-        }
-    }
-    @media(max-width: 320px) {
-        .box--section_container--txtTitleSearchForPsychologist{
-            width: 82%;
-        }
-    } */
-    
+	/* @media(max-width: 648px) {
+		.box--section_container--txtTitleSearchForPsychologist{
+				width: 62%;
+		}
+	}
+	@media(max-width: 375px) {
+		.box--section_container--txtTitleSearchForPsychologist{
+			width: 70%;
+		}
+	}
+	@media(max-width: 320px) {
+		.box--section_container--txtTitleSearchForPsychologist{
+			width: 82%;
+		}
+	} */
         
 	.container-services {
 		flex-direction: column;
