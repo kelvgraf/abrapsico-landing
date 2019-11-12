@@ -1469,7 +1469,7 @@ body {
 }
 @media (max-width: 1366px) {
 	.container--consult_box--titleConsult {
-		width: 26%;
+		width: 35.5%;
 	}
 }
 @media (max-width: 1024px) {
@@ -1505,7 +1505,7 @@ body {
 }
 @media (max-width: 1366px) {
 	.box--titleConsult_title {
-		font-size: 28px;
+		font-size: 2.5rem;
 	}
 }
 @media (max-width: 1024px) {
@@ -1607,7 +1607,7 @@ body {
 }
 @media (max-width: 1366px) {
     .box--imgContact_element--img {
-        width: 60%;
+        width: 70%;
     }
 }
 @media (max-width: 1024px) {
@@ -1826,7 +1826,7 @@ body {
 }
 @media (max-width: 1366px) {
     .container--infoSectionSchedule_box--directionServiseOnline {
-        height: 50vh;
+        height: 70vh;
     }
 }
 @media (max-width: 768px) {
@@ -1897,12 +1897,11 @@ body {
     color: #266294;
     margin: 0;
 }
-/* @media (max-width: 1366px) {
+@media (max-width: 1366px) {
     .box--infoServices_titleServiceOnline {
-        width: 49%;
-        font-size: 25px;
+        height: 10vh;
     }
-} */
+}
 @media (max-width: 1024px) {
     .box--infoServices_titleServiceOnline {
         width: 49%;
