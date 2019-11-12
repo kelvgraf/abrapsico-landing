@@ -1194,25 +1194,6 @@ body {
 	.container--symptoms_container--specificationSymptoms {
 		padding: 1rem;
 	}
-	
-   
-	
-   
-	/* @media(max-width: 648px) {
-		.box--section_container--txtTitleSearchForPsychologist{
-				width: 62%;
-		}
-	}
-	@media(max-width: 375px) {
-		.box--section_container--txtTitleSearchForPsychologist{
-			width: 70%;
-		}
-	}
-	@media(max-width: 320px) {
-		.box--section_container--txtTitleSearchForPsychologist{
-			width: 82%;
-		}
-	} */
         
 	.container-services {
 		flex-direction: column;
@@ -1351,7 +1332,7 @@ body {
 	}
 }
 .box--titleConsult_title {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	margin: 0%;
 	border-bottom: 8px solid #FFBA5C;
 	font-family: 'Nunito ExtraBold';
@@ -1388,7 +1369,6 @@ body {
 .box--titleConsult_underline, .box--textTitle_underline {
     min-width: 11rem;
     height: 6px;
-    /* margin-left: 1.2rem; */
     border-radius: 50px;
     padding-left: 1rem;
     align-self: baseline;
@@ -1396,59 +1376,53 @@ body {
 }
 .container--consult_container--infoSectionSchedule {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+@media (max-width: 768px) {
+    .container--consult_container--infoSectionSchedule {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
 }
 .container--infoSectionSchedule_box--contactBox {
     display: flex;
     flex-direction: row;
 }
 .box--contactBox_box--iconContact {
-    display: flex; 
-    justify-content: center;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
 }
+
+.container-directionServiseOnline {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
 @media (max-width: 768px) {
-    .box--contactBox_box--iconContact {
-        height: 102vh;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+    .container-directionServiseOnline {
+        width: 100%;
+        margin-top: 2rem;
     }
 }
-@media (max-width: 648px) {
-    .box--contactBox_box--iconContact {
-        height: 67vh;
-    }
-}
-@media (max-width: 375px) {
-    .box--contactBox_box--iconContact {
-        height: 62vh;
-    }
-}
+
 .box--iconContact_box--imgContact {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 40%;
+    padding-right: 4rem;
 }
 @media (max-width: 768px) {
     .box--iconContact_box--imgContact {
-        width: 55%;
-        height: 57%;
-        justify-content: flex-start;
-    }
-}
-@media (max-width: 648px) {
-    .box--iconContact_box--imgContact {
-        height: 50%;
-    }
-}
-@media (max-width: 375px) {
-    .box--iconContact_box--imgContact {
-        height: 56%;
+        padding-right: 2rem;
     }
 }
 .box--imgContact_element--img {
-    width: 66%;
+    width: 50%;
 }
 @media (max-width: 1366px) {
     .box--imgContact_element--img {
@@ -1457,62 +1431,24 @@ body {
 }
 @media (max-width: 1024px) {
     .box--imgContact_element--img {
-        width: 56%;
-    }
-}
-@media (max-width: 768px) {
-    .box--imgContact_element--img {
-        width: 65%;
-    }
-}
-@media (max-width: 648px) {
-    .box--imgContact_element--img {
-        width: 80%;
+        width: 100%;
     }
 }
 .box--iconContact_box--txtBox {
-    width: 53%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    width: 78%;
 }
-@media (max-width: 1024px) {
-    .box--iconContact_box--txtBox {
-        height: 21vh;
-    }
-}
+
 @media (max-width: 768px) {
     .box--iconContact_box--txtBox {
-        height: 88vh;
-        justify-content: flex-end;
-    }
-}
-@media (max-width: 648px) {
-    .box--iconContact_box--txtBox {
-        height: 56vh;
-    }
-}
-@media (max-width: 375px) {
-    .box--iconContact_box--txtBox {
-        height: 52vh;
+        width: 95%;
     }
 }
 .box--txtOrientation_title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Nunito ExtraBold';
     color: #266294;
     margin: 0;
 }
-/* @media (max-width: 1366px) {
-    .box--txtOrientation_title {
-        font-size: 25px;
-    }
-} */
-/* @media (max-width: 1024px) {
-    .box--txtOrientation_title {
-        font-size: 2rem;
-    }
-} */
 @media (max-width: 768px) {
     .box--txtOrientation_title {
         width: 100%;
@@ -1528,23 +1464,15 @@ body {
     }
 }
 .box--txtOrientation_txt {
-    width: 78%;
+    width: 72%;
     line-height: 28px;
     font-size: 19px;
     font-family: 'NunitoSans Bold';
     margin: 0;
 }
-/* @media (max-width: 1366px) {
-    .box--txtOrientation_txt {
-        width: 75%;
-        font-size: 18px;
-        line-height: 26px;
-    }
-} */
 @media (max-width: 1024px) {
     .box--txtOrientation_txt {
         width: 90%;
-        /* font-size: 15px; */
     }
 }
 @media (max-width: 768px) {
@@ -1568,13 +1496,10 @@ body {
     }
 }
 .box--txtBox_box--phoneNunber {
-    height: 31%;
-    font-size: 2.3rem;
+    margin: 2em 0;
+    font-size: 2rem;
     color: #3F8ECB;
     font-family: 'NunitoSans Regular';
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 @media (max-width: 768px) {
     .box--txtBox_box--phoneNunber {
@@ -1589,153 +1514,28 @@ body {
         font-size: 19px;
     }
 }
-/* @media (max-width: 375px) {
-    .box--txtBox_box--phoneNunber {
-        height: 36%;
-        font-size: 17px;
-    }
-}
-@media (max-width: 320px) {
-    .box--txtBox_box--phoneNunber {
-        font-size: 16px;
-    }
-} */
-.phoneNunber {
-    margin: 0;
-}
-.container--infoSectionSchedule_box--directionServiseOnline {
-    height: 40vh;
-    display: flex;
-    align-items: center;
-}
-@media (max-width: 1366px) {
-    .container--infoSectionSchedule_box--directionServiseOnline {
-        height: 50vh;
-    }
-}
-@media (max-width: 768px) {
-    .container--infoSectionSchedule_box--directionServiseOnline {
-        height: 110vh;
-        align-items: flex-start;
-    }
-}
-@media (max-width: 648px) {
-    .container--infoSectionSchedule_box--directionServiseOnline {
-        height: 63vh;
-    }
-}
-/* @media (max-width: 375px) {
-    .container--infoSectionSchedule_box--directionServiseOnline {
-        height: 68vh;
-    }
-}
-@media (max-width: 320px) {
-    .container--infoSectionSchedule_box--directionServiseOnline {
-        height: 59vh;
-    }
-} */
-.container--infoSectionSchedule_box--infoServices {
-    width: 80%;
-    height: 74%;
-    display: flex;
-    /* justify-content: space-between; */
-    flex-direction: column;
-    align-items: flex-end;
-}
-/* @media (max-width: 1366px) {
-    .container--infoSectionSchedule_box--infoServices {
-        width: 85.9%;
-        height: 88%;
-    }
-} */
-@media (max-width: 1024px) {
-    .container--infoSectionSchedule_box--infoServices {
-        width: 91.5%;
-        /* height: 88%; */
-    }
-}
-@media (max-width: 648px) {
-    .container--infoSectionSchedule_box--infoServices {
-        height: 82%;
-    }
-}
-/* @media (max-width: 375px) {
-    .container--infoSectionSchedule_box--infoServices {
-        height: 77%;
-    }
-} */
-/* @media (max-width: 320px) {
-    .container--infoSectionSchedule_box--infoServices {
-        height: 77%;
-    }
-} */
+
 .box--infoServices_titleServiceOnline {
-    width: 45%;
-    height: 7vh;
-    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
     font-family: 'Nunito ExtraBold';
     color: #266294;
-    margin: 0;
-}
-/* @media (max-width: 1366px) {
-    .box--infoServices_titleServiceOnline {
-        width: 49%;
-        font-size: 25px;
-    }
-} */
-@media (max-width: 1024px) {
-    .box--infoServices_titleServiceOnline {
-        width: 49%;
-        height: 5vh;
-        /* font-size: 20px; */
-    }
-}
-@media (max-width: 768px) {
-    .box--infoServices_titleServiceOnline {
-        width: 100%;
-        height: 17vh;
-        font-size: 38px;
-    }
-}
-@media (max-width: 648px) {
-    .box--infoServices_titleServiceOnline {
-        font-size: 23px;
-    }
 }
 .box--infoServices_txtInfoOnline {
-    width: 45%;
-    font-size: 1.3rem;
+    width: 55%;
+    font-size: 1.1rem;
     font-family: 'NunitoSans Regular';
-    /* line-height: 23px; */
-    margin: 0;
 }
-/* @media (max-width: 1366px) {
-    .box--infoServices_txtInfoOnline {
-        width: 49%;
-    }
-} */
 @media (max-width: 1024px) {
     .box--infoServices_txtInfoOnline {
         width: 49%;
-        /* font-size: 14px; */
     }
 }
 @media (max-width: 768px) {
     .box--infoServices_txtInfoOnline {
         width: 100%;
-        font-size: 29px;
     }
 }
-@media (max-width: 648px) {
-    .box--infoServices_txtInfoOnline {
-        font-size: 16px;
-    }
-}
-/* @media (max-width: 320px) {
-    .box--infoServices_txtInfoOnline {
-        font-size: 13.7px;
-    }
-} */
 
 /* 	FOOTER */
 
