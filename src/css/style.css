@@ -626,6 +626,7 @@ body {
 }
 .section--blog_container--blog{
     width: 90vw;
+    padding: 2rem 0;
 }
 .box--textTitle_title{
     font-size:35px;
