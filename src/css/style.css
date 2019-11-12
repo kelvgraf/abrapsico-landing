@@ -502,7 +502,7 @@ body {
 .box--textTitle_title{
     margin:2vh 0 8vh 2vw;
     width: fit-content;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Nunito ExtraBold';
     border-bottom: 8px solid #FFBA5C;
 }
@@ -650,7 +650,7 @@ body {
 			padding-left: 2.18rem;
 			margin-bottom: 4rem;
 		}
-    }
+	}
 .container--txtTitleSearchForPsychologist_title{
     height: 12vh;
     display: flex;
@@ -683,13 +683,13 @@ body {
 .container-about__title {
 	width: fit-content;
 	margin: 0;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-family: 'Nunito ExtraBold';
 	color: #141414;
 	border-bottom: 8px solid #FFBA5C;
 }
 .container-services__title {
-    height: 24vh;
+    /* height: 24vh; */
     display: flex;
     align-items: flex-end;
 }
@@ -897,24 +897,24 @@ body {
 }
 
 .container-services__title-box {
-	/* width: 15.5%; */
+	width: 25%;
 	height: 100%;
 }
-@media(max-width: 2560px) {
+/* @media(max-width: 2560px) {
     .container-services__title-box  {
-        /* width: 8.5%; */
+      width: 8.5%;
     }
-}
-@media(max-width: 1366px) {
+} */
+/* @media(max-width: 1366px) {
     .container-services__title-box  {
         width: 16.5%;
     }
-}
-@media(max-width: 1024px) {
+} */
+/* @media(max-width: 1024px) {
     .container-services__title-box  {
         width: 17.5%;
     }
-}
+} */
 @media(max-width: 768px) {
     .container-services__title-box {
         width: 31.5%;
@@ -973,6 +973,11 @@ body {
 	margin: 0 2rem;
 	margin-bottom: 2rem;
 }
+@media(max-width: 1024px) {
+	.services-psicoterapist__box {
+		width: 38%;
+	}
+}
 
 @media(max-width: 648px) {
 	.services-psicoterapist__box {
@@ -994,8 +999,9 @@ body {
 }
 
 .services-psicoterapist__box h4 {
+	margin-top: .5rem;
+	margin-bottom: .5rem;
 	width: 70%;
-	margin-bottom: 0;
 	font-family: 'Nunito ExtraBold';
 	font-size: 2rem;
 	color: #266294;
@@ -1010,10 +1016,11 @@ body {
 	}
 
 .services-psicoterapist__box p {
-	width: 90%;
+	/* width: 90%; */
+	width: 100%;
 	font-family: 'NunitoSans Regular';
 	font-size: 1.1rem;
-	color: #141414;
+	color: #164467;
 }
 	@media(max-width: 768px) {
 		.services-psicoterapist__box p {
@@ -1026,10 +1033,16 @@ body {
 .box--txtPresentation_txt {
 	margin-top: 1.5rem;
 	margin-bottom: 3rem;
-	width: 42%;
+	width: 38%;
 	color: #141414;
 	font-size: 1.6rem;
 	font-family: 'Nunito ExtraBold';
+}
+@media(max-width: 1024px) {
+	.box--txtPresentation_txt{
+		width: 100%;
+		font-size: 1.4rem;
+	}
 }
 @media(max-width: 648px) {
 	.box--txtPresentation_txt {
@@ -1046,7 +1059,8 @@ body {
 .container-links {
 	display: flex;
 	width: 100%;
-	min-height: 35vh;
+	/* min-height: 35vh; */
+	min-height: auto;
 	padding: 2rem 0;
 	padding-top: 5rem;
 	background: #266294;
@@ -1059,10 +1073,12 @@ body {
 	}
 
 .container-links__list {
+    margin-top: 1rem;
 	padding: 0;
-	width: 50%;
+    width: 50%;
+    height: fit-content;
     display: flex;
-    justify-content: space-evenly;
+   /*  justify-content: space-evenly; */
     flex-direction: column;
 	list-style: none;
 }
@@ -1070,7 +1086,6 @@ body {
 	.container-links__list {
 		width: 95%;
 		padding-left: 5rem;
-		margin-bottom: 1.5rem;
 	}
 }
 
@@ -1081,10 +1096,8 @@ body {
 	}
 }
 
-@media(max-width: 648px) {
-	.container-links__list li {
-		margin-bottom: 1rem;
-	}
+.container-links__list li {
+    margin-bottom: 1rem;
 }
 
 .container-links__list li a{
@@ -1111,7 +1124,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-@media(max-width: 648px) {
+@media(max-width: 1024px) {
 	.container--main_section--presentation {
 		background-position-x: center;
 	}
@@ -1289,11 +1302,11 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
 	.section--schedule_container--consult {
 		width: 87%;
 	}
-}
+} */
 @media (max-width: 768px) {
 	.section--schedule_container--consult {
 		width: 75%;
@@ -1338,7 +1351,7 @@ body {
 	}
 }
 .box--titleConsult_title {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	margin: 0%;
 	border-bottom: 8px solid #FFBA5C;
 	font-family: 'Nunito ExtraBold';
@@ -1490,16 +1503,16 @@ body {
     color: #266294;
     margin: 0;
 }
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
     .box--txtOrientation_title {
         font-size: 25px;
     }
-}
-@media (max-width: 1024px) {
+} */
+/* @media (max-width: 1024px) {
     .box--txtOrientation_title {
-        font-size: 20px;
+        font-size: 2rem;
     }
-}
+} */
 @media (max-width: 768px) {
     .box--txtOrientation_title {
         width: 100%;
@@ -1521,17 +1534,17 @@ body {
     font-family: 'NunitoSans Bold';
     margin: 0;
 }
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
     .box--txtOrientation_txt {
         width: 75%;
         font-size: 18px;
         line-height: 26px;
     }
-}
+} */
 @media (max-width: 1024px) {
     .box--txtOrientation_txt {
-        width: 72%;
-        font-size: 15px;
+        width: 90%;
+        /* font-size: 15px; */
     }
 }
 @media (max-width: 768px) {
@@ -1556,7 +1569,7 @@ body {
 }
 .box--txtBox_box--phoneNunber {
     height: 31%;
-    font-size: 24px;
+    font-size: 2.3rem;
     color: #3F8ECB;
     font-family: 'NunitoSans Regular';
     display: flex;
@@ -1576,7 +1589,7 @@ body {
         font-size: 19px;
     }
 }
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     .box--txtBox_box--phoneNunber {
         height: 36%;
         font-size: 17px;
@@ -1586,7 +1599,7 @@ body {
     .box--txtBox_box--phoneNunber {
         font-size: 16px;
     }
-}
+} */
 .phoneNunber {
     margin: 0;
 }
@@ -1611,7 +1624,7 @@ body {
         height: 63vh;
     }
 }
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     .container--infoSectionSchedule_box--directionServiseOnline {
         height: 68vh;
     }
@@ -1620,7 +1633,7 @@ body {
     .container--infoSectionSchedule_box--directionServiseOnline {
         height: 59vh;
     }
-}
+} */
 .container--infoSectionSchedule_box--infoServices {
     width: 80%;
     height: 74%;
@@ -1629,12 +1642,12 @@ body {
     flex-direction: column;
     align-items: flex-end;
 }
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
     .container--infoSectionSchedule_box--infoServices {
         width: 85.9%;
         height: 88%;
     }
-}
+} */
 @media (max-width: 1024px) {
     .container--infoSectionSchedule_box--infoServices {
         width: 91.5%;
@@ -1646,11 +1659,11 @@ body {
         height: 82%;
     }
 }
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     .container--infoSectionSchedule_box--infoServices {
         height: 77%;
     }
-}
+} */
 /* @media (max-width: 320px) {
     .container--infoSectionSchedule_box--infoServices {
         height: 77%;
@@ -1664,17 +1677,17 @@ body {
     color: #266294;
     margin: 0;
 }
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
     .box--infoServices_titleServiceOnline {
         width: 49%;
         font-size: 25px;
     }
-}
+} */
 @media (max-width: 1024px) {
     .box--infoServices_titleServiceOnline {
         width: 49%;
         height: 5vh;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 }
 @media (max-width: 768px) {
@@ -1691,20 +1704,20 @@ body {
 }
 .box--infoServices_txtInfoOnline {
     width: 45%;
-    font-size: 16.5px;
+    font-size: 1.3rem;
     font-family: 'NunitoSans Regular';
     /* line-height: 23px; */
     margin: 0;
 }
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
     .box--infoServices_txtInfoOnline {
         width: 49%;
     }
-}
+} */
 @media (max-width: 1024px) {
     .box--infoServices_txtInfoOnline {
         width: 49%;
-        font-size: 14px;
+        /* font-size: 14px; */
     }
 }
 @media (max-width: 768px) {
@@ -1718,11 +1731,11 @@ body {
         font-size: 16px;
     }
 }
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
     .box--infoServices_txtInfoOnline {
         font-size: 13.7px;
     }
-}
+} */
 
 /* 	FOOTER */
 
