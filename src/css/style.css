@@ -331,7 +331,7 @@ body {
     position: relative;
     font-size: 1.875rem;
     color: #266294;
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     text-decoration: none;
     list-style: none;
