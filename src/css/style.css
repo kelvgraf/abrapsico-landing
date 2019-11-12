@@ -1585,10 +1585,10 @@ body {
 }
 @media (max-width: 648px) {
     .box--contactBox_box--iconContact {
-        height: 80vh;
+        height: 62vh;
     }
 }
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     .box--contactBox_box--iconContact {
         height: 65vh;
     }
@@ -1597,7 +1597,7 @@ body {
     .box--contactBox_box--iconContact {
         height: 62vh;
     }
-}
+} */
 .box--iconContact_box--imgContact {
     display: flex;
     justify-content: center;
@@ -1626,30 +1626,25 @@ body {
 .box--imgContact_element--img {
     width: 66%;
 }
-@media (max-width: 1366px) {
-    .box--imgContact_element--img {
-        width: 70%;
-    }
-}
+/* @media (max-width: 1366px) {
+	.box--imgContact_element--img {
+		width: 70%;
+	}
+} */
 @media (max-width: 1024px) {
-    .box--imgContact_element--img {
-        width: 56%;
-    }
+	.box--imgContact_element--img {
+		width: 56%;
+	}
 }
 @media (max-width: 768px) {
-    .box--imgContact_element--img {
-        width: 80%;
-    }
+	.box--imgContact_element--img {
+		width: 80%;
+	}
 }
 @media (max-width: 648px) {
-    .box--imgContact_element--img {
-        width: 67%;
-    }
-}
-@media (max-width: 648px) {
-    .box--imgContact_element--img {
-        width: 80%;
-    }
+	.box--imgContact_element--img {
+		width: 80%;
+	}
 }
 .box--iconContact_box--txtBox {
     width: 53%;
@@ -1669,12 +1664,13 @@ body {
     }
 }
 @media (max-width: 648px) {
-    .box--iconContact_box--txtBox {
-        height: 68vh;
-        justify-content: flex-end;
-    }
+	.box--iconContact_box--txtBox {
+		margin-top: 3rem;
+		height:	auto;
+		justify-content: space-evenly;
+	}
 }
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     .box--iconContact_box--txtBox {
         height: 55vh;
     }
@@ -1688,13 +1684,13 @@ body {
     .box--iconContact_box--txtBox {
         height: 52vh;
     }
-}
+} */
 @media (max-width: 648px) {
-    .box--txtBox_box--txtOrientation {
-        height: 40vh;
-    }
+	.box--txtBox_box--txtOrientation {
+		margin-bottom: 4rem;
+	}
 }
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     .box--txtBox_box--txtOrientation {
         height: 36vh;
     }
@@ -1703,7 +1699,7 @@ body {
     .box--txtBox_box--txtOrientation {
         height: 30vh;
     }
-}
+} */
 
 .box--txtOrientation_title {
     font-size: 2.5rem;
@@ -1722,16 +1718,15 @@ body {
     }
 } */
 @media (max-width: 768px) {
-    .box--txtOrientation_title {
-        width: 100%;
-        font-size: 1.5rem;
-    }
+	.box--txtOrientation_title {
+		width: 100%;
+		font-size: 1.5rem;
+	}
 }
 @media (max-width: 648px) {
-    .box--txtOrientation_title {
-        width: 75%;
-        font-size: 2.2rem;
-    }
+	.box--txtOrientation_title {
+		width: 75%;
+	}
 }
 /* @media (max-width: 648px) {
     .box--txtOrientation_title {
@@ -1835,7 +1830,7 @@ body {
         font-size: 1.3rem;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 648px) {
     .phoneNunber {
         font-size: 1.1rem;
     }
