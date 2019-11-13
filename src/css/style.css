@@ -1018,7 +1018,6 @@ body {
 	width: 25%;
 	height: 100%;
 }
-
 @media(max-width: 768px) {
 	.container-services__title-box {
 		width: 31.5%;
@@ -1226,7 +1225,8 @@ body {
 	min-height: 940px;
 	background-image: url('../img/Foto-Sobre.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
+    margin-bottom: 2rem;
 }
 @media(max-width: 1024px) {
 	.container--main_section--presentation {
