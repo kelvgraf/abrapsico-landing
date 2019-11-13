@@ -931,7 +931,7 @@ body {
 }
 
 .container--symptoms_container--itensSymptoms p {
-	margin: 2.5rem 0;
+	margin: 2rem 0;
     cursor: pointer;
     font-family: 'NunitoSans Bold';
 }
