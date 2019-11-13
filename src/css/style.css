@@ -1610,12 +1610,7 @@ body {
 }
 @media (max-width: 648px) {
     .box--iconContact_box--imgContact {
-        height: 44%;
-    }
-}
-@media (max-width: 648px) {
-    .box--iconContact_box--imgContact {
-        height: 42%;
+        height: 62%;
     }
 }
 @media (max-width: 375px) {
@@ -1730,16 +1725,9 @@ body {
 @media (max-width: 648px) {
     .box--txtOrientation_title {
         width: 75%;
-        font-size: 23px;
+        font-size: 2.2rem;
     }
 }
-/* @media (max-width: 648px) {
-    .box--txtOrientation_title {
-        width: 100%;
-        font-size: 23px;
-        line-height: 32px;
-    }
-} */
 .box--txtOrientation_txt {
     width: 78%;
     line-height: 28px;
@@ -1769,7 +1757,7 @@ body {
 }
 @media (max-width: 648px) {
     .box--txtOrientation_txt {
-        width: 89%;
+        width: 87%;
         line-height: 30px;
         font-size: 1.3rem;
     }
