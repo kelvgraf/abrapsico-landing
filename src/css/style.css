@@ -1396,11 +1396,6 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-/* @media (max-width: 1366px) {
-	.section--schedule_container--consult {
-		width: 87%;
-	}
-} */
 @media (max-width: 768px) {
 	.section--schedule_container--consult {
 		width: 75%;
@@ -1412,7 +1407,6 @@ body {
 	}
 }
 .container--consult_box--titleConsult {
-	/* width: 28%; */
 	width: fit-content;
 	height: 20rem;
 	display: flex;
@@ -1438,7 +1432,7 @@ body {
 }
 
 .box--titleConsult_title {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	margin: 0%;
 	border-bottom: 8px solid #FFBA5C;
 	font-family: 'Nunito ExtraBold';
@@ -1467,117 +1461,90 @@ body {
 .box--titleConsult_underline, .box--textTitle_underline {
 	min-width: 11rem;
 	height: 6px;
-	/* margin-left: 1.2rem; */
 	border-radius: 50px;
 	padding-left: 1rem;
 	align-self: baseline;
 	background-color: #FFBA5C;
 }
 .container--consult_container--infoSectionSchedule {
-	height: 100%;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+
+@media (max-width: 768px) {
+    .container--consult_container--infoSectionSchedule {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
 }
 .container--infoSectionSchedule_box--contactBox {
     display: flex;
     flex-direction: row;
 }
+
 .box--contactBox_box--iconContact {
-	display: flex; 
-	justify-content: center;
-	flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
 }
+
+.container-directionServiseOnline {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
 @media (max-width: 768px) {
-	.box--contactBox_box--iconContact {
-    margin-top: 4rem;
-		height: 50%;
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-	}
-}
-@media (max-width: 648px) {
-	.box--contactBox_box--iconContact {
-    margin: 3rem 0;
-		height: 40%;
-	}
+    .container-directionServiseOnline {
+        width: 100%;
+        margin-top: 2rem;
+    }
 }
 
 .box--iconContact_box--imgContact {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 40%;
+    padding-right: 4rem;
 }
 @media (max-width: 768px) {
-	.box--iconContact_box--imgContact {
-		width: 46%;
-		height: 80%;
-	}
+    .box--iconContact_box--imgContact {
+        padding-right: 2rem;
+    }
 }
-@media (max-width: 648px) {
-	.box--iconContact_box--imgContact {
-    width: 45%;
-		height: 24%;
-    justify-content: flex-start;
-	}
-}
-
 .box--imgContact_element--img {
-    width: 66%;
+    width: 50%;
 }
 
+@media (max-width: 1366px) {
+	.box--imgContact_element--img {
+		width: 60%;
+	}
+}
 @media (max-width: 1024px) {
 	.box--imgContact_element--img {
-		width: 56%;
-	}
-}
-@media (max-width: 768px) {
-	.box--imgContact_element--img {
-		width: 80%;
-	}
-}
-@media (max-width: 648px) {
-	.box--imgContact_element--img {
-		width: 80%;
+		width: 100%;
 	}
 }
 .box--iconContact_box--txtBox {
-	width: 53%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-@media (max-width: 1024px) {
-	.box--iconContact_box--txtBox {
-		height: 21vh;
-	}
-}
-@media (max-width: 768px) {
-	.box--iconContact_box--txtBox {
-		height: 30%;
-	}
-}
-@media (max-width: 648px) {
-	.box--iconContact_box--txtBox {
-		width: 70%;
-		height:	auto;
-		justify-content: space-evenly;
-	}
+    width: 78%;
 }
 
-@media (max-width: 648px) {
-	.box--txtBox_box--txtOrientation {
-		margin-bottom: 3rem;
-	}
+@media (max-width: 768px) {
+    .box--iconContact_box--txtBox {
+        width: 95%;
+    }
 }
 
 .box--txtOrientation_title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Nunito ExtraBold';
     color: #266294;
     margin: 0;
 }
-
 @media (max-width: 768px) {
 	.box--txtOrientation_title {
 		width: 100%;
@@ -1591,7 +1558,7 @@ body {
 }
 
 .box--txtOrientation_txt {
-    width: 78%;
+    width: 72%;
     line-height: 28px;
     font-size: 19px;
     font-family: 'NunitoSans Bold';
@@ -1619,13 +1586,10 @@ body {
 }
 
 .box--txtBox_box--phoneNunber {
-    height: 31%;
+    margin: 2em 0;
     font-size: 2rem;
     color: #3F8ECB;
     font-family: 'NunitoSans Regular';
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 @media (max-width: 768px) {
     .box--txtBox_box--phoneNunber {
@@ -1705,27 +1669,15 @@ body {
 	font-size: 2.5rem;
 	font-family: 'Nunito ExtraBold';
 }
-
-@media (max-width: 1024px) {
-	.box--infoServices_titleServiceOnline {
-		width: 49%;
-	}
-}
 @media (max-width: 768px) {
 	.box--infoServices_titleServiceOnline {
 		width: 50%;
 		font-size: 1.5rem;
 	}
 }
-@media (max-width: 648px) {
-	.box--infoServices_titleServiceOnline {
-		width: 100%;
-		font-size: 1.3rem;
-	}
-}
 
 .box--infoServices_txtInfoOnline {
-	width: 45%;
+	width: 60%;
 	font-size: 1.2rem;
 	font-family: 'NunitoSans Regular';
 	margin: 0;
