@@ -5,6 +5,8 @@ var postsByPage = 3;
 
 var feed = document.querySelector('#medium');
 var pagination = document.querySelector('#medium-pagination');
+let figure = document.querySelector('.fm-post-sub-title');
+let image =  "../img/logo.svg"
 
 function getPosts() {
     axios.get(endpoint).then(function(response) {
@@ -44,8 +46,17 @@ function mountPagination(feed) {
 
         link.innerHTML = key;
 
-        link.addEventListener('click', function(ev) {
-            mountPage(mediumPosts[key]);
+        if (key === '1') {
+            link.classList.add('selected')
+        }
+
+        link.addEventListener('click', function() {
+            const selectedItem = document.querySelector('.selected');
+            if (link !== selectedItem) {
+                mountPage(mediumPosts[key]);
+                if(selectedItem) { selectedItem.classList.remove('selected'); }
+                link.classList.add('selected');
+            }
         });
 
         pagination.appendChild(link);
@@ -54,7 +65,6 @@ function mountPagination(feed) {
 
 function mountPage(page) {
     feed.innerHTML = '';
-    console.log(page)
     page.forEach(function(post) {
         var container = document.createElement('div');
         var innerContainer = document.createElement('a');
@@ -87,4 +97,10 @@ function mountPage(page) {
     });
 };
 
+function init (){
+    figure.style.background = image
+}
+
 getPosts();
+
+init();
