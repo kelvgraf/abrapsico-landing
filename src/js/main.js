@@ -1,13 +1,27 @@
 // ---------------- Funções do menu responsivo --------------------
 
-function openMenu(){
-    if (document.querySelector('.header--container_container--navegation').style.display === 'flex'){
-        document.querySelector('.header--container_container--navegation').style.display = 'none'
-    }
-    else{
-        document.querySelector('.header--container_container--navegation').style.display = 'flex'
-    }
-}
+ var menuMobile = document.querySelector(".menu-mobile");
+  var menuItem = document.querySelectorAll('.menu-item');
+  var menuList = document.querySelector('.menu-list');
+  
+  document.getElementById("menu-mobile").addEventListener("click", myFunction);
+  document.getElementById("menu-item").addEventListener("click", myFunction2);
+  document.getElementById("menu-item2").addEventListener("click", myFunction2);
+  document.getElementById("menu-item3").addEventListener("click", myFunction2);
+  document.getElementById("menu-item4").addEventListener("click", myFunction2);
+ 
+  function myFunction() {
+    menuMobile.classList.toggle("--menuMobile");;
+    menuList.classList.toggle('--drop-menu')
+    socialIcon.classList.toggle('--drop-social')
+    menuItem.forEach((element) => {
+      element.classList.add('--drop-item')
+    });
+  }
+
+  function myFunction2() {
+    menuList.classList.remove('--drop-menu')
+  };
 
 // ---------------- Funções do menu descktop --------------------
 let underlineItemIdentity = document.getElementById('li--underlineItemIdentity')
