@@ -6,7 +6,6 @@ var postsByPage = 3;
 var feed = document.querySelector('#medium');
 var pagination = document.querySelector('#medium-pagination');
 let figure = document.querySelector('.fm-post-sub-title');
-let image =  "../img/logo.svg"
 
 function getPosts() {
     axios.get(endpoint).then(function(response) {
@@ -97,10 +96,4 @@ function mountPage(page) {
     });
 };
 
-function init (){
-    figure.style.background = image
-}
-
 getPosts();
-
-init();
