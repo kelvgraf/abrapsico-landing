@@ -105,13 +105,17 @@
   color: #74B5E5;
   transform: scale(1.5);
 }
-
+@media (min-width:1150px) {
+  .fm-post-wrapper{
+    height: 45vh;
+  }
+}
 @media (max-width:880px) {
   #medium {
     max-height: 100vh;
   }
   .fm-post-title{
-    margin-top: 5px;
+    margin-top: 1rem;
     font-size: 0.78rem;
     padding: 10px;
   }
