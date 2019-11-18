@@ -1036,6 +1036,7 @@ body {
 .container-services__title-box {
 	width: 25%;
 	height: 100%;
+	padding-top: 0;
 }
 @media(max-width: 768px) {
 	.container-services__title-box {
@@ -1083,7 +1084,7 @@ body {
 .services-psicoterapist__box {
 	width: 27%;
 	margin: 0 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 5rem;
 }
 @media(max-width: 1024px) {
 	.services-psicoterapist__box {
@@ -1111,8 +1112,8 @@ body {
 }
 
 .services-psicoterapist__box h4 {
-	margin-top: .5rem;
-	margin-bottom: .5rem;
+	margin-top: 1.3rem;
+	margin-bottom: 1.3rem;
 	width: 70%;
 	font-family: 'Nunito ExtraBold';
 	font-size: 2rem;
