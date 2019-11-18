@@ -53,7 +53,7 @@ body {
 }
 
 .container--logo_logo--fixed{
-    width: 90%
+    width: 100%;
 }
 @media (max-width: 768px){
     .container--logo_logo--fixed{
@@ -393,53 +393,53 @@ body {
 .section--home_container--textHome{
 	z-index: 0;
 	position: absolute;
-	width: 90%;
-	height: 60vh;
+	/* width: 90%; */
+	height: 75vh;
 	display: flex;
 	justify-content: flex-end;
 }
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
 	.section--home_container--textHome {
 		height: 70vh;
 	}
-}
+} */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 	.section--home_container--textHome {
 		height: 59vh;
 	}
-}
-@media (max-width: 768px) {
+} */
+/* @media (max-width: 768px) {
 	.section--home_container--textHome {
 		height: 63vh;
 	}
-}
+} */
 @media (max-width: 648px) {
 	.section--home_container--textHome {
-		height: 75vh;
+		height: 80vh;
 		justify-content: center;
 		align-items: start;
+		padding-left: 5%;
 	}
 }
 .container--textHome_box--text {
-	width: 94%;
+	width: 95%;
 }
 @media (max-width: 648px) {
 	.container--textHome_box--text {
-		width: 90%;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
 	}
 }
 
 .box--text_title {
-	height: 11vh;
 	display: flex;
 	align-items: flex-start;
-	font-size: 4rem;
+	font-size: 3.5rem;
 	color: #FFBA5C;
-	margin: 0;
+	margin-bottom: 0.7rem;
 	font-family: 'Nunito ExtraBold'
 }
 
@@ -472,19 +472,24 @@ body {
 		font-size: 28px;
 	}
 }
+.box_text--hifen{
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 1rem;
+}
 .box--text_text--introduction {
-    width: 27%;
+    width: 30%;
     font-size: 1.3rem;
     line-height: 1.75rem;
     color: #FFFFFF;
-    margin: 0;
+    /* margin-bottom: 0; */
     font-family: 'NunitoSans Regular'
 }
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
 	.box--text_text--introduction {
 		width: 25%;
 	}
-}
+} */
 
 @media (max-width: 1024px) {
 	.box--text_text--introduction {
@@ -500,8 +505,7 @@ body {
 }
 @media (max-width: 648px) {
 	.box--text_text--introduction {
-		width: 100%;
-		height: 43%;
+		width: 90%;
 		display: flex;
 		align-items: flex-end;
 		font-size: 1rem;
@@ -930,7 +934,7 @@ body {
 }
 
 .container--symptoms_container--itensSymptoms p {
-	margin: 2.5rem 0;
+	margin: 2rem 0;
     cursor: pointer;
     font-family: 'NunitoSans Bold';
 }
@@ -1031,6 +1035,7 @@ body {
 .container-services__title-box {
 	width: 25%;
 	height: 100%;
+	padding-top: 0;
 }
 @media(max-width: 768px) {
 	.container-services__title-box {
@@ -1078,7 +1083,7 @@ body {
 .services-psicoterapist__box {
 	width: 27%;
 	margin: 0 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 5rem;
 }
 @media(max-width: 1024px) {
 	.services-psicoterapist__box {
@@ -1106,8 +1111,8 @@ body {
 }
 
 .services-psicoterapist__box h4 {
-	margin-top: .5rem;
-	margin-bottom: .5rem;
+	margin-top: 1.3rem;
+	margin-bottom: 1.3rem;
 	width: 70%;
 	font-family: 'Nunito ExtraBold';
 	font-size: 2rem;
@@ -1239,14 +1244,15 @@ body {
 	min-height: 940px;
 	background-image: url('../img/Foto-Sobre.jpg');
 	background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
+	background-position-x: center;
     margin-bottom: 2rem;
 }
-@media(max-width: 1024px) {
+/* @media(max-width: 1300px) {
 	.container--main_section--presentation {
 		background-position-x: center;
 	}
-}
+} */
 
 .container-team__members-box {
 	margin-right: 5rem;
@@ -1305,6 +1311,7 @@ body {
 	}
 
 	.container--symptoms_container--itensSymptoms {
+		padding: 0;
 		padding-left: 1.8rem;
 	}
 

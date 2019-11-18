@@ -1,12 +1,14 @@
-var endpoint = "https://api.rss2json.com/v1/api.json?" +
-  "rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40osclegal";
+// var endpoint = "https://api.rss2json.com/v1/api.json?" +
+//   "rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40associacao.abrapsico";
+
+var endpoint = "https://api.rss2json.com/v1/api.json?" + 
+    "rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40osclegal";
 var mediumPosts;
 var postsByPage = 3;
 
 var feed = document.querySelector('#medium');
 var pagination = document.querySelector('#medium-pagination');
 let figure = document.querySelector('.fm-post-sub-title');
-let image =  "../img/logo.svg"
 
 function getPosts() {
     axios.get(endpoint).then(function(response) {
@@ -97,10 +99,4 @@ function mountPage(page) {
     });
 };
 
-function init (){
-    figure.style.background = image
-}
-
 getPosts();
-
-init();
