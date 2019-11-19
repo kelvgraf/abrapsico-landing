@@ -1153,7 +1153,7 @@ body {
 		}
 	}
 .box--txtPresentation_txt-who-we-are {
-	width: 38%;
+	width: 37%;
 	margin-top: 1.5rem;
 	margin-bottom: 3rem;
 	font-size: 1.6rem;
@@ -1161,7 +1161,7 @@ body {
 }
 @media(max-width: 1024px) {
 	.box--txtPresentation_txt-who-we-are {
-		width: 100%;
+		width: 95%;
 		font-size: 1.2rem;
 	}
 }
