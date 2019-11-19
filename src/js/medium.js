@@ -1,10 +1,10 @@
-// var endpoint = "https://api.rss2json.com/v1/api.json?" +
-//   "rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40associacao.abrapsico";
+var endpoint = "https://api.rss2json.com/v1/api.json?" +
+  "rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40associacao.abrapsico";
 
-var endpoint = "https://api.rss2json.com/v1/api.json?" + 
-    "rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40osclegal";
 var mediumPosts;
 var postsByPage = 3;
+
+
 
 var feed = document.querySelector('#medium');
 var pagination = document.querySelector('#medium-pagination');
@@ -13,8 +13,13 @@ let figure = document.querySelector('.fm-post-sub-title');
 function getPosts() {
     axios.get(endpoint).then(function(response) {
         mediumPosts = formatPosts(response.data.items);
-        mountPage(mediumPosts[1]);
-        mountPagination(mediumPosts);
+        if (Object.keys(mediumPosts).length > 0){
+            mountPage(mediumPosts[1]);
+            mountPagination(mediumPosts);
+        }
+        else {
+            document.querySelector('.container--main_section--blog').style.display = 'none'
+        }
     });
 };
 
@@ -22,7 +27,8 @@ function formatPosts(posts) {
     var formattedPosts = {};
     var currentPage = 1;
     var counter = 1;
-
+    console.log(posts)
+    
     posts.forEach(function(post) {
         if (formattedPosts[currentPage]) {
             formattedPosts[currentPage].push(post);
@@ -37,7 +43,6 @@ function formatPosts(posts) {
 
         counter += 1;
     });
-
     return formattedPosts;
 };
 
@@ -60,7 +65,7 @@ function mountPagination(feed) {
                 link.classList.add('selected');
             }
         });
-
+        
         pagination.appendChild(link);
     });
 }
