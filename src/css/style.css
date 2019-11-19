@@ -807,7 +807,8 @@ body {
         height: 40vh;
     }
 }
-@media(max-width: 648px) {
+
+@media(max-width: 425px) {
     .container--txtTitleSearchForPsychologist_title {
         height: 30vh;
     }
