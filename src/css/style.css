@@ -695,6 +695,15 @@ body {
         min-height: 82vh;  
     }
 }
+.container-team {
+	padding-top: 8rem;
+	margin-bottom: 4rem;
+}
+@media(max-width: 768px) {
+	.container-team {
+		padding-top: 0;
+	}
+}
 
 .container-links__title-box {
 	width: 55%;
