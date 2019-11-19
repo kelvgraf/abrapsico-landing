@@ -1154,14 +1154,14 @@ body {
 .box--txtPresentation_txt {
 	margin-top: 1.5rem;
 	margin-bottom: 3rem;
-	width: 37%;
+	width: 42%;
 	color: #141414;
 	font-size: 1.6rem;
 	font-family: 'NunitoSans Bold';
 }
 @media(max-width: 1024px) {
 	.box--txtPresentation_txt{
-		width: 100%;
+		width: 85%;
 		font-size: 1.2rem;
 	}
 }
