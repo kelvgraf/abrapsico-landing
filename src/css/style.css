@@ -542,7 +542,6 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    margin-bottom: 1.5rem;
 }
 @media(max-width: 320px) {
 	.container--blog_box--textTitle {
@@ -688,7 +687,6 @@ body {
 	flex-direction: column;
 	width: 100%;
 	min-height: 90vh;
-	margin-bottom: 2rem;
 }
 @media (max-width: 1024px){
     .container--main_section--SearchForPsychologist, .container-team {
