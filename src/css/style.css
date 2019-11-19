@@ -769,7 +769,8 @@ body {
     @media(max-width: 768px) {
         .box--section_container--txtTitleSearchForPsychologist {
             width: 42%;
-            padding-left: 4rem;
+			padding-left: 4rem;
+			margin-top: 4rem;
         }
     }
     @media(max-width: 425px) {
@@ -1181,7 +1182,7 @@ body {
 @media (max-width: 768px) {
 	.box--txtPresentation_txt {
 		width: 90%;
-		margin-top: 3rem;
+		margin-top: 4rem;
 	}
 }
 
@@ -1204,8 +1205,7 @@ body {
 	width: 100%;
 	/* min-height: 35vh; */
 	min-height: auto;
-	padding: 2rem 0;
-	padding-top: 5rem;
+	padding: 5rem 0;
 	background: #266294;
 }
 
@@ -1228,7 +1228,7 @@ body {
 @media(max-width: 768px) {
 	.container-links__list {
 		width: 95%;
-		padding-left: 5rem;
+		padding-left: 4rem;
 	}
 }
 
@@ -1328,7 +1328,8 @@ body {
 	.container--symptoms_container--itensSymptoms,
 	.services-psicoterapist__box {
 		flex-direction: column;
-		width: 92%;
+		width: 85%;
+		align-self: center;
 	}
 
 	.container--symptoms_container--itensSymptoms {
@@ -1343,6 +1344,8 @@ body {
 	.container-services {
 		flex-direction: column;
 		width: 100%;
+		padding-top: 3rem;
+		margin-top: 5rem;
 	}
 	.services-psicoterapist__box {
 		display: flex;
@@ -1359,7 +1362,6 @@ body {
 	}
 
 	.container-about__title-box {
-		padding-left: 5rem;
 		align-self: center;
 		width: 90%;
 	}
@@ -1404,7 +1406,7 @@ body {
 
 	.container-team__members-box p, .container-team__members-box h5 {
 		width: 100%;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		text-align: center;
 	}
 
@@ -1442,7 +1444,8 @@ body {
 }
 @media (max-width: 768px) {
 	.section--schedule_container--consult {
-		width: 75%;
+		width: 84%;
+		margin-top: 2rem;
 	}
 }
 @media (max-width: 648px) {
