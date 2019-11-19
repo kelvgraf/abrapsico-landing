@@ -750,10 +750,12 @@ body {
     @media(max-width: 1024px) {
         .box--section_container--txtTitleSearchForPsychologist,
         .container-services__title-box,
-        .container-about__title-box,
         .container-who__title-box {
             width: 45%;
-        }
+		}
+		.container-about__title-box {
+			width: 56%;
+		}
     }
     @media(max-width: 1366px) {
         .box--section_container--txtTitleSearchForPsychologist {
@@ -1152,10 +1154,10 @@ body {
 .box--txtPresentation_txt {
 	margin-top: 1.5rem;
 	margin-bottom: 3rem;
-	width: 38%;
+	width: 46%;
 	color: #141414;
 	font-size: 1.6rem;
-	font-family: 'Nunito ExtraBold';
+	font-family: 'NunitoSans Bold';
 }
 @media(max-width: 1024px) {
 	.box--txtPresentation_txt{
@@ -1248,7 +1250,7 @@ body {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	min-height: 940px;
+	min-height: 880px;
 	background-image: url('../img/Foto-Sobre.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1349,6 +1351,7 @@ body {
 		align-self: center;
 		width: 90%;
 	}
+	
 
 	.container-who__title-box {
 		padding-left: 2rem;
