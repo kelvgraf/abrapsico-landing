@@ -697,7 +697,7 @@ body {
 }
 .container-team {
 	padding-top: 8rem;
-	margin-bottom: 4rem;
+	margin-bottom: 6rem;
 }
 @media(max-width: 768px) {
 	.container-team {
@@ -1154,7 +1154,7 @@ body {
 .box--txtPresentation_txt {
 	margin-top: 1.5rem;
 	margin-bottom: 3rem;
-	width: 46%;
+	width: 37%;
 	color: #141414;
 	font-size: 1.6rem;
 	font-family: 'NunitoSans Bold';
@@ -1162,7 +1162,7 @@ body {
 @media(max-width: 1024px) {
 	.box--txtPresentation_txt{
 		width: 100%;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -1179,8 +1179,8 @@ body {
 		padding: 1rem 0;
 		width: 100%;
 		line-height: 1.4rem;
-    font-size: 1.1rem;
-    font-family: 'Nunito Regular';
+		font-size: 1.1rem;
+		font-family: 'Nunito Regular';
 	}
 	.box--txtPresentation_txt-who-we-are{
 		margin-top: 1rem;
@@ -1280,7 +1280,7 @@ body {
 }
 
 .container-team__members-box img {
-	width: 70%;
+	width: 60%;
 }
 
 .container-team__members-box h4 {
@@ -1294,9 +1294,9 @@ body {
 }
 
 .container-team__members-box p {
-	width: 80%;
+	width: 88%;
 	margin-bottom: .5rem;
-	font-family: 'Nunito Bold';
+	font-family: 'NunitoSans Bold';
 	font-weight: 600;
 	font-size: 1rem;
 	color: #141414;
