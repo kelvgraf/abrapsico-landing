@@ -1585,17 +1585,17 @@ body {
 	}
 }
 .box--txtOrientation_txt {
-    width: 72%;
+    width: 78%;
     line-height: 28px;
-    font-size: 19px;
+    font-size: 1.2rem;
     font-family: 'NunitoSans Bold';
     margin: 0;
 }
 
 @media (max-width: 1024px) {
 	.box--txtOrientation_txt {
-		width: 90%;
-		/* font-size: 15px; */
+		width: 100%;
+		font-size: 1.1rem;
 	}
 }
 @media (max-width: 768px) {
@@ -1613,8 +1613,9 @@ body {
 }
 
 .box--txtBox_box--phoneNunber {
-    margin: 2em 0;
-    font-size: 2rem;
+	margin-top: 1em;
+	margin-bottom: 2em;
+    font-size: 1.8rem;
     color: #3F8ECB;
     font-family: 'NunitoSans Regular';
 }
@@ -1693,7 +1694,7 @@ body {
 	margin-bottom: 1rem;
 	width: 45%;
 	color: #266294;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-family: 'Nunito ExtraBold';
 }
 @media (max-width: 768px) {
@@ -1712,7 +1713,7 @@ body {
 
 @media (max-width: 1024px) {
 	.box--infoServices_txtInfoOnline {
-		width: 49%;
+		width: 85%;
 	}
 }
 @media (max-width: 768px) {
