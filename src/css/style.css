@@ -622,7 +622,7 @@ body {
     padding: 2rem 0;
 }
 .box--textTitle_title{
-    margin:2vh 0 8vh 2vw;
+    margin:2vh 0 8vh 1vw;
     width: fit-content;
     font-size: 2.2rem;
     font-family: 'Nunito ExtraBold';
@@ -708,7 +708,7 @@ body {
 .container-links__title-box {
 	width: 55%;
 	height: 100%;
-	padding-left: 5.18rem;
+	padding-left: 5.6rem;
 }
 @media(max-width: 768px) {
 	.container-links__title-box {
@@ -737,7 +737,7 @@ body {
 .container-about__title-box,
 .container-who__title-box {
 	margin-bottom: 2rem;
-	padding-left: 5rem;
+	padding-left: 5.6rem;
 	width: fit-content;
 	display: flex;
 	justify-content: center;
@@ -745,7 +745,7 @@ body {
 }
 .box--section_container--txtTitleSearchForPsychologist {
     height: 19vh;
-    justify-content: flex-end;
+	justify-content: flex-end;
 }
     @media(max-width: 1024px) {
         .box--section_container--txtTitleSearchForPsychologist,
@@ -1457,6 +1457,7 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	padding-left: 1.3rem;
 }
 
 @media (max-width: 1024px) {
