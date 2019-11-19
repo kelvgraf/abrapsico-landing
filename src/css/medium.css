@@ -12,10 +12,10 @@
 }
 
 .paginationMedium {
-  min-height: 10vh;
+  min-height: 12vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .paginationMedium__number {
@@ -108,8 +108,8 @@
 }
 @media (min-width:1150px) {
   .fm-post-wrapper{
-    max-width: 26%;
-    height: 53vh;
+    max-width: 24%;
+    height: 54vh;
   }
 }
 @media (max-width:880px) {
@@ -120,6 +120,7 @@
     margin-top: 1rem;
     font-size: 0.78rem;
     padding: 10px;
+    align-self: auto;
   }
 }
 
@@ -133,6 +134,7 @@
     width: auto;
     height: auto;
     margin-bottom: 5vh;
+    box-shadow: none;
   }
   
   .fm-post{

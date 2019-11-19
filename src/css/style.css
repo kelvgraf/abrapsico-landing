@@ -542,7 +542,7 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 @media(max-width: 320px) {
 	.container--blog_box--textTitle {
@@ -624,7 +624,7 @@ body {
 .box--textTitle_title{
     margin:2vh 0 8vh 1vw;
     width: fit-content;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: 'Nunito ExtraBold';
     border-bottom: 8px solid #FFBA5C;
 }
@@ -831,7 +831,7 @@ body {
 .container-about__title {
 	width: fit-content;
 	margin: 0;
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	font-family: 'Nunito ExtraBold';
 	color: #141414;
 	border-bottom: 8px solid #FFBA5C;
@@ -1121,8 +1121,8 @@ body {
 }
 
 .services-psicoterapist__box h4 {
-	margin-top: 1.3rem;
-	margin-bottom: 1.3rem;
+	margin-top: 1.1rem;
+	margin-bottom: 1.1rem;
 	width: 70%;
 	font-family: 'Nunito ExtraBold';
 	font-size: 2rem;
@@ -1478,7 +1478,7 @@ body {
 }
 
 .box--titleConsult_title {
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	margin: 0%;
 	border-bottom: 8px solid #FFBA5C;
 	font-family: 'Nunito ExtraBold';
