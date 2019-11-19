@@ -12,10 +12,10 @@
 }
 
 .paginationMedium {
-  min-height: 10vh;
+  min-height: 12vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .paginationMedium__number {
