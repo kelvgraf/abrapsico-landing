@@ -695,6 +695,15 @@ body {
         min-height: 82vh;  
     }
 }
+.container-team {
+	padding-top: 8rem;
+	margin-bottom: 6rem;
+}
+@media(max-width: 768px) {
+	.container-team {
+		padding-top: 0;
+	}
+}
 
 .container-links__title-box {
 	width: 55%;
@@ -741,10 +750,12 @@ body {
     @media(max-width: 1024px) {
         .box--section_container--txtTitleSearchForPsychologist,
         .container-services__title-box,
-        .container-about__title-box,
         .container-who__title-box {
             width: 45%;
-        }
+		}
+		.container-about__title-box {
+			width: 56%;
+		}
     }
     @media(max-width: 1366px) {
         .box--section_container--txtTitleSearchForPsychologist {
@@ -778,7 +789,6 @@ body {
             width: 82%;
         }
     }
-
 	@media(max-width: 648px) {
 		.box--section_container--txtTitleSearchForPsychologist,
 		.container-services__title-box,
@@ -807,7 +817,8 @@ body {
         height: 40vh;
     }
 }
-@media(max-width: 648px) {
+
+@media(max-width: 425px) {
     .container--txtTitleSearchForPsychologist_title {
         height: 30vh;
     }
@@ -1033,6 +1044,7 @@ body {
 .container-services__title-box {
 	width: 25%;
 	height: 100%;
+	padding-top: 0;
 }
 @media(max-width: 768px) {
 	.container-services__title-box {
@@ -1142,15 +1154,15 @@ body {
 .box--txtPresentation_txt {
 	margin-top: 1.5rem;
 	margin-bottom: 3rem;
-	width: 38%;
+	width: 42%;
 	color: #141414;
 	font-size: 1.6rem;
-	font-family: 'Nunito ExtraBold';
+	font-family: 'NunitoSans Bold';
 }
 @media(max-width: 1024px) {
 	.box--txtPresentation_txt{
-		width: 100%;
-		font-size: 1.4rem;
+		width: 85%;
+		font-size: 1.2rem;
 	}
 }
 
@@ -1167,8 +1179,8 @@ body {
 		padding: 1rem 0;
 		width: 100%;
 		line-height: 1.4rem;
-    font-size: 1.1rem;
-    font-family: 'Nunito Regular';
+		font-size: 1.1rem;
+		font-family: 'Nunito Regular';
 	}
 	.box--txtPresentation_txt-who-we-are{
 		margin-top: 1rem;
@@ -1238,7 +1250,7 @@ body {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	min-height: 940px;
+	min-height: 880px;
 	background-image: url('../img/Foto-Sobre.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1268,7 +1280,7 @@ body {
 }
 
 .container-team__members-box img {
-	width: 70%;
+	width: 60%;
 }
 
 .container-team__members-box h4 {
@@ -1282,9 +1294,9 @@ body {
 }
 
 .container-team__members-box p {
-	width: 80%;
+	width: 88%;
 	margin-bottom: .5rem;
-	font-family: 'Nunito Bold';
+	font-family: 'NunitoSans Bold';
 	font-weight: 600;
 	font-size: 1rem;
 	color: #141414;
@@ -1339,6 +1351,7 @@ body {
 		align-self: center;
 		width: 90%;
 	}
+	
 
 	.container-who__title-box {
 		padding-left: 2rem;
@@ -1575,17 +1588,17 @@ body {
 	}
 }
 .box--txtOrientation_txt {
-    width: 72%;
+    width: 78%;
     line-height: 28px;
-    font-size: 19px;
+    font-size: 1.2rem;
     font-family: 'NunitoSans Bold';
     margin: 0;
 }
 
 @media (max-width: 1024px) {
 	.box--txtOrientation_txt {
-		width: 90%;
-		/* font-size: 15px; */
+		width: 100%;
+		font-size: 1.1rem;
 	}
 }
 @media (max-width: 768px) {
@@ -1603,8 +1616,9 @@ body {
 }
 
 .box--txtBox_box--phoneNunber {
-    margin: 2em 0;
-    font-size: 2rem;
+	margin-top: 1em;
+	margin-bottom: 2em;
+    font-size: 1.8rem;
     color: #3F8ECB;
     font-family: 'NunitoSans Regular';
 }
@@ -1683,7 +1697,7 @@ body {
 	margin-bottom: 1rem;
 	width: 45%;
 	color: #266294;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-family: 'Nunito ExtraBold';
 }
 @media (max-width: 768px) {
@@ -1702,7 +1716,7 @@ body {
 
 @media (max-width: 1024px) {
 	.box--infoServices_txtInfoOnline {
-		width: 49%;
+		width: 85%;
 	}
 }
 @media (max-width: 768px) {
