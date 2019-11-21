@@ -632,9 +632,9 @@ body {
         font-size: 2rem;
     }
 }
-@media (max-width: 648px){
+@media (max-width: 768px){
     .box--textTitle_title{
-        font-size: 1.75rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -851,7 +851,7 @@ body {
         .container--txtTitleSearchForPsychologist_title,
         .container-services__title,
         .container-links__title  {
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
     }
 
@@ -1054,6 +1054,7 @@ body {
 @media(max-width: 648px) {
 	.container-services__title-box  {
 		width: 35%;
+		margin-bottom: auto;
 	}
 }
 
@@ -1073,7 +1074,11 @@ body {
         font-size: 2rem;
     }
 }
-
+@media (max-width: 768px) {
+	.container-about__title {
+		font-size: 1.6rem;	
+	}
+}
 @media (max-width: 648px) {
 	.container-about__title {
 		margin-top: 2rem;
@@ -1116,6 +1121,11 @@ body {
 	}
 	.services-psicoterapist__box h4 {
 		margin: 1rem 0;
+	}
+}
+@media(max-width: 768px) {
+	.services-psicoterapist__box img {
+		width: 70%;
 	}
 }
 
@@ -1196,7 +1206,7 @@ body {
 		font-family: 'Nunito Regular';
 	}
 	.box--txtPresentation_txt-who-we-are{
-		margin-top: 1rem;
+		margin: 2.3rem 0 0 0;
 	}
 }
 
@@ -1211,7 +1221,8 @@ body {
 
 	@media(max-width: 768px) {
 		.container-links {
-			flex-direction: column;	
+			flex-direction: column;
+			padding-left: 0.8rem;
 		}
 	}
 
@@ -1445,7 +1456,6 @@ body {
 @media (max-width: 768px) {
 	.section--schedule_container--consult {
 		width: 84%;
-		margin-top: 2rem;
 	}
 }
 @media (max-width: 648px) {
@@ -1475,7 +1485,8 @@ body {
 }
 @media (max-width: 648px) {
 	.container--consult_box--titleConsult {
-		width: 70%;
+		width: max-content;
+		padding-left: 0.3rem;
 	}
 }
 
@@ -1494,14 +1505,13 @@ body {
 @media (max-width: 768px) {
 	.box--titleConsult_title {
 		height: 24vh;
-		font-size: 2rem;
+		font-size: 1.6rem;
 		display: flex;
 		align-items: flex-end;
 	}
 }
 @media (max-width: 648px) {
 	.box--titleConsult_title {
-		font-size: 1.75rem;
 		border-bottom-width: 4px;
 	}
 }
@@ -1523,7 +1533,7 @@ body {
 
 @media (max-width: 768px) {
     .container--consult_container--infoSectionSchedule {
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-bottom: 5rem;
     }
 }
@@ -1547,7 +1557,16 @@ body {
 @media (max-width: 768px) {
     .container-directionServiseOnline {
         width: 100%;
-        margin-top: 2rem;
+		align-items: flex-end;
+		padding-right: 4rem;
+    }
+}
+
+@media (max-width: 648px) {
+    .container-directionServiseOnline {
+        width: 100%;
+		align-items: flex-start;
+		padding-right: 0;
     }
 }
 
@@ -1723,6 +1742,12 @@ body {
 		font-size: 1.5rem;
 	}
 }
+@media (max-width: 648px) {
+	.box--infoServices_titleServiceOnline {
+		width: 85%;
+	}
+}
+
 
 .box--infoServices_txtInfoOnline {
 	width: 60%;
