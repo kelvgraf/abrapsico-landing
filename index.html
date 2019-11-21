@@ -68,7 +68,15 @@
                     <p onclick="handleText('fifth-text')">Sintomas de doenças não identificadas</p>
                 </div>
                 <div class="container--symptoms_container--specificationSymptoms">
+                    <p id="title-exit">Pensamentos negativos constantes</p>
                     <p id="texto">Todo mundo tem algum tipo de pensamento pessimista durante o dia. É extremamente normal.  Mas quando se torna recorrente e obsessivo -  como a idealização de situações catastróficas ou ideias ruins -  é de extrema importância buscar ajuda. A terapia psicológica oferece técnicas direcionadas para resolver esse tipo de problema e melhorar a qualidade de vida do indivíduo.</p>
+                    <div class="container--specificationSymptoms_boxSlide">
+                        <div id="firstSlideItem" class="boxSlide_itens selectedItem" onclick="handleSlide(event,'first-text')"></div>
+                        <div id="secondSlideItem" class="boxSlide_itens"onclick="handleSlide(event,'second-text')"></div>
+                        <div id="thirdSlideItem" class="boxSlide_itens" onclick="handleSlide(event,'third-text')"></div>
+                        <div id="fourthSlideItem" class="boxSlide_itens"onclick="handleSlide(event,'fourth-text')" ></div>
+                        <div id="fifthSlideItem" class="boxSlide_itens" onclick="handleSlide(event,'fifth-text')"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -237,5 +245,4 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="./src/js/medium.js"></script>
 </body>
-<script src="./src/js/main.js"></script>
 </html>
