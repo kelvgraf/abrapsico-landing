@@ -503,6 +503,13 @@ body {
 		line-height: 2.3rem;
 	}
 }
+@media (max-width: 425px) {
+	.box--text_text--introduction {
+		width: 95%;
+		font-size: 1rem;
+		line-height: 2.2rem;
+	}
+}
 @media (max-width: 320px) {
 	.box--text_text--introduction {
 		width: 90%;
