@@ -440,7 +440,7 @@ body {
 	font-size: 3.5rem;
 	color: #FFBA5C;
 	margin-bottom: 0.7rem;
-	font-family: 'Nunito ExtraBold'
+	font-family: 'Nunito ExtraBold';
 }
 
 @media (max-width: 1024px) {
@@ -483,7 +483,7 @@ body {
     line-height: 1.75rem;
     color: #FFFFFF;
     /* margin-bottom: 0; */
-    font-family: 'NunitoSans Regular'
+    font-family: 'NunitoSans Regular';
 }
 /* @media (max-width: 1440px) {
 	.box--text_text--introduction {
@@ -707,6 +707,7 @@ body {
 	width: 55%;
 	height: 100%;
 	padding-left: 4rem;
+	position: relative;
 }
 @media(max-width: 768px) {
 	.container-links__title-box {
@@ -740,6 +741,7 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	position: relative;
 }
 .box--section_container--txtTitleSearchForPsychologist {
     height: 19vh;
@@ -795,46 +797,30 @@ body {
 			padding-left: 2.18rem;
 			margin-bottom: 4rem;
 		}
+
 	}
 
 .container--txtTitleSearchForPsychologist_title{
-    height: 12vh;
     display: flex;
-    align-items: flex-end;
-}
-@media(max-width: 1366px) {
-    .container--txtTitleSearchForPsychologist_title {
-        height: 20vh;
-    }
-}
-@media(max-width: 1024px) {
-    .container--txtTitleSearchForPsychologist_title {
-        height: 4vh;
-    }
-}
-@media(max-width: 768px) {
-    .container--txtTitleSearchForPsychologist_title {
-        height: 40vh;
-    }
-}
-
-@media(max-width: 425px) {
-    .container--txtTitleSearchForPsychologist_title {
-        height: 30vh;
-    }
+	align-items: flex-end;
 }
 
 .container--txtTitleSearchForPsychologist_title,
 .container-services__title,
 .container-links__title,
-.container-about__title {
-	width: fit-content;
-	margin: 0;
-	font-size: 2.2rem;
+.container-about__title,
+.box--titleConsult_title {
+	width:fit-content;
+	font-size: 2.3rem;
+    background-size: 1px 1em;
+  	box-shadow:
+    inset 0 -0.23rem #FFBA5C,
+	inset 0 -0.175em transparent,
+	inset 0 -0.175em transparent;
 	font-family: 'Nunito ExtraBold';
-	color: #141414;
-	border-bottom: 8px solid #FFBA5C;
+  	display: inline;	
 }
+
 .container-services__title {
     /* height: 24vh; */
     display: flex;
@@ -1120,7 +1106,7 @@ body {
 		width: 50%;
 	}
 	.services-psicoterapist__box h4 {
-		margin: 1rem 0;
+		margin: 0.6rem 0;
 	}
 }
 @media(max-width: 768px) {
@@ -1203,10 +1189,11 @@ body {
 		width: 100%;
 		line-height: 1.4rem;
 		font-size: 1.1rem;
-		font-family: 'Nunito Regular';
+		font-family: 'NunitoSans Regular';
 	}
 	.box--txtPresentation_txt-who-we-are{
 		margin: 2.3rem 0 0 0;
+		font-family: 'NunitoSans Regular';
 	}
 }
 
@@ -1251,7 +1238,7 @@ body {
 }
 
 .container-links__list li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .container-links__list li a{
@@ -1289,7 +1276,7 @@ body {
 .container-team__members-box {
 	margin-right: 5rem;
 	/* padding: 1.5rem 0; */
-	max-width: 70%;
+	max-width: 79%;
 	display: flex;
 	align-self: flex-end;
 }
@@ -1315,6 +1302,12 @@ body {
     margin: 1rem 0;
 	color: #266294;
 }
+@media (max-width: 648px) {
+	.container-team__members-box h4{
+        font-size: 1.5rem;
+    }
+}
+
 
 .container-team__members-box p {
 	width: 88%;
@@ -1339,7 +1332,7 @@ body {
 	.container--symptoms_container--itensSymptoms,
 	.services-psicoterapist__box {
 		flex-direction: column;
-		width: 85%;
+		width: 90%;
 		align-self: center;
 	}
 
@@ -1490,12 +1483,12 @@ body {
 	}
 }
 
-.box--titleConsult_title {
+/* .box--titleConsult_title {
 	font-size: 2.2rem;
 	margin: 0%;
 	border-bottom: 8px solid #FFBA5C;
 	font-family: 'Nunito ExtraBold';
-}
+} */
 
 @media (max-width: 1024px) {
 	.box--titleConsult_title {
@@ -1764,7 +1757,7 @@ body {
 @media (max-width: 768px) {
 	.box--infoServices_txtInfoOnline {
 		width: 50%;
-		font-size: 0.61rem;
+		font-size: 0.8rem;
 	}
 }
 @media (max-width: 648px) {
