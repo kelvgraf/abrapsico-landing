@@ -503,12 +503,13 @@ body {
 		line-height: 2.3rem;
 	}
 }
-@media (max-width: 648px) {
+@media (max-width: 320px) {
 	.box--text_text--introduction {
 		width: 90%;
 		display: flex;
 		align-items: flex-end;
 		font-size: 1rem;
+		line-height: 1.8rem;
 	}
 }
 
@@ -917,6 +918,9 @@ body {
 }
 @media(max-width: 768px) {
     .box--section_container--symptoms  {
+		width: 97%;
+		flex-direction: column;
+		align-self: center;
         margin-top: 0;
     }
 }
@@ -954,15 +958,45 @@ body {
         font-size:20px; 
     }
 }
-@media(max-width: 648px) {
+@media(max-width: 768px) {
+	.container--symptoms_container--itensSymptoms  {
+		display: none;
+	}
+}
+/* @media(max-width: 648px) {
     .container--symptoms_container--itensSymptoms p  {
         font-size:15px; 
     }
-}
-@media(max-width: 320px) {
+} */
+/* @media(max-width: 320px) {
     .container--symptoms_container--itensSymptoms p  {
         font-size:13px; 
     }
+} */
+
+#title-exit {
+	display: none;
+    width: 85%;
+	font-size: 2rem;
+	padding-left: 2.8rem;
+	font-family: 'NunitoSans Black';
+	color: #266294;
+}
+@media(max-width: 768px) {
+	#title-exit  {
+		display: block;
+	}
+}
+@media(max-width: 425px) {
+	#title-exit  {
+		font-size: 1.5rem;
+		padding-left: 1.3rem;
+	}
+}
+@media(max-width: 375px) {
+	#title-exit  {
+		font-size: 1rem;
+	}
 }
 
 .container--symptoms_container--itensSymptoms p:nth-child(1) {
@@ -998,6 +1032,7 @@ body {
 @media(max-width: 768px) {
 	.container--symptoms_container--specificationSymptoms  {
 		align-self: center;
+		margin: 0;
 	}
 }
 #texto {
@@ -1015,7 +1050,7 @@ body {
 }
 @media(max-width: 768px) {
     #texto  {
-        font-size: 30px;
+        font-size: 1.5rem;
         padding: 40px 40px 50px 40px;    
     }
 }
@@ -1029,6 +1064,38 @@ body {
     #texto  {
         font-size: 12px;
     }
+}
+.container--specificationSymptoms_boxSlide {
+	display: none;
+}
+.selectedItem {
+	background-color: #276294 !important;
+}
+@media(max-width: 768px) {
+    .container--specificationSymptoms_boxSlide  {
+		width: 90%;
+		height: 5vh;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 0 0 1rem 2rem;
+    }
+}
+.slideActive {
+	background-color: #276294;
+}
+/* .slideDesactive {
+	background-color: #276294;
+} */
+
+@media(max-width: 768px) {
+	.boxSlide_itens {
+		width: 15%;
+		height: 90%;
+		border-radius: 50px;
+		background-color:#FFFFFF;
+		transition: background-color .5s;
+	}
 }
 
 .container-services {
@@ -1333,9 +1400,7 @@ body {
 }
 
 @media (max-width: 768px) {
-	.box--section_container--symptoms,
 	.services-psicoterapist,
-	.container--symptoms_container--specificationSymptoms,
 	.container--symptoms_container--itensSymptoms,
 	.services-psicoterapist__box {
 		flex-direction: column;
@@ -1349,6 +1414,8 @@ body {
 	}
 
 	.container--symptoms_container--specificationSymptoms {
+		width: 95%;
+		flex-direction: column;
 		padding: 1rem;
 	}
  
