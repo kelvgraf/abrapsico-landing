@@ -818,7 +818,7 @@ body {
 .container-links__title,
 .container-about__title,
 .box--titleConsult_title {
-	width:fit-content;
+	width: fit-content;
 	font-size: 2.3rem;
     background-size: 1px 1em;
   	box-shadow:
@@ -1434,7 +1434,7 @@ body {
 		text-align: center;
 		margin-top: 2rem;
 	}
-    
+
 	.container--main_section--presentation {
 		min-height: 90vh;
 		margin-bottom: 4.5rem;
