@@ -1033,7 +1033,8 @@ body {
 }
 @media(max-width: 1024px) {
     .container--symptoms_container--specificationSymptoms  {
-        padding: 4rem 2rem;
+		padding: 4rem 2rem;
+		margin-right: 0;
     }
 }
 @media(max-width: 768px) {
@@ -1080,12 +1081,12 @@ body {
 }
 @media(max-width: 768px) {
     .container--specificationSymptoms_boxSlide  {
-		width: 90%;
+		width: 95%;
 		height: 5vh;
 		display: flex;
 		justify-content: space-between;
 		flex-direction: row;
-		padding: 0 0 1rem 2rem;
+		padding: 0 0 1rem 1rem;
     }
 }
 .slideActive {
@@ -1098,7 +1099,7 @@ body {
 @media(max-width: 768px) {
 	.boxSlide_itens {
 		width: 15%;
-		height: 90%;
+		height: 65%;
 		border-radius: 50px;
 		background-color:#FFFFFF;
 		transition: background-color .5s;
