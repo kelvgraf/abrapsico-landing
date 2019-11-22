@@ -81,7 +81,7 @@ function handleText(item) {
             return 'Muitas vezes o paciente passa meses ou até mesmo anos fazendo uma via sacra entre consultórios e hospitais, sofrendo dores e sintomas de uma doença desconhecida. Nestes casos, o psicólogo pode ajudar o paciente a lidar com a ansiedade e os demais sentimentos, causados pela incerteza, evitando a piora do quadro, como o desenvolvimento de outros transtornos e até depressão, por exemplo.';
         }
     }
-
+    
     text.innerHTML = init();
 }
 
@@ -110,14 +110,20 @@ let sintomas = [
 ];
 let text = document.getElementById('texto');
 
+function handleTitle(event, type){
+    document.querySelector('.selectedTitle').classList.remove('selectedTitle');
+    event.target.classList.add('selectedTitle')
+    handleText(type)
+    handleConatinerText(type)
+}
 
 function handleSlide(event, type){
     document.querySelector('.selectedItem').classList.remove('selectedItem');
     event.target.classList.add('selectedItem')
     handleText(type)
-    handleTitle(type)
+    handleConatinerText(type)
 }
-function handleTitle(item) {
+function handleConatinerText(item) {
     let txtExit = document.getElementById('title-exit');
     function init () {
         switch (item) {
