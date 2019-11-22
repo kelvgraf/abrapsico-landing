@@ -985,13 +985,19 @@ body {
     }
 }
 
-.container--symptoms_container--itensSymptoms p {
+.container--symptoms--text {
 	margin: 2rem 0;
     cursor: pointer;
     font-family: 'NunitoSans Bold';
 }
+
+.selectedTitle {
+	font-family: 'NunitoSans Black' !important;
+}
+
+
 @media(max-width: 1024px) {
-    .container--symptoms_container--itensSymptoms p  {
+    .container--symptoms--text  {
         margin: 1.5rem 0;
         font-size:20px; 
     }
@@ -1002,12 +1008,12 @@ body {
 	}
 }
 /* @media(max-width: 648px) {
-    .container--symptoms_container--itensSymptoms p  {
+    .container--symptoms--text  {
         font-size:15px; 
     }
 } */
 /* @media(max-width: 320px) {
-    .container--symptoms_container--itensSymptoms p  {
+    .container--symptoms--text  {
         font-size:13px; 
     }
 } */
@@ -1037,11 +1043,11 @@ body {
 	}
 }
 
-.container--symptoms_container--itensSymptoms p:nth-child(1) {
+.container--symptoms--text:nth-child(1) {
   margin-top: 0;
 }
 
-.container--symptoms_container--itensSymptoms p:hover {
+.container--symptoms--text:hover {
   font-family: 'NunitoSans Black';
 }
 
