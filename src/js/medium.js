@@ -18,10 +18,38 @@ function getPosts() {
             mountPagination(mediumPosts);
         }
         else {
-            document.querySelector('.container--main_section--blog').style.display = 'none'
+            // document.querySelector('.section--blog_container--blog').style.display = 'none'
+            let blog = document.querySelector('.container--main_section--blog');
+            blog.style.display = 'flex'
+            blog.style.flexDirection = 'column'
+            notPosts(blog);
         }
     });
 };
+
+function notPosts(el) {
+    // -------- criando elementos --------
+    let eleMensageNotPosts = document.createElement('p');
+    let txtNotPosts = document.createTextNode('Não há posts');
+    let boxNotPosts = document.createElement('div');
+
+    // -------- estilizando elementos --------
+    eleMensageNotPosts.style.color = 'grey'
+    eleMensageNotPosts.style.opacity = '0.6'
+    eleMensageNotPosts.style.fontSize = '1.5rem' ;
+    eleMensageNotPosts.style.fontFamily = 'NunitoSans Bold';
+
+    boxNotPosts.style.width = '100%';
+    boxNotPosts.style.height = '30vh';
+    boxNotPosts.style.display = 'flex';
+    boxNotPosts.style.justifyContent = 'center';
+    boxNotPosts.style.borderRadius = '50px';
+
+    // -------- renderizando elementos --------
+    eleMensageNotPosts.appendChild(txtNotPosts)
+    boxNotPosts.appendChild(eleMensageNotPosts)
+    el.appendChild(boxNotPosts);
+}
 
 function formatPosts(posts) {
     var formattedPosts = {};

@@ -549,7 +549,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+	width: 50%;
+	padding-left: 4rem;
 }
 @media(max-width: 320px) {
 	.container--blog_box--textTitle {
@@ -633,7 +634,7 @@ body {
     width: fit-content;
     font-size: 2.2rem;
     font-family: 'Nunito ExtraBold';
-    border-bottom: 8px solid #FFBA5C;
+    border-bottom: 4px solid #FFBA5C;
 }
 @media (max-width: 1024px){
     .box--textTitle_title{
@@ -1571,6 +1572,22 @@ body {
 		padding-left: 0.3rem;
 	}
 }
+@media (max-width: 425px) {
+	.container--consult_box--titleConsult {
+		width: 47%;
+		padding-left: 0.3rem;
+	}
+}
+@media (max-width: 375px) {
+	.container--consult_box--titleConsult {
+		width: 54%;
+	}
+}
+@media (max-width: 320px) {
+	.container--consult_box--titleConsult {
+		width: 62%;
+	}
+}
 
 /* .box--titleConsult_title {
 	font-size: 2.2rem;
@@ -1744,14 +1761,20 @@ body {
     .box--txtBox_box--phoneNunber {
         width: 100%;
         height: 41%;
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         justify-content: flex-end;
     }
 }
 @media (max-width: 648px) {
 	.box--txtBox_box--phoneNunber {
 		height: 33%;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
+	}
+}
+@media (max-width: 425px) {
+	.box--txtBox_box--phoneNunber {
+		height: 33%;
+		font-size: 1rem;
 	}
 }
 
