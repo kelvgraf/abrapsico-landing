@@ -802,7 +802,8 @@ body {
     }
     @media(max-width: 1366px) {
         .box--section_container--txtTitleSearchForPsychologist {
-            width: 53%;
+			width: 53%;
+			height: 15vh;
         }
     }
     @media(max-width: 1024px) {
@@ -1949,6 +1950,7 @@ body {
 	position: relative;
 	padding: 6rem 0;
 	display: flex;
+	/* flex-direction: column; */
 	align-items: flex-start;
 	background: #164467;
 }
@@ -2133,3 +2135,24 @@ body {
 			padding-bottom: 7rem;
 		}
 	}
+.footer--box_desenvolvidoPor {
+	width: 100%;
+	padding: 1rem 0 1rem 0;
+	display: flex;
+	justify-content: center;
+}
+.desenvolvidoPor_box--itens {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+}
+.box--itens_img {
+	width: 5%;
+}
+.box--itens_txtDevelopers {
+	/* width: 20%; */
+	display: flex;
+	align-items: center;
+	margin-right: 1rem;
+	font-family: 'NunitoSans Bold';
+}
