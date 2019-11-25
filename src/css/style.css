@@ -837,8 +837,9 @@ body {
     }
     @media(max-width: 375px) {
         .box--section_container--txtTitleSearchForPsychologist {
-			width: 71%;
+			width: 75%;
 			margin-top: 0;
+			padding-top: 2rem
         }
     }
     @media(max-width: 320px) {
@@ -1622,8 +1623,9 @@ body {
 	.container--consult_box--titleConsult {
 		display: inline;
 		width: 42%;
-		height: 20vh;
+		height: auto;
 		padding-left: 0;
+		margin-top: 2rem;
 	}
 }
 @media (max-width: 648px) {
