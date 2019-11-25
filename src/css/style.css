@@ -816,9 +816,11 @@ body {
     
     @media(max-width: 768px) {
         .box--section_container--txtTitleSearchForPsychologist {
-            width: 42%;
+			width: 42%;
+			height: 15vh;
 			padding-left: 3.7rem;
 			margin-top: 4rem;
+			display: inline;
         }
 	}
 	@media(max-width: 648px) {
@@ -836,8 +838,9 @@ body {
     }
     @media(max-width: 375px) {
         .box--section_container--txtTitleSearchForPsychologist {
-			width: 71%;
+			width: 75%;
 			margin-top: 0;
+			padding-top: 2rem
         }
     }
     @media(max-width: 320px) {
@@ -1619,9 +1622,11 @@ body {
 }
 @media (max-width: 768px) {
 	.container--consult_box--titleConsult {
+		display: inline;
 		width: 42%;
-		height: 18%;
+		height: auto;
 		padding-left: 0;
+		margin-top: 2rem;
 	}
 }
 @media (max-width: 648px) {
@@ -1634,6 +1639,7 @@ body {
 	.container--consult_box--titleConsult {
 		width: 47%;
 		padding-left: 0.3rem;
+		padding-top: 3rem;
 	}
 }
 @media (max-width: 375px) {
@@ -1663,7 +1669,6 @@ body {
 	.box--titleConsult_title {
 		height: 24vh;
 		font-size: 1.6rem;
-		display: flex;
 		align-items: flex-end;
 	}
 }
