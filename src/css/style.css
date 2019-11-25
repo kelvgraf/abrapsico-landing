@@ -802,7 +802,8 @@ body {
     }
     @media(max-width: 1366px) {
         .box--section_container--txtTitleSearchForPsychologist {
-            width: 53%;
+			width: 53%;
+			height: 15vh;
         }
     }
     @media(max-width: 1024px) {
