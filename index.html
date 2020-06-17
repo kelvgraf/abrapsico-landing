@@ -47,7 +47,8 @@
             <div class="section--home_container--textHome">
                 <div class="container--textHome_box--text">
                     <h1 class="box--text_title">Experimente mudar com a Abrapsico.</h1>
-                    <p class="box--text_text--introduction">_<br>Atendimento psicológico de qualidade, visando sempre o bem estar do paciente, com profissionais qualificados prontos para te atender, não deixe de agendar a sua consulta.</p>
+                    <p class="box_text--hifen">_</p>
+                    <p class="box--text_text--introduction">Atendimento psicológico de qualidade, visando sempre o bem estar do paciente, com profissionais qualificados prontos para te atender, não deixe de agendar a sua consulta.</p>
                 </div>
             </div>
             <div class="section--home_container--imageBackground">
@@ -60,14 +61,22 @@
             </div>
             <div class="box--section_container--symptoms">
                 <div class="container--symptoms_container--itensSymptoms">
-                    <p onclick="handleText('first-text')">Pensamentos negativos constantes</p>
-                    <p onclick="handleText('second-text')">Excesso de raiva</p>
-                    <p onclick="handleText('third-text')">Dificuldade nos relacionamentos</p>
-                    <p onclick="handleText('fourth-text')">Situações traumáticas</p>
-                    <p onclick="handleText('fifth-text')">Sintomas de doenças não identificadas</p>
+                    <p class="container--symptoms--text selectedTitle" onclick="handleTitle(event, 'first-text')">Pensamentos negativos constantes aqui</p>
+                    <p class="container--symptoms--text" onclick="handleTitle(event, 'second-text')">Excesso de raiva</p>
+                    <p class="container--symptoms--text" onclick="handleTitle(event, 'third-text')">Dificuldade nos relacionamentos</p>
+                    <p class="container--symptoms--text" onclick="handleTitle(event, 'fourth-text')">Situações traumáticas</p>
+                    <p class="container--symptoms--text" onclick="handleTitle(event, 'fifth-text')">Sintomas de doenças não identificadas</p>
                 </div>
                 <div class="container--symptoms_container--specificationSymptoms">
+                    <p id="title-exit">Pensamentos negativos constantes</p>
                     <p id="texto">Todo mundo tem algum tipo de pensamento pessimista durante o dia. É extremamente normal.  Mas quando se torna recorrente e obsessivo -  como a idealização de situações catastróficas ou ideias ruins -  é de extrema importância buscar ajuda. A terapia psicológica oferece técnicas direcionadas para resolver esse tipo de problema e melhorar a qualidade de vida do indivíduo.</p>
+                    <div class="container--specificationSymptoms_boxSlide">
+                        <div id="firstSlideItem" class="boxSlide_itens selectedItem" onclick="handleSlide(event,'first-text')"></div>
+                        <div id="secondSlideItem" class="boxSlide_itens" onclick="handleSlide(event,'second-text')"></div>
+                        <div id="thirdSlideItem" class="boxSlide_itens" onclick="handleSlide(event,'third-text')"></div>
+                        <div id="fourthSlideItem" class="boxSlide_itens" onclick="handleSlide(event,'fourth-text')" ></div>
+                        <div id="fifthSlideItem" class="boxSlide_itens" onclick="handleSlide(event,'fifth-text')"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -119,16 +128,16 @@
             </div>
             <ul class="container-links__list">
                 <li>
-                    <a href="https://site.cfp.org.br">Conselho Federal de Psicologia</a>
+                    <a href="https://site.cfp.org.br" target="_blank">Conselho Federal de Psicologia</a>
                 </li>
                 <li>
-                    <a href="https://www.crpsp.org">Conselho Regional de Psicologia</a>
+                    <a href="https://www.crpsp.org" target="_blank">Conselho Regional de Psicologia</a>
                 </li>
                 <li>
-                    <a href="https://site.cfp.org.br/wp-content/uploads/2018/05/RESOLU%C3%87%C3%83O-N%C2%BA-11-DE-11-DE-MAIO-DE-2018.pdf">Resolução CFP 011/2018</a>
+                    <a href="https://site.cfp.org.br/wp-content/uploads/2018/05/RESOLU%C3%87%C3%83O-N%C2%BA-11-DE-11-DE-MAIO-DE-2018.pdf" target="_blank">Resolução CFP 011/2018</a>
                 </li>
                 <li>
-                    <a href="https://site.cfp.org.br/wp-content/uploads/2012/07/codigo-de-etica-psicologia.pdf">Código de Ética do Psicológo</a>
+                    <a href="https://site.cfp.org.br/wp-content/uploads/2012/07/codigo-de-etica-psicologia.pdf" target="_blank">Código de Ética do Psicológo</a>
                 </li>
             </ul>
         </section>
@@ -138,26 +147,22 @@
                     <h2 class="box--titleConsult_title">Agende uma consulta</h2>
                 </div>
                 <div class="container--consult_container--infoSectionSchedule">
+                    <div class="box--iconContact_box--imgContact">
+                        <img class="box--imgContact_element--img" src="./src/img/Ícone-Agendamento.svg">
+                    </div>
                     <div class="box--contactBox_box--iconContact">
-                        <div class="box--iconContact_box--imgContact">
-                            <img class="box--imgContact_element--img" src="./src/img/Ícone-Agendamento.svg">
-                        </div>
                         <div class="box--iconContact_box--txtBox">
-                            <div class="box--txtBox_box--txtOrientation">
-                                <h2 class="box--txtOrientation_title">Vamos conversar?</h2>
-                                <p class="box--txtOrientation_txt">Nossa equipe está à disposição para lhe atender e solucionar suas dúvidas.</p>
-                            </div>
+                            <h2 class="box--txtOrientation_title">Vamos conversar?</h2>
+                            <p class="box--txtOrientation_txt">Nossa equipe está à disposição para lhe atender e solucionar suas dúvidas.</p>
                             <div class="box--txtBox_box--phoneNunber">
-                                <p class="box--phoneNunber_nunber--call phoneNunber">(11) 99825-8963</p>
-                                <p class="box--phoneNunber_nunber--Whatsapp phoneNunber">(11) 97783-1381 (Whatsapp)</p>
+                                <p>(11) 99825-8963</p>
+                                <p>(11) 97783-1381 (Whatsapp)</p>
                             </div>
                         </div>
                     </div>
-                    <div class="container--infoSectionSchedule_box--directionServiseOnline">
-                        <div class="container--infoSectionSchedule_box--infoServices">
-                            <h2 class="box--infoServices_titleServiceOnline">Terapia Online</h2>
-                            <p class="box--infoServices_txtInfoOnline">A Terapia Online foi regulamentada no Brasil em 12/11/2018, através da Resolução CFP 011/2018. Atualmente é permitida e amplamente divulgada, não havendo limites de sessões para sua prática. A Terapia Online amplia o acesso de serviços de psicologia à população que vive em regiões com acesso limitado a serviços psicológicos e também para brasileiros que moram no exterior.</p>
-                        </div>
+                    <div class="container-directionServiseOnline">
+                        <h2 class="box--infoServices_titleServiceOnline">Terapia Online</h2>
+                        <p class="box--infoServices_txtInfoOnline">A Terapia Online foi regulamentada no Brasil em 12/11/2018, através da Resolução CFP 011/2018. Atualmente é permitida e amplamente divulgada, não havendo limites de sessões para sua prática. A Terapia Online amplia o acesso de serviços de psicologia à população que vive em regiões com acesso limitado a serviços psicológicos e também para brasileiros que moram no exterior.</p>
                     </div>
                 </div>
             </div>
@@ -173,7 +178,7 @@
         <section id="QUEMSOMOS" class="container-team">
             <div class="container-who__title-box">
                 <h2 class="container-services__title">Quem Somos</h2>
-                <p class="box--txtPresentation_txt">Um grupo de Psicólogos que atua visando o bem estar do Indivíduo, levando a Psicologia ao alcance de todos. Prezamos pela ética e qualidade no atendimento.</p>
+                <p class="box--txtPresentation_txt-who-we-are">Um grupo de Psicólogos que atua visando o bem estar do Indivíduo, levando a Psicologia ao alcance de todos. Prezamos pela ética e qualidade no atendimento.</p>
             </div>
             <div class="container-team__members-box">
                 <div>
@@ -203,7 +208,7 @@
             </div>
         </section>
     </main>
-    <footer id="contato">
+    <footer id="CONTATO">
         <section class="contato_wrap">
             <figure class="contato_wrap--figure">
                 <img src="./src/img/Simbolo-Footer.svg" alt="logo Abrapsico" class="contato_wrap--figure--img">
@@ -235,10 +240,17 @@
                 </div>
             </div>
         </section>
+        <div class="footer--box_desenvolvidoPor">
+            <div class="desenvolvidoPor_box--itens">
+                <p class="box--itens_txtDevelopers">Desenvolvido por</p>
+                <a href="https://www.vainaweb.com.br/" target="_blank">
+                    <img class="box--itens_img" src="src/img/VnW-Logo.svg">
+                </a> 
+            </div>
+        </div>
     </footer>
     <script src="./src/js/main.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="./src/js/medium.js"></script>
 </body>
-<script src="./src/js/main.js"></script>
 </html>
